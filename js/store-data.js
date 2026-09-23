@@ -2,10 +2,8 @@
    RACKHOUSE — store configuration & product catalog
    Single source of truth for pricing, shipping and product data.
 
-   LAUNCH CHECKLIST — replace before taking real orders:
-   1. SHOP.email   → a real inbox you check (currently a safe RFC 2606 .example
-                      placeholder that cannot deliver mail).
-   2. SHOP.payment.productLinks → paste a Stripe Payment Link URL per product
+   LAUNCH CHECKLIST — one item left before taking real orders:
+   1. SHOP.payment.productLinks → paste a Stripe Payment Link URL per product
                       (see business/PAYMENTS-SETUP.md) once you have a Stripe
                       account, and every "Buy now" button on that product
                       instantly starts taking real cards — no other code
@@ -14,14 +12,14 @@
                       account at all. Multi-item carts ("Add to cart") always
                       use the built-in checkout, since one Payment Link can't
                       represent an arbitrary mixed cart without a backend.
-   3. Swap SHOP.social if/when real social accounts exist (none are linked yet).
+   2. Swap SHOP.social if/when real social accounts exist (none are linked yet).
    ========================================================================== */
 
 const SHOP = {
   name: 'Rackhouse',
   legalName: 'Rackhouse Supply Co.',
   tagline: 'Small-batch 3D-printed gear storage for climbers.',
-  email: 'hello@rackhousesupply.example',
+  email: 'rackhousesupplyco@gmail.com',
   phone: '',
   address: 'Chicago, IL · ships from a home studio, not a storefront',
   currency: '$',

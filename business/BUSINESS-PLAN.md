@@ -50,8 +50,8 @@ changes the whole shape of the launch:
       with the email/manual-invoice flow already built and add Stripe
       once the first order proves demand. Either is a legitimate
       starting point; Stripe just removes a manual step for you.
-- [ ] Swap the placeholder contact email (`hello@rackhousesupply.example`) for
-      a real inbox you check — see `README.md`.
+- [x] Contact email is live: `rackhousesupplyco@gmail.com`, forwarding to
+      your personal inbox.
 - [ ] Print (or have printed) **one of each product** as a photo/video
       prop and to get real cost numbers (see `UNIT-ECONOMICS-AND-SCALING.md`).
 
