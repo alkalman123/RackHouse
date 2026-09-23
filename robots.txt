@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alkalman123.github.io/RackHouse/sitemap.xml

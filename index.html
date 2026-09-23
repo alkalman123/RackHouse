@@ -5,6 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Rackhouse — 3D-Printed Gear Storage for Climbers</title>
 <meta name="description" content="The Gatekeeper is an oversized, 3D-printed carabiner-shaped gear organizer and helmet holder that hangs a full trad rack off one point — printed to order in six colorways, alongside the Rock Ring and the Cup Cradle.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Rackhouse">
+<meta property="og:title" content="Rackhouse — 3D-Printed Gear Storage for Climbers">
+<meta property="og:description" content="The Gatekeeper is an oversized, 3D-printed carabiner-shaped gear organizer and helmet holder that hangs a full trad rack off one point — printed to order in six colorways, alongside the Rock Ring and the Cup Cradle.">
+<meta property="og:image" content="https://alkalman123.github.io/RackHouse/img/gatekeeper-hero-dark.jpg">
+<meta property="og:url" content="https://alkalman123.github.io/RackHouse/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rackhouse — 3D-Printed Gear Storage for Climbers">
+<meta name="twitter:description" content="The Gatekeeper is an oversized, 3D-printed carabiner-shaped gear organizer and helmet holder that hangs a full trad rack off one point — printed to order in six colorways, alongside the Rock Ring and the Cup Cradle.">
+<meta name="twitter:image" content="https://alkalman123.github.io/RackHouse/img/gatekeeper-hero-dark.jpg">
 <link rel="icon" type="image/png" sizes="512x512" href="img/favicon-512.png">
 <link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192.png">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
@@ -69,6 +79,7 @@
     <div class="cart-drawer-foot" id="cartDrawerFoot" style="display:none;">
       <div class="cart-subtotal-row"><span>Subtotal</span><span class="num" id="cartDrawerSubtotal">$0.00</span></div>
       <div class="cart-ship-note" id="cartShipNote"></div>
+      <div class="ship-progress"><div class="ship-progress-fill" id="cartShipProgress"></div></div>
       <a href="checkout.html" class="btn btn-primary btn-block">Checkout</a>
       <a href="cart.html" class="btn btn-ghost btn-block" style="justify-content:center;margin-top:10px;">View full cart</a>
     </div>
@@ -95,7 +106,7 @@
       </div>
     </div>
     <div class="hero-media">
-      <img src="img/gatekeeper-hero-dark.jpg" alt="The Gatekeeper, an oversized carabiner-shaped gear organizer and helmet holder, in the Ember colorway" width="1200" height="840">
+      <img fetchpriority="high" src="img/gatekeeper-hero-dark.jpg" alt="The Gatekeeper, an oversized carabiner-shaped gear organizer and helmet holder, in the Ember colorway" width="1200" height="840">
     </div>
   </div>
 </section>
@@ -113,7 +124,7 @@
   <div class="container">
     <div class="grid grid-2" style="align-items:center; gap:60px;">
       <div class="reveal">
-        <img src="img/gatekeeper-rock-hero.jpg" alt="The Gatekeeper in the Rock colorway, front three-quarter view" style="border-radius:var(--radius-lg); border:1px solid var(--line);">
+        <img loading="lazy" src="img/gatekeeper-rock-hero.jpg" alt="The Gatekeeper in the Rock colorway, front three-quarter view" style="border-radius:var(--radius-lg); border:1px solid var(--line);">
       </div>
       <div class="reveal reveal-1">
         <span class="eyebrow">The flagship</span>
@@ -180,27 +191,27 @@
     </div>
     <div class="grid grid-4" style="gap:18px;">
       <a href="product-gatekeeper.html?color=rock" class="reveal reveal-1" style="text-decoration:none;">
-        <img src="img/gatekeeper-rock-hero.jpg" alt="Gatekeeper in Rock colorway" style="border-radius:var(--radius); border:1px solid var(--line); aspect-ratio:1/1; object-fit:cover;">
+        <img loading="lazy" src="img/gatekeeper-rock-hero.jpg" alt="Gatekeeper in Rock colorway" style="border-radius:var(--radius); border:1px solid var(--line); aspect-ratio:1/1; object-fit:cover;">
         <p style="text-align:center;margin-top:10px;font-weight:700;font-size:14px;">Rock</p>
       </a>
       <a href="product-gatekeeper.html?color=moss" class="reveal reveal-2" style="text-decoration:none;">
-        <img src="img/gatekeeper-moss-hero.jpg" alt="Gatekeeper in Moss colorway" style="border-radius:var(--radius); border:1px solid var(--line); aspect-ratio:1/1; object-fit:cover;">
+        <img loading="lazy" src="img/gatekeeper-moss-hero.jpg" alt="Gatekeeper in Moss colorway" style="border-radius:var(--radius); border:1px solid var(--line); aspect-ratio:1/1; object-fit:cover;">
         <p style="text-align:center;margin-top:10px;font-weight:700;font-size:14px;">Moss</p>
       </a>
       <a href="product-gatekeeper.html?color=ice" class="reveal reveal-3" style="text-decoration:none;">
-        <img src="img/gatekeeper-ice-hero.jpg" alt="Gatekeeper in Ice colorway" style="border-radius:var(--radius); border:1px solid var(--line); aspect-ratio:1/1; object-fit:cover;">
+        <img loading="lazy" src="img/gatekeeper-ice-hero.jpg" alt="Gatekeeper in Ice colorway" style="border-radius:var(--radius); border:1px solid var(--line); aspect-ratio:1/1; object-fit:cover;">
         <p style="text-align:center;margin-top:10px;font-weight:700;font-size:14px;">Ice</p>
       </a>
       <a href="product-gatekeeper.html?color=sand" class="reveal reveal-4" style="text-decoration:none;">
-        <img src="img/gatekeeper-sand-hero.jpg" alt="Gatekeeper in Sand colorway" style="border-radius:var(--radius); border:1px solid var(--line); aspect-ratio:1/1; object-fit:cover;">
+        <img loading="lazy" src="img/gatekeeper-sand-hero.jpg" alt="Gatekeeper in Sand colorway" style="border-radius:var(--radius); border:1px solid var(--line); aspect-ratio:1/1; object-fit:cover;">
         <p style="text-align:center;margin-top:10px;font-weight:700;font-size:14px;">Sand</p>
       </a>
       <a href="product-gatekeeper.html?color=ink" class="reveal reveal-1" style="text-decoration:none;">
-        <img src="img/gatekeeper-ink-hero.jpg" alt="Gatekeeper in Ink colorway" style="border-radius:var(--radius); border:1px solid var(--line); aspect-ratio:1/1; object-fit:cover;">
+        <img loading="lazy" src="img/gatekeeper-ink-hero.jpg" alt="Gatekeeper in Ink colorway" style="border-radius:var(--radius); border:1px solid var(--line); aspect-ratio:1/1; object-fit:cover;">
         <p style="text-align:center;margin-top:10px;font-weight:700;font-size:14px;">Ink</p>
       </a>
       <a href="product-gatekeeper.html?color=ember" class="reveal reveal-2" style="text-decoration:none;">
-        <img src="img/gatekeeper-ember-hero.jpg" alt="Gatekeeper in Ember colorway" style="border-radius:var(--radius); border:1px solid var(--line); aspect-ratio:1/1; object-fit:cover;">
+        <img loading="lazy" src="img/gatekeeper-ember-hero.jpg" alt="Gatekeeper in Ember colorway" style="border-radius:var(--radius); border:1px solid var(--line); aspect-ratio:1/1; object-fit:cover;">
         <p style="text-align:center;margin-top:10px;font-weight:700;font-size:14px;">Ember</p>
       </a>
       <a href="product-gift-duo.html" class="reveal reveal-3" style="text-decoration:none;">
@@ -228,7 +239,7 @@
       <a href="product-rock-ring.html" class="product-card reveal reveal-1">
         <div class="thumb">
           <div class="badges"><span class="badge">Original</span></div>
-          <img src="img/rockring-rock-hero.jpg" alt="The Rock Ring gear valet">
+          <img loading="lazy" src="img/rockring-rock-hero.jpg" alt="The Rock Ring gear valet">
         </div>
         <div class="body">
           <div class="title-row"><h3>The Rock Ring</h3><span class="price">$34.00</span></div>
@@ -238,7 +249,7 @@
       <a href="product-cup-cradle.html" class="product-card reveal reveal-2">
         <div class="thumb">
           <div class="badges"><span class="badge badge-ember">New</span></div>
-          <img src="img/cupcradle-ice-hero.jpg" alt="The Cup Cradle Nalgene cupholder adapter">
+          <img loading="lazy" src="img/cupcradle-ice-hero.jpg" alt="The Cup Cradle Nalgene cupholder adapter">
         </div>
         <div class="body">
           <div class="title-row"><h3>The Cup Cradle</h3><span class="price">$16.00</span></div>
@@ -259,7 +270,7 @@
       <a href="product-tee.html" class="product-card reveal reveal-1">
         <div class="thumb">
           <div class="badges"><span class="badge">Merch</span></div>
-          <img src="img/tee-ink.svg" alt="Rackhouse tee">
+          <img loading="lazy" src="img/tee-ink.svg" alt="Rackhouse tee">
         </div>
         <div class="body">
           <div class="title-row"><h3>Rackhouse Tee</h3><span class="price">$26.00</span></div>
@@ -269,7 +280,7 @@
       <a href="product-stickers.html" class="product-card reveal reveal-2">
         <div class="thumb">
           <div class="badges"><span class="badge">Merch</span></div>
-          <img src="img/stickers-pack.svg" alt="Rackhouse sticker pack">
+          <img loading="lazy" src="img/stickers-pack.svg" alt="Rackhouse sticker pack">
         </div>
         <div class="body">
           <div class="title-row"><h3>Sticker Pack</h3><span class="price">$8.00</span></div>
@@ -297,7 +308,7 @@
         <a href="product-gatekeeper.html#details" class="btn btn-outline" style="margin-top:24px;">Full spec sheet</a>
       </div>
       <div class="reveal reveal-1">
-        <img src="img/gatekeeper-rock-front.jpg" alt="The Gatekeeper, front view, showing the ring of holes around the frame" style="border-radius:var(--radius-lg); border:1px solid var(--line);">
+        <img loading="lazy" src="img/gatekeeper-rock-front.jpg" alt="The Gatekeeper, front view, showing the ring of holes around the frame" style="border-radius:var(--radius-lg); border:1px solid var(--line);">
       </div>
     </div>
   </div>
@@ -312,7 +323,7 @@
         <p class="lede" style="margin-top:16px;">Rackhouse is a small-batch operation, not a warehouse — every piece is sliced, printed and packed to order. The Gatekeeper is the flagship shape off the plate; more gear-storage pieces are already in the print queue.</p>
         <a href="about.html" class="btn btn-outline" style="margin-top:22px;">Read our story</a>
       </div>
-      <img src="img/gatekeeper-ink-hero.jpg" alt="The Gatekeeper in the Ink colorway">
+      <img loading="lazy" src="img/gatekeeper-ink-hero.jpg" alt="The Gatekeeper in the Ink colorway">
     </div>
   </div>
 </section>

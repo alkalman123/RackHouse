@@ -86,6 +86,25 @@ function iconSvg(name) {
   return icons[name] || '';
 }
 
+function updateShipProgress(noteEl, barEl, subtotal) {
+  if (!noteEl && !barEl) return;
+  const threshold = SHOP.freeShippingThreshold;
+  const pct = Math.max(0, Math.min(100, (subtotal / threshold) * 100));
+  if (noteEl) {
+    if (subtotal >= threshold) {
+      noteEl.textContent = 'Free standard shipping unlocked.';
+    } else if (subtotal > 0) {
+      noteEl.textContent = `Add ${fmtMoney(threshold - subtotal)} more for free standard shipping.`;
+    } else {
+      noteEl.textContent = `Free standard shipping over ${fmtMoney(threshold)}.`;
+    }
+  }
+  if (barEl) {
+    barEl.style.width = pct + '%';
+    barEl.classList.toggle('complete', subtotal >= threshold);
+  }
+}
+
 function renderCartUI() {
   const cart = readCart();
   const count = cart.reduce((s, c) => s + c.qty, 0);
@@ -116,17 +135,8 @@ function renderCartUI() {
   const subtotalEl = document.getElementById('cartDrawerSubtotal');
   if (subtotalEl) subtotalEl.textContent = fmtMoney(subtotal);
 
-  const shipNote = document.getElementById('cartShipNote');
-  if (shipNote) {
-    if (subtotal >= SHOP.freeShippingThreshold) {
-      shipNote.textContent = 'Free standard shipping unlocked.';
-    } else if (subtotal > 0) {
-      const remaining = SHOP.freeShippingThreshold - subtotal;
-      shipNote.textContent = `Add ${fmtMoney(remaining)} more for free standard shipping.`;
-    } else {
-      shipNote.textContent = '';
-    }
-  }
+  updateShipProgress(document.getElementById('cartShipNote'), document.getElementById('cartShipProgress'), subtotal);
+  updateShipProgress(document.getElementById('cartPageShipNote'), document.getElementById('cartPageShipProgress'), subtotal);
 
   wireCartLineControls();
 

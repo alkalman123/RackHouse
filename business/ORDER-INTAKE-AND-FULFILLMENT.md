@@ -4,17 +4,17 @@ The honest bottom line first, then the exact setup steps.
 
 ## What's automatic today vs. what needs you
 
-| Step | 3D-printed items (Gatekeeper, Rock Ring, Cup Cradle, Gift Duo, Felt Pads) | Merch (Tee, Stickers) |
-|---|---|---|
-| Take payment | **Automatic** — Stripe Payment Link or built-in checkout | **Automatic** — same mechanism |
-| Customer gets a receipt email | **Automatic** — Stripe's built-in receipt (one checkbox, see below) | **Automatic** — same |
-| You get notified of the order | **Automatic** — Stripe app/email push | **Automatic** — same |
-| "What happens next" branded email | Automatic once you do the 15-minute Zapier/Make setup below | Same |
-| Production | **You** — slice, print, pack (a human has to run the printer, always) | **Automatic** once linked to a print-on-demand partner — you never touch it |
-| Shipping | **You** — box it, buy a label, ship it | **Automatic** — the POD partner ships and emails tracking |
-| Shipping notification email | Automatic once you do the tracker setup below | Automatic (POD partner sends its own) |
+| Step | 3D-printed items, printed by you | 3D-printed items, routed to a drop-ship print farm | Merch (Tee, Stickers) |
+|---|---|---|---|
+| Take payment | **Automatic** — Stripe Payment Link or built-in checkout | **Automatic** — same | **Automatic** — same |
+| Customer gets a receipt email | **Automatic** — Stripe's built-in receipt (one checkbox, see below) | **Automatic** — same | **Automatic** — same |
+| You get notified of the order | **Automatic** — Stripe app/email push | **Automatic** — same | **Automatic** — same |
+| "What happens next" branded email | Automatic once you do the 15-minute Zapier/Make setup below | Automatic — same setup | Same |
+| Production | **You** — slice, print, pack (a human has to run the printer) | **Automatic** — the farm prints, you never touch it | **Automatic** once linked to a print-on-demand partner |
+| Shipping | **You** — box it, buy a label, ship it | **Automatic** — the farm ships directly to the customer (if it drop-ships — see Part 3b) | **Automatic** — the POD partner ships and emails tracking |
+| Shipping notification email | Automatic once you do the tracker setup below | Automatic (farm sends its own, if it drop-ships) | Automatic (POD partner sends its own) |
 
-So: **payment collection and customer emails can be 100% automatic today, on every item.** The one thing that can never be fully hands-off is the physical printing of the 3D-printed line — a human has to run the printer. The merch line (tee, stickers) *can* be fully hands-off end-to-end once it's routed through a print-on-demand partner, because nothing physical touches your hands at all.
+So: **payment collection and customer emails can be 100% automatic today, on every item, regardless of who prints it.** Printing it yourself is the one path that always needs a human — a printer has to be run by someone. But routing a SKU to a drop-ship print farm makes it just as hands-off as the merch line, at the cost of a real margin hit (see `UNIT-ECONOMICS-AND-SCALING.md`'s "DIY printing vs. a print farm" section — worth doing for the Gatekeeper and Cup Cradle specifically, where the margin math already favors it once your own time is priced in).
 
 ## Part 1 — Order intake (works today, zero extra setup)
 
@@ -69,6 +69,53 @@ Questions? Just reply to this email.
 
 — Rackhouse
 ```
+
+## Part 3b — Routing a 3D-printed SKU to a drop-ship print farm instead
+
+Per the margin math in `UNIT-ECONOMICS-AND-SCALING.md`, this is worth
+doing for the Gatekeeper and Cup Cradle from early on, not just as a
+late-stage scaling move — those two lose money to your own labor when
+printed one at a time, before you have enough volume to batch.
+
+**The one requirement that makes this actually hands-off:** the farm
+must ship directly to your customer, not back to you. If it ships to
+you, you're back to manual packing and shipping — no better than
+printing it yourself, and worse on margin. Confirm drop-ship support
+before committing to a farm.
+
+**A concrete lead:** [Slant 3D](https://www.slant3d.com) is an FDM
+print farm built specifically for API-driven, drop-ship order
+fulfillment — aimed at exactly this use case (e-commerce/Kickstarter
+sellers who don't want to run their own printers). Get a current quote
+directly; I don't have verified pricing to give you and per-unit costs
+change over time.
+
+**Wiring it up**, once you've picked a farm and confirmed drop-ship:
+
+1. Upload the STL for the SKU you're routing (Gatekeeper, Cup Cradle,
+   or both) to the farm, matching colorway options to what the site
+   offers.
+2. If the farm has an API and a Zapier/Make integration (check their
+   docs — this varies by vendor and changes over time): **Trigger:
+   Stripe → New Payment**, filtered to that SKU. **Action:** create an
+   order with the farm, mapping the Stripe shipping address and
+   colorway straight through. This is the same pattern as the Printful
+   automation in Part 4 below.
+3. If the farm doesn't have a no-code integration yet, fall back to the
+   same semi-automated pattern as Printful's "day one" option: the new
+   row in your order tracker (Part 2) tells you to submit that order on
+   the farm's dashboard by hand — a couple minutes of clicking, not
+   printing or packing.
+4. Either way, the farm's own shipping confirmation to the customer
+   replaces the tracker-triggered "it shipped" email from Part 3 for
+   that order — nothing further needed from you.
+
+You can run a mixed model: print the Rock Ring yourself (it wins DIY
+even unbatched per the margin math) while routing the Gatekeeper and
+Cup Cradle to the farm. Nothing about the site's code needs to change
+either way — `SHOP.payment.productLinks` and the cart already treat
+every product identically; only your own fulfillment process differs
+per SKU.
 
 ## Part 4 — Fulfilling a merch order (Tee, Stickers) — fully automatic once linked
 

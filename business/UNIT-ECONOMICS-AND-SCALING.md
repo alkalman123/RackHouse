@@ -89,6 +89,85 @@ Two things the first table deliberately leaves out, on purpose:
   hours and your own pack/ship time. That's the real constraint — see
   below.
 
+## DIY printing vs. a print farm — pricing in your own time
+
+Materials-only margins (above) look great, but they hide the thing that
+actually costs you: your own hands-on time. A print farm — a third-party
+FDM shop that prints and ships parts on your behalf — trades margin for
+zero equipment, zero print-queue time, and (if it's the right kind of
+farm) zero of your own labor per order. Whether that trade is worth it
+depends entirely on whether you price your time into the DIY column.
+
+### Print-farm cost, ballpark
+
+Rough per-unit cost from a third-party FDM print farm (a wide range,
+since farms price on material + machine-time + their margin — get 2–3
+real quotes before trusting this):
+
+| Product | DIY filament-only cost | Ballpark print-farm cost |
+|---|---|---|
+| Rock Ring (~170g) | $3.74 | $8–14 |
+| Gatekeeper (~85g) | $1.87 | $5–9 |
+| Cup Cradle (~110g) | $2.42 | $6–10 |
+
+A print farm roughly **doubles to triples** your per-unit cost versus
+printing it yourself — but it also removes the one-printer-at-a-time
+ceiling entirely (see "the real bottleneck," below) and, if the farm
+drop-ships, removes your labor too.
+
+### Margin after farm cost + your own packaging/shipping
+
+If the farm ships the part **to you** and you still pack/ship it to the
+customer yourself (most consumer-facing farms work this way), the
+margin at the midpoint of the ranges above:
+
+| Product | Price | Print-farm margin |
+|---|---|---|
+| Gatekeeper | $20.00 | $10.12 (51%) |
+| Rock Ring | $34.00 | $20.21 (59%) |
+| Cup Cradle | $16.00 | $5.94 (37%) |
+
+### Now price in your own hands-on time for the DIY column
+
+DIY printing is mostly unattended machine time, but there's real
+hands-on work per unit: slicing/setup, starting the print and checking
+the first layers, post-processing, packing, and a shipping run. At a
+placeholder **$25/hr** (swap in your real number), two scenarios:
+
+- **One order at a time:** ~35–40 min hands-on ≈ $15–17/unit in labor
+- **Batched** (several units per plate/session — scaling step 1 below): ~15–20 min/unit ≈ $6–8/unit in labor
+
+| Product | DIY margin (materials only) | Minus labor, one-at-a-time | Minus labor, batched |
+|---|---|---|---|
+| Gatekeeper | $15.25 | **-$1.42** | $7.75 |
+| Rock Ring | $27.47 | $10.80 | $19.97 |
+| Cup Cradle | $11.52 | **-$5.15** | $4.02 |
+
+The takeaway: **once your time is priced in, printing the Gatekeeper or
+Cup Cradle one order at a time can lose money.** Only the Rock Ring
+clearly wins DIY even unbatched, because its price is high enough to
+absorb the labor. Batching (filling a plate with several units before
+you print) fixes this for all three — but batching only works once
+you have enough simultaneous orders to fill a plate, which isn't true
+in the first weeks when orders trickle in one at a time.
+
+Compare the time-adjusted DIY numbers above to the hands-off print-farm
+margins: **the farm route wins on Gatekeeper and Cup Cradle, and comes
+close on Rock Ring**, whenever DIY would otherwise be done one order at
+a time. This is a genuine case for routing at least some of the catalog
+through a farm from day one, not just as a stopgap before you own a
+printer.
+
+### The catch: this only works if the farm is actually hands-off
+
+Most farms ship the finished part **back to you**, and you repack and
+ship to the customer — which reintroduces labor and erases the
+advantage above. For the "hands-free" case to hold, you need a farm
+that drop-ships directly to your customer. See
+`ORDER-INTAKE-AND-FULFILLMENT.md` for how to wire that up and a
+concrete service to look at (Slant 3D, built specifically for
+API-driven, drop-ship FDM fulfillment).
+
 ## The real bottleneck is printer-hours, not materials
 
 A print that costs $3.74 in filament but ties up your printer for 8–10
@@ -126,11 +205,12 @@ already seen, not upfront investment:
 4. **Recruit a "print partner."** Some makerspaces and hobbyist 3D
    printer owners will run prints for a per-part fee (a cut of margin,
    or a flat $/hour) — lets you scale capacity without buying hardware.
-5. **Outsource to a print-on-demand manufacturing service** (search
-   terms: "on-demand FDM manufacturing," "3D print production service")
-   once volume is consistent enough to justify their minimums — this
-   trades margin for zero-printer-ownership scaling and is usually the
-   right move only after step 3–4 stop keeping up.
+5. **Outsource to a print-on-demand manufacturing service** — see the
+   "DIY vs. print farm" section above for the actual margin math, and
+   `ORDER-INTAKE-AND-FULFILLMENT.md` for how to automate order intake
+   to one. Worth doing earlier than step 3–4 for lower-priced SKUs
+   specifically (see that section), not only as a late-stage scaling
+   move.
 
 Don't skip ahead in this list — every step past #2 costs real money or
 margin, and the whole point of your make-to-order model is that you only
