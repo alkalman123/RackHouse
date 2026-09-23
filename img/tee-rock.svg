@@ -1,18 +1,37 @@
 <svg viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rackhouse t-shirt with the carabiner logo printed on the chest">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="bg-rock" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#ecebe6"/>
       <stop offset="1" stop-color="#dcdcd6"/>
     </linearGradient>
+    <radialGradient id="spot-rock" cx="42%" cy="28%" r="70%">
+      <stop offset="0" stop-color="#828d97"/>
+      <stop offset="55%" stop-color="#6b7680"/>
+      <stop offset="100%" stop-color="#525a62"/>
+    </radialGradient>
+    <linearGradient id="sleeveL-rock" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#828d97"/>
+      <stop offset="1" stop-color="#525a62"/>
+    </linearGradient>
+    <linearGradient id="sleeveR-rock" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#828d97"/>
+      <stop offset="1" stop-color="#525a62"/>
+    </linearGradient>
+    <filter id="soft-rock" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
   </defs>
-  <rect width="800" height="700" rx="20" fill="url(#bg)"/>
+  <rect width="800" height="700" rx="20" fill="url(#bg-rock)"/>
 
-  <!-- tee shadow -->
-  <ellipse cx="400" cy="610" rx="230" ry="26" fill="#15191c" opacity=".14"/>
+  <!-- floor shadow -->
+  <ellipse cx="400" cy="618" rx="235" ry="24" fill="#15191c" opacity=".16" filter="url(#soft-rock)"/>
 
   <!-- sleeves -->
-  <path d="M240 150 L120 230 L150 340 L245 280 Z" fill="#6b7680" stroke="#15191c" stroke-width="5" stroke-linejoin="round"/>
-  <path d="M560 150 L680 230 L650 340 L555 280 Z" fill="#6b7680" stroke="#15191c" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M242 152 L118 228 L146 344 L248 282 Z" fill="url(#sleeveL-rock)" stroke="#525a62" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M558 152 L682 228 L654 344 L552 282 Z" fill="url(#sleeveR-rock)" stroke="#525a62" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- sleeve hem shading -->
+  <path d="M146 344 L248 282 L242 300 L154 356 Z" fill="#525a62" opacity=".35"/>
+  <path d="M654 344 L552 282 L558 300 L646 356 Z" fill="#525a62" opacity=".35"/>
 
   <!-- body -->
   <path d="M245 165
@@ -20,22 +39,37 @@
            C 345 128 375 142 400 142
            C 425 142 455 128 470 100
            C 515 108 555 130 555 165
-           L 560 590
-           C 560 605 548 615 533 615
-           L 267 615
-           C 252 615 240 605 240 590 Z"
-        fill="#6b7680" stroke="#15191c" stroke-width="5" stroke-linejoin="round"/>
+           L 561 592
+           C 561 607 549 617 534 617
+           L 266 617
+           C 251 617 239 607 239 592 Z"
+        fill="url(#spot-rock)" stroke="#525a62" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- fabric fold shading, subtle -->
+  <path d="M290 220 C 300 340 296 470 285 590" stroke="#525a62" stroke-width="14" stroke-linecap="round" opacity=".10" fill="none"/>
+  <path d="M400 210 C 404 350 402 480 400 600" stroke="#828d97" stroke-width="20" stroke-linecap="round" opacity=".12" fill="none"/>
+  <path d="M505 220 C 498 340 502 470 512 590" stroke="#525a62" stroke-width="14" stroke-linecap="round" opacity=".10" fill="none"/>
+
+  <!-- side seams -->
+  <path d="M245 168 L239 592" stroke="#525a62" stroke-width="2" opacity=".45" fill="none"/>
+  <path d="M555 168 L561 592" stroke="#525a62" stroke-width="2" opacity=".45" fill="none"/>
+
+  <!-- shoulder seams -->
+  <path d="M245 168 L292 205" stroke="#525a62" stroke-width="2" opacity=".4" fill="none"/>
+  <path d="M555 168 L508 205" stroke="#525a62" stroke-width="2" opacity=".4" fill="none"/>
 
   <!-- collar rib -->
   <path d="M330 100 C 345 128 375 142 400 142 C 425 142 455 128 470 100"
-        fill="none" stroke="#15191c" stroke-opacity=".4" stroke-width="4"/>
+        fill="none" stroke="#525a62" stroke-opacity=".55" stroke-width="5" stroke-linecap="round"/>
+  <path d="M333 106 C 348 130 376 143 400 143 C 424 143 452 130 467 106"
+        fill="none" stroke="#828d97" stroke-opacity=".5" stroke-width="2"/>
 
   <!-- chest print: carabiner mark + wordmark -->
-  <g transform="translate(400,330)">
-    <circle cx="0" cy="0" r="52" fill="none" stroke="#f7f4ee" stroke-width="9"/>
-    <line x1="-38" y1="-24" x2="6" y2="-24" stroke="#d85c2a" stroke-width="9" stroke-linecap="round"/>
-    <circle cx="-38" cy="-24" r="5.5" fill="#d85c2a"/>
-    <circle cx="6" cy="-24" r="5.5" fill="#d85c2a"/>
-    <text x="0" y="100" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-weight="800" font-size="32" letter-spacing="5" fill="#f7f4ee">RACKHOUSE</text>
+  <g transform="translate(400,335)">
+    <circle cx="0" cy="0" r="52" fill="none" stroke="#f7f4ee" stroke-width="8" opacity=".92"/>
+    <line x1="-38" y1="-24" x2="6" y2="-24" stroke="#d85c2a" stroke-width="8" stroke-linecap="round" opacity=".92"/>
+    <circle cx="-38" cy="-24" r="5" fill="#d85c2a" opacity=".92"/>
+    <circle cx="6" cy="-24" r="5" fill="#d85c2a" opacity=".92"/>
+    <text x="0" y="98" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-weight="800" font-size="31" letter-spacing="5" fill="#f7f4ee" opacity=".92">RACKHOUSE</text>
   </g>
 </svg>
