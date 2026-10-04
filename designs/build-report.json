@@ -4,6 +4,7 @@
     "watertight": true,
     "winding_consistent": true,
     "bodies": 1,
+    "stl_roundtrip_watertight": true,
     "print_bbox_mm": [
       104.0,
       209.0,
@@ -20,25 +21,60 @@
     "watertight": true,
     "winding_consistent": true,
     "bodies": 1,
+    "stl_roundtrip_watertight": true,
     "print_bbox_mm": [
-      58.0,
-      56.0,
-      100.0
+      184.0,
+      206.0,
+      26.0
     ],
-    "solid_volume_cm3": 186.4,
-    "pla_mass_100pct_g": 231.0,
-    "triangles": 3908,
-    "edge_depths_mm": [
-      19,
-      11
+    "solid_volume_cm3": 158.2,
+    "pla_mass_100pct_g": 196.0,
+    "triangles": 26226,
+    "rack_positions": 15,
+    "band_mm": [
+      20.0,
+      14.0
     ],
-    "channel_diameter_mm": 14
+    "band_at_notch_mm": [
+      14.0,
+      14.0
+    ],
+    "standoff_mm": 12.0,
+    "outer_diameter_mm": 184.0
+  },
+  "draw-bar": {
+    "status": "Error.NoError",
+    "watertight": true,
+    "winding_consistent": true,
+    "bodies": 1,
+    "stl_roundtrip_watertight": true,
+    "print_bbox_mm": [
+      200.0,
+      44.0,
+      20.0
+    ],
+    "solid_volume_cm3": 72.8,
+    "pla_mass_100pct_g": 90.0,
+    "triangles": 21582,
+    "slots": 7,
+    "slot_mm": [
+      13,
+      22
+    ],
+    "slot_pitch_mm": 22.0,
+    "rail_mm": [
+      11,
+      8.0
+    ],
+    "standoff_mm": 12.0,
+    "length_mm": 200.0
   },
   "cup-cradle": {
     "status": "Error.NoError",
     "watertight": true,
     "winding_consistent": true,
     "bodies": 1,
+    "stl_roundtrip_watertight": true,
     "print_bbox_mm": [
       101.0,
       101.0,

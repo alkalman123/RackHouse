@@ -12,7 +12,8 @@ to you in chat) contains one folder per design:
 
 ```
 rackhouse-gatekeeper-v3/   files/ (STL), images/ (5), LICENSE.txt, DESCRIPTION.md
-rackhouse-rock-ring-v2/    files/ (STL), images/ (5), LICENSE.txt, DESCRIPTION.md
+rackhouse-rock-ring-v3/    files/ (STL), images/ (5), LICENSE.txt, DESCRIPTION.md
+rackhouse-draw-bar-v1/     files/ (STL), images/ (5), LICENSE.txt, DESCRIPTION.md
 rackhouse-cup-cradle-v2/   files/ (STL), images/ (5), LICENSE.txt, DESCRIPTION.md
 ```
 
@@ -108,43 +109,89 @@ Use a screw into a stud or a rated anchor once it's loaded with a full rack.
 Don't have a printer? Buy one printed to order in six colors at https://alkalman123.github.io/RackHouse/
 ````
 
-## Rock Ring V2 - Portable Edge Lift Block for Finger Training (Rackhouse)
+## Rock Ring V3 - Full Trad Rack & Helmet Gear Ring (Rackhouse)
 
-**Folder in the upload zip:** `rackhouse-rock-ring-v2/`
+**Folder in the upload zip:** `rackhouse-rock-ring-v3/`
 
 | Field on Thingiverse | Enter this |
 |---|---|
-| Thing name | Rock Ring V2 - Portable Edge Lift Block for Finger Training (Rackhouse) |
+| Thing name | Rock Ring V3 - Full Trad Rack & Helmet Gear Ring (Rackhouse) |
 | Category | Hobby > Sport & Outdoors |
 | License | **Creative Commons - Attribution - Non-Commercial - Share Alike** |
 | This is a remix | **Leave OFF** (original design) |
-| Tags | climbing, hangboard, fingerboard, lift block, edge block, grip training, finger strength, bouldering, training, rackhouse |
+| Tags | climbing, trad, rack, gear ring, gear organizer, cam rack, helmet holder, wall hanger, garage organization, rackhouse |
 | Files | `files/` (the STL) and `LICENSE.txt` |
 | Images | `images/` in numbered order. Image 01 becomes the thumbnail. |
 | Print settings → Supports / Rafts | No / No |
 | Print settings → Resolution | 0.2 mm |
-| Print settings → Infill | 30% gyroid, 4 walls (minimum) |
+| Print settings → Infill | 40% gyroid, 4 walls |
 | Print settings → Filament | PLA+ or PETG |
-| Print settings → Notes | Print standing on its end, as exported. |
+| Print settings → Notes | Print face down, feet up, as exported. Needs 210 mm of bed in one direction. |
 
 **Description** (paste into the Summary/Description box; it's also in `DESCRIPTION.md`):
 
 ````markdown
-# Rock Ring V2: portable edge lift block
+# Rock Ring V3: full-rack gear ring
 
-Hangboard-style finger training without a hangboard. Run a cord through the channel, hang a kettlebell or loaded bag, and lift it off the floor by the edge.
+Your whole trad rack and your helmet on one ring on the wall.
 
-- **19 mm edge** on one side, **11 mm edge** on the other. Flip it to change difficulty.
-- 3 mm radiused edges for skin-friendly crimps.
-- **14 mm load channel** with 45-degree countersunk ends so the cord doesn't chafe.
-- 100 x 56 x 58 mm, about 90-120 g. Fits in a chalk bucket.
+- **Clip on like a gear sling:** carabiners clip straight onto the ring band.
+- **15 numbered notches** on the inner edge keep every cam in size order instead of sliding to the bottom. Enough for a double rack plus nuts and a couple of draws.
+- **Helmet hook** in the middle: hang your helmet by its chin strap (13 mm throat).
+- **Keyhole** for one #8 pan-head screw, and **3 standoff feet** that hold it 26 mm off the wall so every carabiner clips on easily.
+- **RACKHOUSE / NOT FOR CLIMBING** debossed on the band.
+
+Size: 184 x 206 mm, 26 mm deep. About 110-140 g. Built for up to 8 kg of gear.
 
 ## Printing
-Prints **standing on its end** exactly as exported, **no supports**. Every layer contains the whole T profile, so finger loads pull along the layers instead of peeling them apart.
-0.2 mm layers, **4 walls, 30% gyroid** minimum. PLA+ or PETG.
+Prints **face down** exactly as exported, feet up, **no supports**. Needs 210 mm of bed in one direction (Ender 3, Prusa MK3/MK4, Bambu A1/P1/X1).
+0.2 mm layers, **4 walls, 40% gyroid** (it carries a full rack). PLA+ indoors, PETG in a hot van.
 
-## Safety
-Keep the weight low to the floor. Use cord or a loading pin rated well above your load. Inspect the block before every session and retire it if you see cracks or layer separation. Never hang body weight from it. Warm up and add load gradually: finger pulleys strain easily.
+## Hanging
+Drive a #8 pan-head screw into a stud or a rated anchor, leaving the head about 9 mm out. Slip the keyhole over it and let the ring drop.
+
+**License:** Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (CC BY-NC-SA 4.0). Print and remix it for yourself. Please don't sell prints or files. Commercial rights are reserved by Rackhouse Supply Co.; contact rackhousesupplyco@gmail.com for a commercial license.
+
+**Not climbing equipment.** Never use this part in a climbing, rescue or fall-protection system.
+
+Don't have a printer? Buy one printed to order in six colors at https://alkalman123.github.io/RackHouse/
+````
+
+## Draw Bar - Quickdraw & Extra Gear Wall Rail (Rackhouse)
+
+**Folder in the upload zip:** `rackhouse-draw-bar-v1/`
+
+| Field on Thingiverse | Enter this |
+|---|---|
+| Thing name | Draw Bar - Quickdraw & Extra Gear Wall Rail (Rackhouse) |
+| Category | Hobby > Sport & Outdoors |
+| License | **Creative Commons - Attribution - Non-Commercial - Share Alike** |
+| This is a remix | **Leave OFF** (original design) |
+| Tags | climbing, quickdraw, quickdraw holder, gear rail, gear organizer, sling, wall rack, garage organization, rackhouse |
+| Files | `files/` (the STL) and `LICENSE.txt` |
+| Images | `images/` in numbered order. Image 01 becomes the thumbnail. |
+| Print settings → Supports / Rafts | No / No |
+| Print settings → Resolution | 0.2 mm |
+| Print settings → Infill | 30% gyroid, 4 walls |
+| Print settings → Filament | PLA+ or PETG |
+| Print settings → Notes | Print face down, standoffs up, as exported. |
+
+**Description** (paste into the Summary/Description box; it's also in `DESCRIPTION.md`):
+
+````markdown
+# Draw Bar: quickdraw & extra-gear rail
+
+A straight wall rail for your quickdraws, slings, nuts and everything that doesn't fit on your main rack.
+
+- **7 slots** (13 x 22 mm, 22 mm apart): clip a carabiner through a slot and around the 11 mm bottom rail.
+- **Two keyholes** for #8 pan-head screws, 176 mm apart.
+- **12 mm standoff ends** hold it 20 mm off the wall so carabiners clip on cleanly.
+- **RACKHOUSE / NOT FOR CLIMBING** debossed along the top.
+
+Size: 200 x 44 mm, 20 mm deep. About 55-65 g. Built for up to 5 kg of gear.
+
+## Printing
+Prints **face down** exactly as exported, standoffs up, **no supports**. 0.2 mm layers, 4 walls, 30% gyroid.
 
 **License:** Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (CC BY-NC-SA 4.0). Print and remix it for yourself. Please don't sell prints or files. Commercial rights are reserved by Rackhouse Supply Co.; contact rackhousesupplyco@gmail.com for a commercial license.
 
@@ -206,7 +253,8 @@ Don't have a printer? Buy one printed to order in six colors at https://alkalman
 | Design | Thingiverse URL | Printables URL | MakerWorld URL |
 |---|---|---|---|
 | Gatekeeper V3 | | | |
-| Rock Ring V2 | | | |
+| Rock Ring V3 | | | |
+| Draw Bar | | | |
 | Cup Cradle V2 | | | |
 
 Once they're live, add the Thingiverse links to the Kickstarter page's

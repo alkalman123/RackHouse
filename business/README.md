@@ -36,7 +36,7 @@ to you directly.
 | `ORDER-INTAKE-AND-FULFILLMENT.md` | How orders actually reach you, what's automatic out of the box, and how to wire up hands-off order tracking, customer emails, and print-on-demand fulfillment for the tee/stickers |
 | `LEGAL-AND-ENTITY-FORMATION.md` | Sole prop vs. LLC, when to actually form one, product-liability and trademark considerations, and **§4c: why the products were redesigned and who owns the designs** — general education, not legal advice |
 | `KICKSTARTER-CAMPAIGN.md` | Goal and budget, reward tiers, paste-ready story/risks text, video plan, pre-launch plan, how to share in climbing communities without getting banned |
-| `THINGIVERSE-UPLOAD.md` | Step-by-step upload of the three designs with license choice, titles, tags, print settings and descriptions |
+| `THINGIVERSE-UPLOAD.md` | Step-by-step upload of the four designs with license choice, titles, tags, print settings and descriptions |
 | `PAYMENTS-SETUP.md` | Exact steps to accept credit cards via Stripe, and how it plugs into the code that's already built for it |
 | `RENDER-DEPLOYMENT.md` | An alternative hosting path, documented but not the one currently live |
 | `SOCIAL-MEDIA-KIT.md` | Ready-to-edit launch posts and an evergreen content list |

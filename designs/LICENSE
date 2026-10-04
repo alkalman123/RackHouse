@@ -3,8 +3,8 @@ Copyright (c) 2026 Rackhouse Supply Co. All rights reserved except as
 granted below.
 
 Covered files: designs/rackhouse_designs.py, designs/make_usecase_svgs.py,
-designs/print-ready/*.stl, models/*.stl, and the Gatekeeper, Rock Ring
-and Cup Cradle geometry they define.
+designs/make_dimension_drawing.py, designs/print-ready/*.stl, models/*.stl,
+and the Gatekeeper, Rock Ring, Draw Bar and Cup Cradle geometry they define.
 
 Public license
 --------------

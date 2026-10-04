@@ -41,6 +41,7 @@ const SHOP = {
     productLinks: {
       'gatekeeper': '',
       'rock-ring': '',
+      'draw-bar': '',
       'cup-cradle': '',
       'gift-duo': '',
       'felt-pads': '',
@@ -70,6 +71,7 @@ const SHOP = {
   openDesigns: {
     'gatekeeper': '',
     'rock-ring': '',
+    'draw-bar': '',
     'cup-cradle': '',
   },
 };
@@ -93,6 +95,14 @@ function rockRingImages(colorKey) {
     front: `img/rockring-${colorKey}-front.jpg`,
     profile: `img/rockring-${colorKey}-profile.jpg`,
     detail: `img/rockring-${colorKey}-detail.jpg`,
+  };
+}
+
+function drawBarImages(colorKey) {
+  return {
+    hero: `img/drawbar-${colorKey}-hero.jpg`,
+    front: `img/drawbar-${colorKey}-front.jpg`,
+    detail: `img/drawbar-${colorKey}-detail.jpg`,
   };
 }
 
@@ -139,13 +149,24 @@ const PRODUCTS = {
   'rock-ring': {
     id: 'rock-ring',
     name: 'The Rock Ring',
-    tagline: 'Portable edge lift block — V2',
+    tagline: 'Full-rack gear ring & helmet hook — V3',
     price: 34.0,
     slug: 'product-rock-ring.html',
     badge: 'Original',
     hasColor: true,
     defaultColor: 'rock',
-    short: 'A 10 cm T-profile block with a 19 mm edge on one side and an 11 mm edge on the other. Run a cord or loading pin through the countersunk channel, hang a weight, and pinch-lift it for finger strength anywhere: garage, hotel room, crag parking lot.',
+    short: 'A 184 mm gear ring for your whole trad rack and your helmet. Clip carabiners straight onto the ring, the way you rack on a gear sling, into 15 numbered notches that keep every cam in size order. Your helmet hangs from the hook in the middle by its chin strap. Hangs on one screw, 26 mm off the wall.',
+  },
+  'draw-bar': {
+    id: 'draw-bar',
+    name: 'The Draw Bar',
+    tagline: 'Quickdraw & extra-gear rail',
+    price: 18.0,
+    slug: 'product-draw-bar.html',
+    badge: 'New',
+    hasColor: true,
+    defaultColor: 'ember',
+    short: 'A straight 20 cm wall rail with seven slots. Clip quickdraws, slings, nuts or anything that doesn\'t fit on your main rack around its bottom rail and they hang in a neat row, ready to grab. Two screws, 20 mm off the wall.',
   },
   'cup-cradle': {
     id: 'cup-cradle',
@@ -168,7 +189,7 @@ const PRODUCTS = {
     badge: 'Bundle',
     hasColor: false,
     image: rockRingImages('rock').hero,
-    short: 'Two Rock Ring edge blocks in the colorways of your choice, boxed together. Load both hands at once, or give one to your climbing partner.',
+    short: 'Two Rock Rings in the colorways of your choice, boxed together: one for your rack and one for your partner\'s, or one for the garage and one for the van.',
   },
   'felt-pads': {
     id: 'felt-pads',
@@ -179,7 +200,7 @@ const PRODUCTS = {
     badge: 'Add-on',
     hasColor: false,
     image: gatekeeperImages('sand').front,
-    short: 'Four self-adhesive felt strips cut for the Rock Ring’s stem foot and the Cup Cradle’s base, so they sit quietly on a desk, shelf or console without rattling or scuffing.',
+    short: 'Four self-adhesive 20 mm felt pads. Stick them on the Rock Ring’s or Draw Bar’s standoff feet, or the back of the Gatekeeper, so they hang without scuffing the wall or rattling in a van.',
   },
   'tee': {
     id: 'tee',
@@ -206,7 +227,7 @@ const PRODUCTS = {
   },
 };
 
-const CATALOG_ORDER = ['gatekeeper', 'rock-ring', 'cup-cradle', 'gift-duo', 'felt-pads', 'tee', 'stickers'];
+const CATALOG_ORDER = ['gatekeeper', 'rock-ring', 'draw-bar', 'cup-cradle', 'gift-duo', 'felt-pads', 'tee', 'stickers'];
 
 const COMING_SOON = [
   { name: 'Crimp Tray', note: 'A shallow dish for rings, coins and hold-shaped clutter.' },

@@ -52,19 +52,22 @@ outperform them on social every time). Swap `[link]` for your shop URL.
 *Good spot for a short video: hanging the Gatekeeper on one hook, then
 clipping cams into the slots and dropping a helmet strap into the J-hook.*
 
-### Post 3 — the Rock Ring + Cup Cradle (day 4–5)
+### Post 3 — the Rock Ring, Draw Bar + Cup Cradle (day 4–5)
 
-> Two more in the lineup:
+> Three more in the lineup:
 >
-> The Rock Ring — a pocket-size edge lift block. 19 mm edge on one side,
-> 11 mm on the other, cord through the middle, kettlebell on the end.
-> Hangboard training in a hotel room, a garage, or the crag parking lot.
+> The Rock Ring — your whole double rack on one ring. Clip every cam
+> into its own numbered notch, smallest to biggest, and hang your helmet
+> from the hook in the middle. One screw on the wall.
+>
+> The Draw Bar — a straight rail for your quickdraws, slings and
+> everything that doesn't fit on the main rack. Seven slots, two screws.
 >
 > And for the drive out: the Cup Cradle, a car-cupholder insert that
 > cradles a wide-mouth Nalgene so it stops sliding around on the way to
 > the trailhead.
 >
-> Both live now. [link]
+> All live now. [link]
 
 ### Post 4 — merch drop (week 2)
 

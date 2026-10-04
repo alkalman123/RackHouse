@@ -4,16 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Shop — Rackhouse</title>
-<meta name="description" content="Shop the Gatekeeper gear organizer, the Rock Ring edge lift block, the Cup Cradle cupholder adapter, the Gift Duo bundle, and Rackhouse logo merch — tees and stickers.">
+<meta name="description" content="Shop the Gatekeeper gear organizer, the Rock Ring full-rack gear ring, the Draw Bar quickdraw rail, the Cup Cradle cupholder adapter, the Gift Duo bundle, and Rackhouse logo merch — tees and stickers.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Rackhouse">
 <meta property="og:title" content="Shop — Rackhouse">
-<meta property="og:description" content="Shop the Gatekeeper gear organizer, the Rock Ring edge lift block, the Cup Cradle cupholder adapter, the Gift Duo bundle, and Rackhouse logo merch — tees and stickers.">
+<meta property="og:description" content="Shop the Gatekeeper gear organizer, the Rock Ring full-rack gear ring, the Draw Bar quickdraw rail, the Cup Cradle cupholder adapter, the Gift Duo bundle, and Rackhouse logo merch — tees and stickers.">
 <meta property="og:image" content="https://alkalman123.github.io/RackHouse/img/gatekeeper-rock-hero.jpg">
 <meta property="og:url" content="https://alkalman123.github.io/RackHouse/shop.html">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Shop — Rackhouse">
-<meta name="twitter:description" content="Shop the Gatekeeper gear organizer, the Rock Ring edge lift block, the Cup Cradle cupholder adapter, the Gift Duo bundle, and Rackhouse logo merch — tees and stickers.">
+<meta name="twitter:description" content="Shop the Gatekeeper gear organizer, the Rock Ring full-rack gear ring, the Draw Bar quickdraw rail, the Cup Cradle cupholder adapter, the Gift Duo bundle, and Rackhouse logo merch — tees and stickers.">
 <meta name="twitter:image" content="https://alkalman123.github.io/RackHouse/img/gatekeeper-rock-hero.jpg">
 <link rel="icon" type="image/png" sizes="512x512" href="img/favicon-512.png">
 <link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192.png">
@@ -135,12 +135,31 @@
 
       <a href="product-rock-ring.html" class="product-card" id="rockRingCard">
         <div class="thumb">
-          <div class="badges"><span class="badge">Original</span></div>
-          <img loading="lazy" id="rockRingCardImg" src="img/rockring-rock-hero.jpg" alt="The Rock Ring edge lift block">
+          <div class="badges"><span class="badge badge-ember">Full rack</span></div>
+          <img loading="lazy" id="rockRingCardImg" src="img/rockring-rock-hero.jpg" alt="The Rock Ring gear ring">
         </div>
         <div class="body">
           <div class="title-row"><h3>The Rock Ring</h3><span class="price">$34.00</span></div>
-          <p class="desc">Portable edge lift block with 19 mm and 11 mm edges. V2.</p>
+          <p class="desc">Your whole trad rack in size order, plus your helmet, on one ring. V3.</p>
+          <div class="swatches">
+            <span class="swatch-dot" style="background:#63707c;"></span>
+            <span class="swatch-dot" style="background:#55805a;"></span>
+            <span class="swatch-dot" style="background:#4a90c2;"></span>
+            <span class="swatch-dot" style="background:#c9a86a;"></span>
+            <span class="swatch-dot" style="background:#202326;"></span>
+            <span class="swatch-dot" style="background:#d85c2a;"></span>
+          </div>
+        </div>
+      </a>
+
+      <a href="product-draw-bar.html" class="product-card" id="drawBarCard">
+        <div class="thumb">
+          <div class="badges"><span class="badge badge-ember">New</span></div>
+          <img loading="lazy" id="drawBarCardImg" src="img/drawbar-ember-hero.jpg" alt="The Draw Bar quickdraw rail">
+        </div>
+        <div class="body">
+          <div class="title-row"><h3>The Draw Bar</h3><span class="price">$18.00</span></div>
+          <p class="desc">Straight 7-slot wall rail for quickdraws, slings and extra gear.</p>
           <div class="swatches">
             <span class="swatch-dot" style="background:#63707c;"></span>
             <span class="swatch-dot" style="background:#55805a;"></span>
@@ -227,7 +246,7 @@
       <div class="product-card disabled" aria-disabled="true">
         <div class="thumb">
           <div class="badges"><span class="badge badge-soft">Coming soon</span></div>
-          <img loading="lazy" src="img/rockring-sand-front.jpg" alt="Crimp Tray, a future Rackhouse product, coming soon">
+          <div class="soon-placeholder" role="img" aria-label="Crimp Tray, a future Rackhouse product, coming soon">In the print queue</div>
         </div>
         <div class="body">
           <div class="title-row"><h3>Crimp Tray</h3></div>
@@ -238,7 +257,7 @@
       <div class="product-card disabled" aria-disabled="true">
         <div class="thumb">
           <div class="badges"><span class="badge badge-soft">Coming soon</span></div>
-          <img loading="lazy" src="img/rockring-moss-front.jpg" alt="Chalk Bucket Base, a future Rackhouse product, coming soon">
+          <div class="soon-placeholder" role="img" aria-label="Chalk Bucket Base, a future Rackhouse product, coming soon">In the print queue</div>
         </div>
         <div class="body">
           <div class="title-row"><h3>Chalk Bucket Base</h3></div>
@@ -280,6 +299,7 @@
         <ul>
           <li><a href="product-gatekeeper.html">The Gatekeeper</a></li>
           <li><a href="product-rock-ring.html">The Rock Ring</a></li>
+          <li><a href="product-draw-bar.html">The Draw Bar</a></li>
           <li><a href="product-cup-cradle.html">The Cup Cradle</a></li>
           <li><a href="product-tee.html">Rackhouse Tee</a></li>
           <li><a href="product-stickers.html">Sticker Pack</a></li>
@@ -331,6 +351,8 @@
     document.getElementById('gatekeeperCard').setAttribute('href', `product-gatekeeper.html?color=${key}`);
     document.getElementById('rockRingCardImg').src = `img/rockring-${key}-hero.jpg`;
     document.getElementById('rockRingCard').setAttribute('href', `product-rock-ring.html?color=${key}`);
+    document.getElementById('drawBarCardImg').src = `img/drawbar-${key}-hero.jpg`;
+    document.getElementById('drawBarCard').setAttribute('href', `product-draw-bar.html?color=${key}`);
     document.getElementById('cupCradleCardImg').src = `img/cupcradle-${key}-hero.jpg`;
     document.getElementById('cupCradleCard').setAttribute('href', `product-cup-cradle.html?color=${key}`);
   });

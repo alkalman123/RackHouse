@@ -3,14 +3,16 @@
 **Running the business, not just the code?** Start in [`business/README.md`](business/README.md) — the plan, unit economics, legal notes, payments setup, and order fulfillment/automation all live there. This README covers the site's codebase.
 
 A self-contained e-commerce site for **Rackhouse Supply Co.**, selling
-three 3D-printed pieces, all **original Rackhouse designs** modeled from
+four 3D-printed pieces, all **original Rackhouse designs** modeled from
 scratch in `designs/rackhouse_designs.py`, plus two print-on-demand merch
 items:
 
 - **The Gatekeeper V3** (flagship) — a pear-shaped gear hanger with four
   gear slots and a helmet J-hook.
-- **The Rock Ring V2** — a portable edge lift block (19 mm / 11 mm edges,
-  cord channel) for finger training.
+- **The Rock Ring V3** — a full-rack gear ring: 15 numbered clip notches
+  for a double rack of cams, plus a helmet hook in the middle.
+- **The Draw Bar** — a straight 7-slot wall rail for quickdraws and extra
+  gear.
 - **The Cup Cradle V2** — a car-cupholder adapter that holds a wide-mouth
   Nalgene upright.
 - **Rock Ring — Gift Duo** and **Felt Pad Set** — add-ons.
@@ -36,12 +38,12 @@ python3 -m http.server 8099
 
 | | |
 |---|---|
-| **18 pages** | Home, shop, seven product pages, Kickstarter support page, cart, checkout, order confirmation, about, FAQ, shipping & returns, contact, 404. |
+| **19 pages** | Home, shop, eight product pages, Kickstarter support page, cart, checkout, order confirmation, about, FAQ, shipping & returns, contact, 404. |
 | **A real cart** | `localStorage`-backed, shared across every page via `js/cart.js`, with a slide-out drawer and a full cart page. |
 | **A real checkout** | Address form with validation, two shipping speeds, a working promo code (`FIRSTSEND10`), live order-summary math. |
 | **Order capture** | Placing an order saves it (client-side) and shows a confirmation with an order ID — see **What still needs you** below for the one piece this can't do on its own. |
-| **Interactive 3D viewers** | The Gatekeeper, Rock Ring, and Cup Cradle each have a drag-to-rotate, live-recolored WebGL viewer (Three.js, vendored — no CDN) loading the actual STL, alongside rendered photography. |
-| **74 images** | Rendered directly from the three products' actual STL geometry (six colorways × multiple angles each) plus dark hero shots, "in use" illustrations, and the merch mockups — not stock photography. |
+| **Interactive 3D viewers** | The Gatekeeper, Rock Ring, Draw Bar and Cup Cradle each have a drag-to-rotate, live-recolored WebGL viewer (Three.js, vendored — no CDN) loading the actual STL, alongside rendered photography. |
+| **95 images** | Rendered directly from the four products' actual STL geometry (six colorways × multiple angles each) plus dark hero shots, "in use" illustrations, and the merch mockups — not stock photography. |
 
 ## Where the numbers come from
 
@@ -53,7 +55,7 @@ CAD in Python with `manifold3d`). Running it rebuilds:
 - `designs/build-report.json` — watertight/single-body checks, bounding
   boxes, solid volume and mass for each part.
 
-Every spec on the site (dimensions, edge depths, cupholder range, weights)
+Every spec on the site (dimensions, notch and slot sizes, cupholder range, weights)
 comes from those parameters and that report. Weights are estimates at
 typical infill and are labelled as such everywhere they appear.
 
@@ -117,7 +119,7 @@ js/ui.js            Header, mobile nav, cart drawer wiring, scroll
 js/checkout.js      Checkout page: shipping/promo math, validation,
                     order placement.
 js/model-viewer.js  Mounts the interactive Three.js STL viewer used
-                    on the Gatekeeper, Rock Ring, and Cup Cradle pages.
+                    on the Gatekeeper, Rock Ring, Draw Bar and Cup Cradle pages.
 js/vendor/          Three.js, STLLoader, OrbitControls — vendored
                     locally, no CDN dependency at runtime.
 

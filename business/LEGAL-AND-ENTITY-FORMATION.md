@@ -135,16 +135,18 @@ and editing an NC file doesn't fix that: an edited copy is a "derivative"
 and inherits the NC restriction.
 
 **What replaced them.** All three products were redesigned from scratch
-as new, original parts. Nothing was traced, imported or remixed from the
-old files. They're defined from functional requirements (bottle and
-cupholder diameters, finger-edge depths, carabiner clearances, a 220 mm
+as new, original parts, and the Draw Bar was added as a new original
+design. Nothing was traced, imported or remixed from the old files.
+They're defined from functional requirements (bottle and cupholder
+diameters, carabiner gate openings and clearances, rack sizes, a 210 mm
 print bed) in `designs/rackhouse_designs.py`:
 
 | Product | Old file (not yours) | New Rackhouse design (yours) |
 |---|---|---|
 | Gatekeeper | Oversized carabiner-outline panel with a ring of holes | **V3:** pear frame, 4 stadium gear slots, cross rail with debossed text, helmet J-hook, top hang tab |
-| Rock Ring | Dome-topped desktop block with two finger ports | **V2:** T-profile edge lift block, 19/11 mm edges, countersunk 14 mm load channel |
+| Rock Ring | Dome-topped block with two open ports | **V3:** 184 mm clip-on gear ring, 15 numbered inner-edge notches, central helmet hook, keyhole hanger, 3 standoff feet |
 | Cup Cradle | Stem flaring to a scalloped basket | **V2:** tapered stem with 8 wedge ribs, 45° flare, 94 mm cup with arch/gate windows, drain |
+| Draw Bar | (none: new product) | Straight 200 mm rail, 7 carabiner slots, debossed text, 2 keyholes in standoff ends |
 
 Copyright protects a design's specific *expression*, not the idea or
 function ("hang gear on a wall," "adapt a bottle to a cupholder"). So an
@@ -174,10 +176,10 @@ them as one would pull the old NC license onto them.
    **trademark** ("Rackhouse," the logo, the debossed wordmark) protects
    the brand regardless.
 2. **Patents are a separate system.** Copyright clearance says nothing
-   about patents. Simple organizers, lift blocks and cupholder adapters
-   are old, crowded product categories. A quick search on Google Patents
-   for each product (for example "cup holder adapter bottle", "finger
-   training lift block") before you scale up is cheap insurance.
+   about patents. Gear hangers, gear rails and cupholder adapters are
+   old, crowded product categories. A quick search on Google Patents for
+   each product (for example "cup holder adapter bottle", "climbing gear
+   organizer rack hanger") before you scale up is cheap insurance.
 3. **The old files still exist in git history.** The original STLs and
    renders were removed from the current versions of both repos, but
    they remain in past commits of the public repos. Purging them requires

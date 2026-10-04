@@ -37,10 +37,11 @@ typical-infill column assumes ~1.2 mm walls plus 20–30% infill). Rebuild
 
 | Product | Solid volume | Weight at 100% infill | Weight at ~20–35% infill (typical) |
 |---|---|---|---|
-| Rock Ring V2 | 186.4 cm³ | 231 g | **~90–120 g** |
+| Rock Ring V3 | 158.2 cm³ | 196 g | **~110–140 g** |
 | Gatekeeper V3 | 86.6 cm³ | 107 g | **~65–85 g** |
+| Draw Bar | 72.8 cm³ | 90 g | **~55–65 g** |
 | Cup Cradle V2 | 240.5 cm³ | 298 g | **~140–180 g** |
-| Gift Duo (2× Rock Ring) | — | — | **~180–240 g** |
+| Gift Duo (2× Rock Ring) | — | — | **~220–280 g** |
 | Felt Pads | — (not printed; a bought-in commodity item) | — | — |
 | Tee, Sticker Pack | — (not printed here; print-on-demand — see `ORDER-INTAKE-AND-FULFILLMENT.md`) | — | — |
 
@@ -66,10 +67,11 @@ processing fee:
 
 | Product | Price | Filament cost | Packaging (est.) | Processing fee | Materials-only COGS | Gross margin |
 |---|---|---|---|---|---|---|
-| Rock Ring | $34.00 | $2.42 (110g) | $1.50 | $1.29 | $5.21 | **$28.79 (85%)** |
+| Rock Ring | $34.00 | $2.64 (120g) | $2.00 (larger flat box) | $1.29 | $5.93 | **$28.07 (83%)** |
 | Gatekeeper | $20.00 | $1.76 (80g) | $2.00 (larger flat box) | $0.88 | $4.64 | **$15.36 (77%)** |
+| Draw Bar | $18.00 | $1.32 (60g) | $1.50 | $0.82 | $3.64 | **$14.36 (80%)** |
 | Cup Cradle | $16.00 | $3.52 (160g) | $1.30 | $0.76 | $5.58 | **$10.42 (65%)** |
-| Gift Duo | $62.00 | $4.84 (220g) | $2.50 | $2.10 | $9.44 | **$52.56 (85%)** |
+| Gift Duo | $62.00 | $5.28 (240g) | $2.50 | $2.10 | $9.88 | **$52.12 (84%)** |
 | Felt Pads | $5.00 | ~$0.75 (bought-in) | $0.75 | $0.45 | $1.95 | **$3.06 (61%)** |
 
 Merch (print-on-demand, not filament — see `ORDER-INTAKE-AND-FULFILLMENT.md`):
@@ -86,8 +88,8 @@ Two things the first table deliberately leaves out, on purpose:
 - **Shipping.** The site charges $5.95 standard (free over $60) — verify
   that actually covers a real USPS/UPS/regional-carrier rate for your
   package's real weight and dimensions before you rely on it. A Rock Ring
-  in a small box is light but bulky; get an actual quote.
-- **Your time.** Materials margin looks great (65–83%) because it ignores
+  in a 21 × 19 cm flat box is light but bulky; get an actual quote.
+- **Your time.** Materials margin looks great (65–84%) because it ignores
   the thing that's actually scarce in a one-printer operation: print
   hours and your own pack/ship time. That's the real constraint — see
   below.
@@ -109,8 +111,9 @@ real quotes before trusting this):
 
 | Product | DIY filament-only cost | Ballpark print-farm cost |
 |---|---|---|
-| Rock Ring (~110g) | $2.42 | $6–10 |
+| Rock Ring (~120g) | $2.64 | $6–10 |
 | Gatekeeper (~80g) | $1.76 | $5–9 |
+| Draw Bar (~60g) | $1.32 | $4–7 |
 | Cup Cradle (~160g) | $3.52 | $8–12 |
 
 A print farm roughly **doubles to triples** your per-unit cost versus
@@ -127,7 +130,8 @@ margin at the midpoint of the ranges above:
 | Product | Price | Print-farm margin |
 |---|---|---|
 | Gatekeeper | $20.00 | $10.12 (51%) |
-| Rock Ring | $34.00 | $23.21 (68%) |
+| Rock Ring | $34.00 | $22.71 (67%) |
+| Draw Bar | $18.00 | $10.18 (57%) |
 | Cup Cradle | $16.00 | $3.94 (25%) |
 
 ### Now price in your own hands-on time for the DIY column
@@ -143,19 +147,20 @@ placeholder **$25/hr** (swap in your real number), two scenarios:
 | Product | DIY margin (materials only) | Minus labor, one-at-a-time | Minus labor, batched |
 |---|---|---|---|
 | Gatekeeper | $15.36 | **-$1.31** | $7.86 |
-| Rock Ring | $28.79 | $12.12 | $21.29 |
+| Rock Ring | $28.07 | $11.40 | $20.57 |
+| Draw Bar | $14.36 | **-$2.31** | $6.86 |
 | Cup Cradle | $10.42 | **-$6.25** | $2.92 |
 
-The takeaway: **once your time is priced in, printing the Gatekeeper or
-Cup Cradle one order at a time can lose money.** Only the Rock Ring
+The takeaway: **once your time is priced in, printing the Gatekeeper,
+Draw Bar or Cup Cradle one order at a time can lose money.** Only the Rock Ring
 clearly wins DIY even unbatched, because its price is high enough to
 absorb the labor. Batching (filling a plate with several units before
-you print) fixes this for all three — but batching only works once
+you print) fixes this for all four — but batching only works once
 you have enough simultaneous orders to fill a plate, which isn't true
 in the first weeks when orders trickle in one at a time.
 
 Compare the time-adjusted DIY numbers above to the hands-off print-farm
-margins: **the farm route beats one-at-a-time DIY on all three**, and
+margins: **the farm route beats one-at-a-time DIY on every product**, and
 only batched DIY on the Rock Ring comes close.
 
 **Watch the Cup Cradle.** The V2 redesign is a bigger, sturdier part

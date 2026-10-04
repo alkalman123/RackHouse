@@ -40,8 +40,8 @@ below). Everything you'll paste into it is written out here.
 | Field | Enter |
 |---|---|
 | Project title | Rackhouse: Original 3D-Printed Gear for Climbers |
-| Subtitle | A trad rack + helmet hanger, a pocket edge lift block, and a Nalgene cupholder adapter. Designed and printed in Chicago. |
-| Image | `img/kickstarter-share.jpg` until you have a real photo, then a real photo of all three parts |
+| Subtitle | Wall hangers for your whole trad rack and helmet, a quickdraw bar, and a Nalgene cupholder adapter. Designed and printed in Chicago. |
+| Image | `img/kickstarter-share.jpg` until you have a real photo, then a real photo of all four parts |
 | Funding goal | **$1,200** |
 | Campaign duration | **21 days** (shorter campaigns convert better; avoid ending on a holiday weekend) |
 | Launch date | A Tuesday morning, at least 3 weeks after you start the pre-launch page |
@@ -77,17 +77,19 @@ item: $6 shipping. Bundles: $8. "Spotter" has no shipping.
 | $17 | Gatekeeper | 1 Gatekeeper | — | +6 weeks |
 | $26 | Early Bird Rock Ring | 1 Rock Ring | 50 | +6 weeks |
 | $29 | Rock Ring | 1 Rock Ring | — | +6 weeks |
-| $45 | The Send Kit | Gatekeeper + Rock Ring + sticker pack | — | +6 weeks |
-| $55 | The Full Rack | All three + sticker pack | — | +6 weeks |
-| $79 | The Crew Pack | All three + sticker pack + logo tee (size in survey) | — | +8 weeks (tee is print-on-demand) |
+| $14 | Early Bird Draw Bar | 1 Draw Bar | 50 | +6 weeks |
+| $15 | Draw Bar | 1 Draw Bar | — | +6 weeks |
+| $44 | The Send Kit | Rock Ring + Draw Bar + sticker pack ($60 retail) | — | +6 weeks |
+| $68 | The Full Wall | Rock Ring + Gatekeeper + Draw Bar + Cup Cradle + sticker pack ($96 retail) | — | +6 weeks |
+| $89 | The Crew Pack | The Full Wall + logo tee, size in survey ($122 retail) | — | +8 weeks (tee is print-on-demand) |
 
-Turn on **add-ons** for extra Cup Cradles ($13), Sticker Packs ($7) and
-Felt Pads ($5): a backer on the Send Kit can add a Cup Cradle without
-switching tiers.
+Turn on **add-ons** for extra Draw Bars ($15), Cup Cradles ($13),
+Sticker Packs ($7) and Felt Pads ($5): a backer on the Send Kit can add
+a second Draw Bar or a Cup Cradle without switching tiers.
 
-Margin check: The Full Rack at $55 costs about $8 in filament, $2 in
-stickers, $2.50 in packaging and $5.50 in fees, leaving about $37 before
-your time. Every tier is profitable. The early birds are deliberately
+Margin check: The Full Wall at $68 costs about $9 in filament, $2 in
+stickers, $3 in packaging and $7 in fees, leaving about $47 before your
+time. Every tier is profitable. The early birds are deliberately
 thinner.
 
 ### Story (paste into the Story editor; add your photos between sections)
@@ -98,14 +100,17 @@ I'm a climber in Chicago, and I design and 3D-print gear that fixes the small an
 THE GATEKEEPER: your whole rack, off one hook
 A pear-shaped hanger that holds a full trad rack and your helmet. Clip cams and quickdraws through the four gear slots, drape slings through the frame, and drop your helmet's chin strap into the J-hook. 21 cm tall, hangs from one screw. "NOT FOR CLIMBING" is debossed right into it, because it's an organizer, not rated hardware.
 
-THE ROCK RING: hangboard training in your pocket
-A 10 cm edge lift block with a 19 mm edge on one side and an 11 mm edge on the other. Run a cord through the channel, clip on a kettlebell, and lift. Train fingers in a hotel room, the garage, or the crag parking lot. No door frame or drilling.
+THE ROCK RING: your whole double rack, in order
+A 184 mm gear ring you clip cams straight onto, the way you rack on a gear sling. Fifteen numbered notches keep every piece in size order instead of sliding into a pile, and your helmet hangs from the hook in the middle. One screw on the wall.
+
+THE DRAW BAR: every quickdraw in a row
+A straight 20 cm rail with seven slots for quickdraws, slings, nuts and all the gear that doesn't fit on your main rack. Two screws, and it sits 20 mm off the wall so every carabiner clips on cleanly.
 
 THE CUP CRADLE: your Nalgene, upright in the car
 Wide-mouth Nalgenes don't fit car cupholders. The Cup Cradle's ribbed stem wedges into 69–79 mm cupholders and holds a 32 oz wide-mouth bottle upright, with windows to grab it and a drain for spills.
 
 EVERY DESIGN IS ORIGINAL
-I modeled all three from scratch around real measurements: bottle and cupholder diameters, finger-edge depths, carabiner clearances. Have a printer? The files are free for personal use on Thingiverse. The campaign is how I get printed ones to everyone else.
+I modeled all four from scratch around real measurements: bottle and cupholder diameters, carabiner gate openings, the size of a double rack. Have a printer? The files are free for personal use on Thingiverse. The campaign is how I get printed ones to everyone else.
 
 WHERE YOUR PLEDGE GOES
 [insert the budget table image or list from the Kickstarter page]
@@ -124,8 +129,10 @@ The designs are finished and prototypes are printed and tested, so the main risk
 1. 0–10 s: the problem. A gear pile on the garage floor, a Nalgene
    rolling in the footwell.
 2. 10–40 s: the Gatekeeper in use. Hang it on one screw, clip cams in,
-   drop the helmet strap on the hook. Then the Rock Ring: cord through,
-   kettlebell lift. Then the Cup Cradle dropping into a cupholder.
+   drop the helmet strap on the hook. Then the Rock Ring: rack a full
+   set of cams onto the ring, smallest to biggest, and hang the helmet
+   in the middle. Then a row of quickdraws going onto the Draw Bar, and
+   the Cup Cradle dropping into a cupholder.
 3. 40–60 s: you at the printer, a part coming off the bed. "Every design
    is original, printed here in Chicago."
 4. 60–80 s: the ask. "$1,200 gets a real printer running and the first
@@ -157,15 +164,14 @@ Most climbing communities **ban or limit self-promotion**. Read each
 group's rules first, and lead with something useful.
 
 - **Lead with the free files.** "I designed a free printable trad rack
-  hanger / lift block. Files here, and I'm also running a small
+  hanger / gear ring / quickdraw bar. Files here, and I'm also running a small
   Kickstarter for printed ones." Free useful stuff is welcome almost
   everywhere; ads aren't.
 - **Disclose you're the maker** in every post.
 - **Reddit:** r/climbing has strict self-promotion rules. Check the
   sidebar, and post in the weekly/self-promo thread if there is one.
-  r/3Dprinting, r/functionalprint, r/tradclimbing, r/bouldering and
-  r/climbharder (training: the Rock Ring) are better fits; post a build
-  or "made this" photo.
+  r/3Dprinting, r/functionalprint, r/tradclimbing and r/bouldering are
+  better fits; post a build or "made this" photo of a racked-up Rock Ring.
 - **Facebook groups:** local climbing groups, gym groups, van-life and
   climbing-trip groups. Message an admin first and ask whether a
   one-time post about a local climber's project is OK.
@@ -180,9 +186,9 @@ group's rules first, and lead with something useful.
 
 **Ready-to-post caption:**
 
-> I'm a Chicago climber launching a tiny gear shop on Kickstarter. Three
-> original 3D-printed designs: a rack + helmet hanger, a pocket edge lift
-> block for finger training, and a cupholder adapter for wide-mouth
+> I'm a Chicago climber launching a tiny gear shop on Kickstarter. Four
+> original 3D-printed designs: two wall hangers for your whole trad rack
+> and helmet, a quickdraw bar, and a cupholder adapter for wide-mouth
 > Nalgenes. Got a printer? The files are free for personal use. Want a
 > printed one? Early birds are up to 25% off for the first 50 backers:
 > https://alkalman123.github.io/RackHouse/kickstarter.html

@@ -818,3 +818,4 @@ h3, .h3 { font-size: clamp(1.2rem, 1.6vw, 1.5rem); font-weight: 750; letter-spac
 .ks-timeline { list-style: none; padding: 0; margin: 0; }
 .hero-dark.ks-cta .container { display: block; min-height: 0; padding-top: 72px; padding-bottom: 72px; max-width: 760px; text-align: center; }
 .hero-dark.ks-cta p.lede { max-width: 560px; margin-left: auto; margin-right: auto; }
+.soon-placeholder { width: 100%; height: 100%; aspect-ratio: 1 / 1; display: grid; place-items: center; background: repeating-linear-gradient(135deg, rgba(21,25,28,.04) 0 12px, rgba(21,25,28,.07) 12px 24px); color: var(--ink-2); font-weight: 750; font-size: 14px; letter-spacing: .04em; text-transform: uppercase; }
