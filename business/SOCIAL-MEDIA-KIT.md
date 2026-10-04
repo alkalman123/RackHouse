@@ -23,11 +23,11 @@ outperform them on social every time). Swap `[link]` for your shop URL.
 
 > Been sitting on this for a while — finally printed and shipping.
 >
-> The Gatekeeper: an oversized carabiner-shaped rack that hangs your
-> whole trad kit off one hook. Full rack, draws, slings, helmet — all
-> off the floor, all in one spot. And yes, "NOT FOR CLIMBING" is printed
-> right into the plastic — it's a rack, not rated hardware, and I'd
-> rather you know that up front.
+> The Gatekeeper: a pear-shaped rack that hangs your whole trad kit off
+> one hook. Cams and draws on the gear slots, slings on the frame, helmet
+> on the J-hook — all off the floor, all in one spot. And yes, "NOT FOR
+> CLIMBING" is debossed right into it — it's a rack, not rated hardware,
+> and I'd rather you know that up front.
 >
 > Small batch, printed to order, six colors. First run is live — link in
 > bio. 🧗
@@ -43,22 +43,22 @@ outperform them on social every time). Swap `[link]` for your shop URL.
 > floor or the bottom of the trunk — cams jumbled together, helmet
 > rolling around loose, twenty minutes lost before you even leave.
 >
-> So — one hook, one board, everything clipped in its own hole where you
+> So — one hook, one rack, everything clipped in its own spot where you
 > can see it. Grab and go.
 >
 > Six colorways named after actual terrain — Rock, Moss, Ice, Sand, Ink,
 > Ember. [link]
 
-*Good spot for a short video: hanging the board on one hook, then
-clipping cams and a helmet into it one by one.*
+*Good spot for a short video: hanging the Gatekeeper on one hook, then
+clipping cams into the slots and dropping a helmet strap into the J-hook.*
 
 ### Post 3 — the Rock Ring + Cup Cradle (day 4–5)
 
 > Two more in the lineup:
 >
-> The Rock Ring — started as a desk fingerboard for finger curls between
-> sessions, doubles as a little valet for chalk bag, keys, sunglasses,
-> whatever's loose on the bench.
+> The Rock Ring — a pocket-size edge lift block. 19 mm edge on one side,
+> 11 mm on the other, cord through the middle, kettlebell on the end.
+> Hangboard training in a hotel room, a garage, or the crag parking lot.
 >
 > And for the drive out: the Cup Cradle, a car-cupholder insert that
 > cradles a wide-mouth Nalgene so it stops sliding around on the way to

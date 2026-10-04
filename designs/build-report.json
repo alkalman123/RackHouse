@@ -1,0 +1,56 @@
+{
+  "gatekeeper": {
+    "status": "Error.NoError",
+    "watertight": true,
+    "winding_consistent": true,
+    "bodies": 1,
+    "print_bbox_mm": [
+      104.0,
+      209.0,
+      10.0
+    ],
+    "solid_volume_cm3": 86.6,
+    "pla_mass_100pct_g": 107.0,
+    "triangles": 16840,
+    "gear_slots": 4,
+    "thickness_mm": 10.0
+  },
+  "rock-ring": {
+    "status": "Error.NoError",
+    "watertight": true,
+    "winding_consistent": true,
+    "bodies": 1,
+    "print_bbox_mm": [
+      58.0,
+      56.0,
+      100.0
+    ],
+    "solid_volume_cm3": 186.4,
+    "pla_mass_100pct_g": 231.0,
+    "triangles": 3908,
+    "edge_depths_mm": [
+      19,
+      11
+    ],
+    "channel_diameter_mm": 14
+  },
+  "cup-cradle": {
+    "status": "Error.NoError",
+    "watertight": true,
+    "winding_consistent": true,
+    "bodies": 1,
+    "print_bbox_mm": [
+      101.0,
+      101.0,
+      135.4
+    ],
+    "solid_volume_cm3": 240.5,
+    "pla_mass_100pct_g": 298.0,
+    "triangles": 4444,
+    "cup_inner_diameter_mm": 94.0,
+    "cupholder_fit_mm": [
+      69,
+      79
+    ]
+  }
+}

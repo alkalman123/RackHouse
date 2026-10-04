@@ -22,11 +22,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Build public site directory (excludes business/ and repo metadata)
+      - name: Build public site directory (excludes business/, designs/ and repo metadata)
         run: |
           mkdir _site
           shopt -s extglob
-          cp -r !(business|_site|.git|.github) _site/
+          cp -r !(business|designs|_site|.git|.github) _site/
       - uses: actions/configure-pages@v5
         with:
           enablement: true

@@ -51,6 +51,27 @@ const SHOP = {
   social: {
     instagram: '',
   },
+  // Kickstarter campaign (see business/KICKSTARTER-CAMPAIGN.md).
+  // 1. Once your Kickstarter draft exists, turn on its pre-launch page and
+  //    paste that URL into `url`; leave status 'prelaunch'. Every
+  //    "Back us" button then sends people to Kickstarter's "Notify me on
+  //    launch" button.
+  // 2. On launch day set status to 'live' (buttons become "Back us on
+  //    Kickstarter"). After it ends, set 'funded' or 'ended'.
+  // While url is blank, the page collects "notify me" emails instead.
+  kickstarter: {
+    url: '',
+    status: 'prelaunch',   // 'prelaunch' | 'live' | 'funded' | 'ended'
+    goal: 1200,
+    launchDate: '',        // e.g. 'November 12' — shown on the page when set
+  },
+  // Free design files (business/THINGIVERSE-UPLOAD.md). Paste each
+  // Thingiverse / Printables URL once published; blank = "coming soon".
+  openDesigns: {
+    'gatekeeper': '',
+    'rock-ring': '',
+    'cup-cradle': '',
+  },
 };
 
 const COLORWAYS = [
@@ -107,35 +128,35 @@ const PRODUCTS = {
   'gatekeeper': {
     id: 'gatekeeper',
     name: 'The Gatekeeper',
-    tagline: 'Gear organizer & helmet holder — V2.2',
+    tagline: 'Gear organizer & helmet hook — V3',
     price: 20.0,
     slug: 'product-gatekeeper.html',
     badge: 'Flagship',
     hasColor: true,
     defaultColor: 'rock',
-    short: 'An oversized carabiner-shaped rack with more than a dozen holes — hang a full trad rack, your helmet, and everything else that usually ends up loose in the trunk, all off one point. "NOT FOR CLIMBING" is printed right into the plastic, because it is genuinely not a rated carabiner.',
+    short: 'A pear-shaped wall hanger, 21 cm tall, that keeps a whole trad rack and your helmet off one hook. Clip cams and draws through the four gear slots, drape slings over the frame, and hang your helmet from the J-hook by its chin strap. "NOT FOR CLIMBING" is debossed right into the rail, because it is genuinely not a rated carabiner.',
   },
   'rock-ring': {
     id: 'rock-ring',
     name: 'The Rock Ring',
-    tagline: 'Desktop mini fingerboard — V1',
+    tagline: 'Portable edge lift block — V2',
     price: 34.0,
     slug: 'product-rock-ring.html',
     badge: 'Original',
     hasColor: true,
     defaultColor: 'rock',
-    short: 'A dome-topped block that sits on its own base, with two open ports sized to hook two or three fingers into — a mini fingerboard for finger curls and isometric holds at your desk. Between sessions, the same two ports corral chalk, keys and sunglasses.',
+    short: 'A 10 cm T-profile block with a 19 mm edge on one side and an 11 mm edge on the other. Run a cord or loading pin through the countersunk channel, hang a weight, and pinch-lift it for finger strength anywhere: garage, hotel room, crag parking lot.',
   },
   'cup-cradle': {
     id: 'cup-cradle',
     name: 'The Cup Cradle',
-    tagline: 'Nalgene-to-cupholder adapter',
+    tagline: 'Nalgene-to-cupholder adapter — V2',
     price: 16.0,
     slug: 'product-cup-cradle.html',
     badge: 'New',
     hasColor: true,
     defaultColor: 'ice',
-    short: 'A stem sized for a standard car console cupholder flares up into a wide, scalloped cradle that cups a full-size wide-mouth Nalgene so it rides upright instead of sliding around on the next turn.',
+    short: 'A ribbed, tapered stem wedges into 69–79 mm car cupholders and flares at 45° into a 94 mm cup that holds a 32 oz wide-mouth Nalgene upright. Arch windows let you grab the bottle, and a drain hole keeps spills from pooling.',
   },
   'gift-duo': {
     id: 'gift-duo',
@@ -147,18 +168,18 @@ const PRODUCTS = {
     badge: 'Bundle',
     hasColor: false,
     image: rockRingImages('rock').hero,
-    short: 'Two full-size Rock Rings in the colorways of your choice, boxed together — the easy answer to "what do you get a climber."',
+    short: 'Two Rock Ring edge blocks in the colorways of your choice, boxed together. Load both hands at once, or give one to your climbing partner.',
   },
   'felt-pads': {
     id: 'felt-pads',
-    name: 'Felt Base Pad Set',
+    name: 'Felt Pad Set',
     tagline: 'Self-adhesive felt, 4-pack',
     price: 5.0,
     slug: 'product-felt-pads.html',
     badge: 'Add-on',
     hasColor: false,
-    image: rockRingImages('sand').profile,
-    short: 'Four self-adhesive felt pads sized for the Rock Ring’s base, so it sits quietly on a desk, shelf or van console without scuffing the finish.',
+    image: gatekeeperImages('sand').front,
+    short: 'Four self-adhesive felt strips cut for the Rock Ring’s stem foot and the Cup Cradle’s base, so they sit quietly on a desk, shelf or console without rattling or scuffing.',
   },
   'tee': {
     id: 'tee',
@@ -181,7 +202,7 @@ const PRODUCTS = {
     badge: 'Merch',
     hasColor: false,
     image: 'img/stickers-pack.svg',
-    short: 'Four die-cut vinyl stickers: the carabiner mark, the wordmark, a mountain icon, and a "NOT FOR CLIMBING" tag pulled straight off the Gatekeeper. Waterproof, for a bottle, a bumper or a bin.',
+    short: 'Four die-cut vinyl stickers: the carabiner mark, the wordmark, a mountain icon, and a "NOT FOR CLIMBING" tag just like the one debossed on the Gatekeeper. Waterproof, for a bottle, a bumper or a bin.',
   },
 };
 

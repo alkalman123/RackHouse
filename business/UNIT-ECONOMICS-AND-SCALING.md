@@ -29,16 +29,19 @@ order arrives:
 
 ## Where the weights come from
 
-Not guessed — computed from the actual STL geometry (mesh volume via the
-divergence theorem, scaled by PLA's density of 1.24 g/cm³):
+Not guessed — computed from the actual CAD geometry of the current
+(original, Rackhouse-owned) designs in `designs/rackhouse_designs.py`
+(solid volume from the mesh, scaled by PLA's density of 1.24 g/cm³; the
+typical-infill column assumes ~1.2 mm walls plus 20–30% infill). Rebuild
+`designs/build-report.json` after any design change to refresh these:
 
 | Product | Solid volume | Weight at 100% infill | Weight at ~20–35% infill (typical) |
 |---|---|---|---|
-| Rock Ring | 644.6 cm³ | 799 g | **~160–210 g** |
-| Gatekeeper | 87.1 cm³ | 108 g | **~70–100 g** |
-| Cup Cradle | 129.9 cm³ | 161 g | **~90–130 g** |
-| Gift Duo (2× Rock Ring) | — | — | **~320–420 g** |
-| Felt Base Pads | — (not printed; a bought-in commodity item) | — | — |
+| Rock Ring V2 | 186.4 cm³ | 231 g | **~90–120 g** |
+| Gatekeeper V3 | 86.6 cm³ | 107 g | **~65–85 g** |
+| Cup Cradle V2 | 240.5 cm³ | 298 g | **~140–180 g** |
+| Gift Duo (2× Rock Ring) | — | — | **~180–240 g** |
+| Felt Pads | — (not printed; a bought-in commodity item) | — | — |
 | Tee, Sticker Pack | — (not printed here; print-on-demand — see `ORDER-INTAKE-AND-FULFILLMENT.md`) | — | — |
 
 Print time is the one number I can't compute from geometry alone — it
@@ -63,11 +66,11 @@ processing fee:
 
 | Product | Price | Filament cost | Packaging (est.) | Processing fee | Materials-only COGS | Gross margin |
 |---|---|---|---|---|---|---|
-| Rock Ring | $34.00 | $3.74 (170g) | $1.50 | $1.29 | $6.53 | **$27.47 (81%)** |
-| Gatekeeper | $20.00 | $1.87 (85g) | $2.00 (larger flat box) | $0.88 | $4.75 | **$15.25 (76%)** |
-| Cup Cradle | $16.00 | $2.42 (110g) | $1.30 | $0.76 | $4.48 | **$11.52 (72%)** |
-| Gift Duo | $62.00 | $7.48 (340g) | $2.50 | $2.10 | $12.08 | **$49.92 (81%)** |
-| Felt Base Pads | $5.00 | ~$0.75 (bought-in) | $0.75 | $0.45 | $1.95 | **$3.06 (61%)** |
+| Rock Ring | $34.00 | $2.42 (110g) | $1.50 | $1.29 | $5.21 | **$28.79 (85%)** |
+| Gatekeeper | $20.00 | $1.76 (80g) | $2.00 (larger flat box) | $0.88 | $4.64 | **$15.36 (77%)** |
+| Cup Cradle | $16.00 | $3.52 (160g) | $1.30 | $0.76 | $5.58 | **$10.42 (65%)** |
+| Gift Duo | $62.00 | $4.84 (220g) | $2.50 | $2.10 | $9.44 | **$52.56 (85%)** |
+| Felt Pads | $5.00 | ~$0.75 (bought-in) | $0.75 | $0.45 | $1.95 | **$3.06 (61%)** |
 
 Merch (print-on-demand, not filament — see `ORDER-INTAKE-AND-FULFILLMENT.md`):
 
@@ -106,9 +109,9 @@ real quotes before trusting this):
 
 | Product | DIY filament-only cost | Ballpark print-farm cost |
 |---|---|---|
-| Rock Ring (~170g) | $3.74 | $8–14 |
-| Gatekeeper (~85g) | $1.87 | $5–9 |
-| Cup Cradle (~110g) | $2.42 | $6–10 |
+| Rock Ring (~110g) | $2.42 | $6–10 |
+| Gatekeeper (~80g) | $1.76 | $5–9 |
+| Cup Cradle (~160g) | $3.52 | $8–12 |
 
 A print farm roughly **doubles to triples** your per-unit cost versus
 printing it yourself — but it also removes the one-printer-at-a-time
@@ -124,8 +127,8 @@ margin at the midpoint of the ranges above:
 | Product | Price | Print-farm margin |
 |---|---|---|
 | Gatekeeper | $20.00 | $10.12 (51%) |
-| Rock Ring | $34.00 | $20.21 (59%) |
-| Cup Cradle | $16.00 | $5.94 (37%) |
+| Rock Ring | $34.00 | $23.21 (68%) |
+| Cup Cradle | $16.00 | $3.94 (25%) |
 
 ### Now price in your own hands-on time for the DIY column
 
@@ -139,9 +142,9 @@ placeholder **$25/hr** (swap in your real number), two scenarios:
 
 | Product | DIY margin (materials only) | Minus labor, one-at-a-time | Minus labor, batched |
 |---|---|---|---|
-| Gatekeeper | $15.25 | **-$1.42** | $7.75 |
-| Rock Ring | $27.47 | $10.80 | $19.97 |
-| Cup Cradle | $11.52 | **-$5.15** | $4.02 |
+| Gatekeeper | $15.36 | **-$1.31** | $7.86 |
+| Rock Ring | $28.79 | $12.12 | $21.29 |
+| Cup Cradle | $10.42 | **-$6.25** | $2.92 |
 
 The takeaway: **once your time is priced in, printing the Gatekeeper or
 Cup Cradle one order at a time can lose money.** Only the Rock Ring
@@ -152,9 +155,15 @@ you have enough simultaneous orders to fill a plate, which isn't true
 in the first weeks when orders trickle in one at a time.
 
 Compare the time-adjusted DIY numbers above to the hands-off print-farm
-margins: **the farm route wins on Gatekeeper and Cup Cradle, and comes
-close on Rock Ring**, whenever DIY would otherwise be done one order at
-a time. This is a genuine case for routing at least some of the catalog
+margins: **the farm route beats one-at-a-time DIY on all three**, and
+only batched DIY on the Rock Ring comes close.
+
+**Watch the Cup Cradle.** The V2 redesign is a bigger, sturdier part
+(~160 g vs ~110 g for the old file), so at $16 its farm margin is thin
+(~$4, 25%). Two fixes, your call: raise it to **$18** (farm margin
+~$5.90, 33%), or sell it mainly as an add-on that rides along in a
+Gatekeeper or Rock Ring order, where the packaging and shipping are
+already paid for. This is a genuine case for routing at least some of the catalog
 through a farm from day one, not just as a stopgap before you own a
 printer.
 
@@ -170,7 +179,7 @@ API-driven, drop-ship FDM fulfillment).
 
 ## The real bottleneck is printer-hours, not materials
 
-A print that costs $3.74 in filament but ties up your printer for 8–10
+A print that costs $2.42 in filament but ties up your printer for 5–7
 hours caps how many you can sell per week far more than materials cost
 ever will. Before pricing decisions, figure out (from your benchmark
 print) roughly how many hours each product takes, then:
@@ -179,10 +188,10 @@ print) roughly how many hours each product takes, then:
 Max units/week on one printer ≈ (printer-hours available per week) ÷ (hours per print)
 ```
 
-Example: if a Rock Ring takes ~8 hours and you can run the printer
+Example: if a Rock Ring takes ~6 hours and you can run the printer
 ~12 hours/day (waking hours plus one overnight run), that's roughly
-1.5 prints/day, or **~10 Rock Rings/week** from a single machine — call
-it $340/week gross on that SKU alone, materials-only margin ~$275/week,
+2 prints/day, or **~14 Rock Rings/week** from a single machine — call
+it $476/week gross on that SKU alone, materials-only margin ~$400/week,
 before your labor. That's a real, useful ceiling to know going in.
 
 ## Scaling past one printer (only once demand proves it)

@@ -62,7 +62,8 @@ function wireMailtoForm(form, { toEmail, subject }) {
     const body = encodeURIComponent(lines.join('\n'));
     const subj = encodeURIComponent(subject || `Message from ${SHOP.name} site`);
     window.location.href = `mailto:${toEmail}?subject=${subj}&body=${body}`;
-    const note = form.querySelector('[data-form-note]');
+    const note = form.querySelector('[data-form-note]')
+      || (form.parentElement && form.parentElement.querySelector('[data-form-note]'));
     if (note) {
       note.textContent = 'Opening your email app with this pre-filled… if nothing opens, email us directly instead.';
       note.style.display = 'block';

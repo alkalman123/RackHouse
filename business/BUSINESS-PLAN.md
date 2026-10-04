@@ -12,11 +12,11 @@ order, plus two print-on-demand merch items:
 
 | Product | Price | What it is |
 |---|---|---|
-| The Gatekeeper | $20 | Flagship — oversized carabiner-shaped gear organizer and helmet holder, hangs a full trad rack off one point, explicitly marked "NOT FOR CLIMBING" |
-| The Rock Ring | $34 | Desktop mini fingerboard — two open ports for finger curls, doubles as storage for chalk bag, keys, sunglasses |
-| The Cup Cradle | $16 | Car-cupholder adapter that cradles a wide-mouth Nalgene upright |
+| The Gatekeeper | $20 | Flagship — pear-shaped gear hanger with four gear slots and a helmet J-hook, hangs a full trad rack and a helmet off one point, debossed "NOT FOR CLIMBING" |
+| The Rock Ring | $34 | Portable edge lift block — 19 mm and 11 mm edges, cord channel for hanging a weight; hangboard-style finger training anywhere |
+| The Cup Cradle | $16 | Car-cupholder adapter: ribbed stem fits 69–79 mm cupholders, 94 mm cup holds a wide-mouth Nalgene upright |
 | Rock Ring — Gift Duo | $62 | Two Rock Rings, any two colors |
-| Felt Base Pad Set | $5 | Bought-in accessory for the Rock Ring's base |
+| Felt Pad Set | $5 | Bought-in felt pads: quiet, scuff-free hanging for the Gatekeeper and shelving for the others |
 | Rackhouse Tee | $26 | Logo tee, print-on-demand, S–XXL |
 | Sticker Pack | $8 | Four die-cut vinyl stickers, print-on-demand |
 

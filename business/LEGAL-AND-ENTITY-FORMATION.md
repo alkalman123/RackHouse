@@ -125,6 +125,75 @@ Two things worth doing before this takes off, not required to launch:
   merch is protecting *your own* mark (above), not clearing someone
   else's.
 
+## 4c. Who owns the product designs, and why they were redrawn
+
+**What changed.** The first versions of the Gatekeeper, Rock Ring and Cup
+Cradle were STL files made by someone else and published under a
+*non-commercial* license (Creative Commons BY-NC style). That license
+lets you print them for yourself. It does **not** let you sell prints,
+and editing an NC file doesn't fix that: an edited copy is a "derivative"
+and inherits the NC restriction.
+
+**What replaced them.** All three products were redesigned from scratch
+as new, original parts. Nothing was traced, imported or remixed from the
+old files. They're defined from functional requirements (bottle and
+cupholder diameters, finger-edge depths, carabiner clearances, a 220 mm
+print bed) in `designs/rackhouse_designs.py`:
+
+| Product | Old file (not yours) | New Rackhouse design (yours) |
+|---|---|---|
+| Gatekeeper | Oversized carabiner-outline panel with a ring of holes | **V3:** pear frame, 4 stadium gear slots, cross rail with debossed text, helmet J-hook, top hang tab |
+| Rock Ring | Dome-topped desktop block with two finger ports | **V2:** T-profile edge lift block, 19/11 mm edges, countersunk 14 mm load channel |
+| Cup Cradle | Stem flaring to a scalloped basket | **V2:** tapered stem with 8 wedge ribs, 45° flare, 94 mm cup with arch/gate windows, drain |
+
+Copyright protects a design's specific *expression*, not the idea or
+function ("hang gear on a wall," "adapt a bottle to a cupholder"). So an
+independently created part that serves the same function is not an
+infringement. These new parts don't share the old parts' shapes.
+
+**Keep the evidence.** Your best protection is a clear record that the
+new designs were created independently. That record already exists:
+`designs/rackhouse_designs.py` is the full source and git history
+timestamps it. Don't delete it, and don't add the old STLs back to any
+repo or listing. When you post the designs on Thingiverse, **don't mark
+them as a remix** of the old things. They aren't remixes, and marking
+them as one would pull the old NC license onto them.
+
+**Three honest caveats (take these to a lawyer if money is on the line):**
+
+1. **Selling is fine; exclusivity is the open question.** Nothing
+   prevents *you* from selling these designs commercially. You don't
+   need anyone's permission to sell your own independent designs.
+   Whether you can stop *others* from copying them depends on copyright
+   ownership. The US Copyright Office currently requires meaningful
+   *human* authorship, and these designs were generated with an AI
+   assistant at your direction. Strengthen your claim by making and
+   recording your own creative decisions: change the parameters
+   (dimensions, slot pattern, text, rib count) to your taste, print and
+   revise them, and keep notes and photos of that process. Your
+   **trademark** ("Rackhouse," the logo, the debossed wordmark) protects
+   the brand regardless.
+2. **Patents are a separate system.** Copyright clearance says nothing
+   about patents. Simple organizers, lift blocks and cupholder adapters
+   are old, crowded product categories. A quick search on Google Patents
+   for each product (for example "cup holder adapter bottle", "finger
+   training lift block") before you scale up is cheap insurance.
+3. **The old files still exist in git history.** The original STLs and
+   renders were removed from the current versions of both repos, but
+   they remain in past commits of the public repos. Purging them requires
+   rewriting history (a force-push). That's optional, and you have to
+   approve it explicitly. Your exposure is low because you're not
+   selling them, but purging removes any doubt.
+
+**Licensing your designs.** Post them publicly under **CC BY-NC-SA 4.0**
+(set up in `designs/LICENSE` and `business/THINGIVERSE-UPLOAD.md`).
+As the owner, you keep every right, including the exclusive right to sell
+prints. Everyone else can print for personal use and remix
+non-commercially, with credit, and their remixes must carry the same
+non-commercial terms. That's the same arrangement the original designer
+used on you, now working in your favor. If you'd rather nobody can post
+modified versions at all, pick CC BY-NC-ND 4.0 instead.
+
 ## 5. Sales tax — the honest current state
 
 The site does not currently collect sales tax (see `checkout.js` — no
