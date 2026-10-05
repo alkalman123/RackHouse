@@ -2,3 +2,4 @@ __pycache__/
 _site/
 designs/render/raw/
 designs/render/scenes/
+designs/render/raw-cycles/

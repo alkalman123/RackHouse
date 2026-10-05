@@ -25,7 +25,7 @@ the crag.
 | `print-ready/rackhouse-pocket-bar.stl` | Pocket Bar (prototype B14), flat on the bed |
 | `products-report.json` | Size, openings, clip-strip widths, estimated weight, hang points and every check, per product |
 | `make_product_drawings.py` | Builds `img/products/<id>-dimensions.jpg` |
-| `render/` | Gear mock-ups: `gear.py` builds carabiners, quickdraws and cams hung on each product; `make_images.py` renders every site image (3D renders, not photos) |
+| `render/` | Photoreal product images: `realgear.py` models real-proportion carabiners (asymmetric D, wire/solid/bent gates), 12 cm dogbone quickdraws and 4-lobe cams sized to the common 0.3–4 ranges; `photoreal.py` clips them through the real openings, hangs them physically (slings drape over what's in front of them) and path-traces every site image in Blender Cycles with PBR materials and a CC0 studio HDRI. 3D renders, not photos |
 | `make_site.py` | Generates the seven organizer pages, the Full Kit page, the shop grid and the product data in `js/store-data.js` |
 | `make_share_image.py` | Builds `img/kickstarter-share.jpg` |
 
@@ -68,10 +68,9 @@ python3 designs/rackhouse_designs.py     # Gatekeeper + Cup Cradle
 python3 designs/make_usecase_svgs.py
 python3 designs/make_site.py             # product pages + store data
 
-# renders (needs Chromium; serve the repo root first)
-python3 -m http.server 8790 --bind 127.0.0.1 &
-python3 designs/render/gear.py
-python3 designs/render/make_images.py
+# photoreal renders (Blender as a Python module; several hours on 4 cores)
+pip install bpy==4.2.0 scipy
+designs/render/run_all.sh          # or: python3 designs/render/photoreal.py gear-board --views gear
 python3 designs/make_share_image.py
 ```
 
