@@ -16,59 +16,6 @@
     "gear_slots": 4,
     "thickness_mm": 10.0
   },
-  "rock-ring": {
-    "status": "Error.NoError",
-    "watertight": true,
-    "winding_consistent": true,
-    "bodies": 1,
-    "stl_roundtrip_watertight": true,
-    "print_bbox_mm": [
-      184.0,
-      206.0,
-      26.0
-    ],
-    "solid_volume_cm3": 158.2,
-    "pla_mass_100pct_g": 196.0,
-    "triangles": 26226,
-    "rack_positions": 15,
-    "band_mm": [
-      20.0,
-      14.0
-    ],
-    "band_at_notch_mm": [
-      14.0,
-      14.0
-    ],
-    "standoff_mm": 12.0,
-    "outer_diameter_mm": 184.0
-  },
-  "draw-bar": {
-    "status": "Error.NoError",
-    "watertight": true,
-    "winding_consistent": true,
-    "bodies": 1,
-    "stl_roundtrip_watertight": true,
-    "print_bbox_mm": [
-      200.0,
-      44.0,
-      20.0
-    ],
-    "solid_volume_cm3": 72.8,
-    "pla_mass_100pct_g": 90.0,
-    "triangles": 21582,
-    "slots": 7,
-    "slot_mm": [
-      13,
-      22
-    ],
-    "slot_pitch_mm": 22.0,
-    "rail_mm": [
-      11,
-      8.0
-    ],
-    "standoff_mm": 12.0,
-    "length_mm": 200.0
-  },
   "cup-cradle": {
     "status": "Error.NoError",
     "watertight": true,

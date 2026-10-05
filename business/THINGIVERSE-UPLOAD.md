@@ -11,11 +11,20 @@ license. It takes about 10 minutes per design.
 to you in chat) contains one folder per design:
 
 ```
-rackhouse-gatekeeper-v3/   files/ (STL), images/ (5), LICENSE.txt, DESCRIPTION.md
-rackhouse-rock-ring-v3/    files/ (STL), images/ (5), LICENSE.txt, DESCRIPTION.md
-rackhouse-draw-bar-v1/     files/ (STL), images/ (5), LICENSE.txt, DESCRIPTION.md
-rackhouse-cup-cradle-v2/   files/ (STL), images/ (5), LICENSE.txt, DESCRIPTION.md
+rackhouse-gear-board-v1/    files/ (STL), images/ (5), LICENSE.txt, DESCRIPTION.md
+rackhouse-crag-ring-v1/     same
+rackhouse-rock-ring-v1/     same
+rackhouse-double-ring-v1/   same
+rackhouse-sport-board-v1/   same
+rackhouse-approach-bar-v1/  same
+rackhouse-pocket-bar-v1/    same
+rackhouse-gatekeeper-v3/    same
+rackhouse-cup-cradle-v2/    same
 ```
+
+Post the Gear Board and Crag Ring first; they're the two lead products.
+Rebuild the zip and the organizer sections below after any design change
+with `python3 designs/make_thingiverse.py`.
 
 ## The license, and why this one
 
@@ -31,8 +40,8 @@ Pick **Creative Commons - Attribution - Non-Commercial - Share Alike**
   *Attribution - Non-Commercial - No Derivatives* instead. You'll get less
   community remixing, which is free marketing.
 
-**Do NOT mark these as a remix** of the old Gatekeeper / Rock Ring /
-Cup Cradle things. They're new, original designs (see
+**Do NOT mark these as a remix** of anything, including the old
+Gatekeeper / Rock Ring / Cup Cradle things. They're new, original designs (see
 `LEGAL-AND-ENTITY-FORMATION.md` §4c). Marking them as remixes would
 attach the original creator's non-commercial license to your work.
 
@@ -61,6 +70,320 @@ MakerWorld can also host a print profile (`.3mf`). After your first real
 print, export your slicer project and upload it there.
 
 ---
+
+<!-- organizers:start -->
+
+## Gear Board - Trad Rack & Quickdraw Wall Board (Rackhouse)
+
+**Folder in the upload zip:** `rackhouse-gear-board-v1/`
+
+| Field on Thingiverse | Enter this |
+|---|---|
+| Thing name | Gear Board - Trad Rack & Quickdraw Wall Board (Rackhouse) |
+| Category | Hobby > Sport & Outdoors |
+| License | **Creative Commons - Attribution - Non-Commercial - Share Alike** |
+| This is a remix | **Leave OFF** (original design) |
+| Tags | climbing, trad rack, quickdraw, gear board, cam rack, gear organizer, carabiner holder, wall rack, garage organization, rackhouse |
+| Files | `files/` (the STL) and `LICENSE.txt` |
+| Images | `images/` in numbered order. Image 01 becomes the thumbnail. The images are 3D renders: add a photo of your own print once you have one. |
+| Print settings → Supports / Rafts | No / No |
+| Print settings → Resolution | 0.2 mm |
+| Print settings → Infill | 30% gyroid, 4 walls |
+| Print settings → Filament | PLA+ or PETG |
+| Print settings → Notes | Print flat, text up, as exported. |
+
+**Description** (paste into the Summary/Description box; it's also in `DESCRIPTION.md`):
+
+````markdown
+# Gear Board: trad rack & quickdraw wall board
+
+Your whole rack on one board: 18 fully enclosed slots in three rows of six. Quickdraws on the bottom row, cams and nuts on the rows above, each hanging through its own window so nothing tangles.
+
+- **Every opening is fully enclosed.** Once a carabiner's gate closes through it, it can't slide off in any direction: on a wall, in a car, in a pack or at the crag.
+- **18 clip openings**, each at least 14 mm wide, with a 8-9 mm strip a carabiner gate closes around.
+- **Hangs from:** two top slots: hooks, screws with washers or a sling.
+- **RACKHOUSE / NOT FOR CLIMBING** debossed into the face.
+
+Size: 200 x 169 mm, 9 mm thick. About 171 g.
+
+## Printing
+Prints **flat, text up**, exactly as exported, **no supports**. Fits a 210 mm bed (Ender 3, Prusa MK3/MK4, Bambu A1/P1/X1).
+0.2 mm layers, **4 walls, 30% gyroid**. PLA+ indoors, PETG if it lives in a hot car.
+
+**License:** Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (CC BY-NC-SA 4.0). Print and remix it for yourself. Please don't sell prints or files. Commercial rights are reserved by Rackhouse Supply Co.; contact rackhousesupplyco@gmail.com for a commercial license.
+
+**Not climbing equipment.** Never use this part in a climbing, rescue or fall-protection system.
+
+Don't have a printer? Buy one printed to order in six colors at https://alkalman123.github.io/RackHouse/
+````
+
+## Crag Ring - Gear Ring with Carry Handle (Rackhouse)
+
+**Folder in the upload zip:** `rackhouse-crag-ring-v1/`
+
+| Field on Thingiverse | Enter this |
+|---|---|
+| Thing name | Crag Ring - Gear Ring with Carry Handle (Rackhouse) |
+| Category | Hobby > Sport & Outdoors |
+| License | **Creative Commons - Attribution - Non-Commercial - Share Alike** |
+| This is a remix | **Leave OFF** (original design) |
+| Tags | climbing, trad rack, gear ring, carry handle, cam rack, crag, gear organizer, carabiner holder, rackhouse |
+| Files | `files/` (the STL) and `LICENSE.txt` |
+| Images | `images/` in numbered order. Image 01 becomes the thumbnail. The images are 3D renders: add a photo of your own print once you have one. |
+| Print settings → Supports / Rafts | No / No |
+| Print settings → Resolution | 0.2 mm |
+| Print settings → Infill | 30% gyroid, 4 walls |
+| Print settings → Filament | PLA+ or PETG |
+| Print settings → Notes | Print flat, text up, as exported. |
+
+**Description** (paste into the Summary/Description box; it's also in `DESCRIPTION.md`):
+
+````markdown
+# Crag Ring: gear ring with carry handle
+
+A light 7 mm gear ring with 11 fully enclosed windows and a hand-size carry handle. Rack your cams, carry it to the crag like a bag, then clip the handle to a sling or a tree.
+
+- **Every opening is fully enclosed.** Once a carabiner's gate closes through it, it can't slide off in any direction: on a wall, in a car, in a pack or at the crag.
+- **11 clip openings**, each at least 14 mm wide, with a 6-6 mm strip a carabiner gate closes around.
+- **Hangs from:** hand-carry handle (76 x 26 mm opening); also clips to a sling or hook.
+- **RACKHOUSE / NOT FOR CLIMBING** debossed into the face.
+
+Size: 152 x 190 mm, 7 mm thick. About 72 g.
+
+## Printing
+Prints **flat, text up**, exactly as exported, **no supports**. Fits a 210 mm bed (Ender 3, Prusa MK3/MK4, Bambu A1/P1/X1).
+0.2 mm layers, **4 walls, 30% gyroid**. PLA+ indoors, PETG if it lives in a hot car.
+
+**License:** Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (CC BY-NC-SA 4.0). Print and remix it for yourself. Please don't sell prints or files. Commercial rights are reserved by Rackhouse Supply Co.; contact rackhousesupplyco@gmail.com for a commercial license.
+
+**Not climbing equipment.** Never use this part in a climbing, rescue or fall-protection system.
+
+Don't have a printer? Buy one printed to order in six colors at https://alkalman123.github.io/RackHouse/
+````
+
+## Rock Ring - Flat Trad Gear Ring (Rackhouse)
+
+**Folder in the upload zip:** `rackhouse-rock-ring-v1/`
+
+| Field on Thingiverse | Enter this |
+|---|---|
+| Thing name | Rock Ring - Flat Trad Gear Ring (Rackhouse) |
+| Category | Hobby > Sport & Outdoors |
+| License | **Creative Commons - Attribution - Non-Commercial - Share Alike** |
+| This is a remix | **Leave OFF** (original design) |
+| Tags | climbing, trad rack, gear ring, cam rack, gear organizer, carabiner holder, wall hanger, rackhouse |
+| Files | `files/` (the STL) and `LICENSE.txt` |
+| Images | `images/` in numbered order. Image 01 becomes the thumbnail. The images are 3D renders: add a photo of your own print once you have one. |
+| Print settings → Supports / Rafts | No / No |
+| Print settings → Resolution | 0.2 mm |
+| Print settings → Infill | 30% gyroid, 4 walls |
+| Print settings → Filament | PLA+ or PETG |
+| Print settings → Notes | Print flat, text up, as exported. |
+
+**Description** (paste into the Summary/Description box; it's also in `DESCRIPTION.md`):
+
+````markdown
+# Rock Ring: flat trad gear ring
+
+A flat gear ring with 13 fully enclosed windows: a single rack of cams plus nuts in size order around the ring. Nothing sticks out, so it packs flat and never snags.
+
+- **Every opening is fully enclosed.** Once a carabiner's gate closes through it, it can't slide off in any direction: on a wall, in a car, in a pack or at the crag.
+- **13 clip openings**, each at least 14 mm wide, with a 7.9-7.9 mm strip a carabiner gate closes around.
+- **Hangs from:** top eye: hook, carabiner or sling.
+- **RACKHOUSE / NOT FOR CLIMBING** debossed into the face.
+
+Size: 176 x 203 mm, 9 mm thick. About 91 g.
+
+## Printing
+Prints **flat, text up**, exactly as exported, **no supports**. Fits a 210 mm bed (Ender 3, Prusa MK3/MK4, Bambu A1/P1/X1).
+0.2 mm layers, **4 walls, 30% gyroid**. PLA+ indoors, PETG if it lives in a hot car.
+
+**License:** Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (CC BY-NC-SA 4.0). Print and remix it for yourself. Please don't sell prints or files. Commercial rights are reserved by Rackhouse Supply Co.; contact rackhousesupplyco@gmail.com for a commercial license.
+
+**Not climbing equipment.** Never use this part in a climbing, rescue or fall-protection system.
+
+Don't have a printer? Buy one printed to order in six colors at https://alkalman123.github.io/RackHouse/
+````
+
+## Double Ring - Two-Row Gear Ring for Cams & Draws (Rackhouse)
+
+**Folder in the upload zip:** `rackhouse-double-ring-v1/`
+
+| Field on Thingiverse | Enter this |
+|---|---|
+| Thing name | Double Ring - Two-Row Gear Ring for Cams & Draws (Rackhouse) |
+| Category | Hobby > Sport & Outdoors |
+| License | **Creative Commons - Attribution - Non-Commercial - Share Alike** |
+| This is a remix | **Leave OFF** (original design) |
+| Tags | climbing, trad rack, gear ring, quickdraw, cam rack, gear organizer, carabiner holder, rackhouse |
+| Files | `files/` (the STL) and `LICENSE.txt` |
+| Images | `images/` in numbered order. Image 01 becomes the thumbnail. The images are 3D renders: add a photo of your own print once you have one. |
+| Print settings → Supports / Rafts | No / No |
+| Print settings → Resolution | 0.2 mm |
+| Print settings → Infill | 30% gyroid, 4 walls |
+| Print settings → Filament | PLA+ or PETG |
+| Print settings → Notes | Print flat, text up, as exported. |
+
+**Description** (paste into the Summary/Description box; it's also in `DESCRIPTION.md`):
+
+````markdown
+# Double Ring: two-row gear ring for cams & draws
+
+A two-row gear ring with 20 fully enclosed windows: 13 around the outside for cams and 7 on the inner row for quickdraws, nuts and a nut tool.
+
+- **Every opening is fully enclosed.** Once a carabiner's gate closes through it, it can't slide off in any direction: on a wall, in a car, in a pack or at the crag.
+- **20 clip openings**, each at least 14 mm wide, with a 6-7.9 mm strip a carabiner gate closes around.
+- **Hangs from:** top eye: hook, carabiner or sling.
+- **RACKHOUSE / NOT FOR CLIMBING** debossed into the face.
+
+Size: 180 x 207 mm, 9 mm thick. About 122 g.
+
+## Printing
+Prints **flat, text up**, exactly as exported, **no supports**. Fits a 210 mm bed (Ender 3, Prusa MK3/MK4, Bambu A1/P1/X1).
+0.2 mm layers, **4 walls, 30% gyroid**. PLA+ indoors, PETG if it lives in a hot car.
+
+**License:** Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (CC BY-NC-SA 4.0). Print and remix it for yourself. Please don't sell prints or files. Commercial rights are reserved by Rackhouse Supply Co.; contact rackhousesupplyco@gmail.com for a commercial license.
+
+**Not climbing equipment.** Never use this part in a climbing, rescue or fall-protection system.
+
+Don't have a printer? Buy one printed to order in six colors at https://alkalman123.github.io/RackHouse/
+````
+
+## Sport Board - Quickdraw Wall Board (Rackhouse)
+
+**Folder in the upload zip:** `rackhouse-sport-board-v1/`
+
+| Field on Thingiverse | Enter this |
+|---|---|
+| Thing name | Sport Board - Quickdraw Wall Board (Rackhouse) |
+| Category | Hobby > Sport & Outdoors |
+| License | **Creative Commons - Attribution - Non-Commercial - Share Alike** |
+| This is a remix | **Leave OFF** (original design) |
+| Tags | climbing, quickdraw, sport climbing, gear board, gear organizer, carabiner holder, wall rack, rackhouse |
+| Files | `files/` (the STL) and `LICENSE.txt` |
+| Images | `images/` in numbered order. Image 01 becomes the thumbnail. The images are 3D renders: add a photo of your own print once you have one. |
+| Print settings → Supports / Rafts | No / No |
+| Print settings → Resolution | 0.2 mm |
+| Print settings → Infill | 30% gyroid, 4 walls |
+| Print settings → Filament | PLA+ or PETG |
+| Print settings → Notes | Print flat, text up, as exported. |
+
+**Description** (paste into the Summary/Description box; it's also in `DESCRIPTION.md`):
+
+````markdown
+# Sport Board: quickdraw wall board
+
+A two-row board for a sport rack: 7 closed slots below and 6 above, whose quickdraws hang through a long window so the rows never tangle.
+
+- **Every opening is fully enclosed.** Once a carabiner's gate closes through it, it can't slide off in any direction: on a wall, in a car, in a pack or at the crag.
+- **13 clip openings**, each at least 14 mm wide, with a 6-9 mm strip a carabiner gate closes around.
+- **Hangs from:** end slots: two hooks, two screws with washers, or a sling through both.
+- **RACKHOUSE / NOT FOR CLIMBING** debossed into the face.
+
+Size: 200 x 97 mm, 9 mm thick. About 100 g.
+
+## Printing
+Prints **flat, text up**, exactly as exported, **no supports**. Fits a 210 mm bed (Ender 3, Prusa MK3/MK4, Bambu A1/P1/X1).
+0.2 mm layers, **4 walls, 30% gyroid**. PLA+ indoors, PETG if it lives in a hot car.
+
+**License:** Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (CC BY-NC-SA 4.0). Print and remix it for yourself. Please don't sell prints or files. Commercial rights are reserved by Rackhouse Supply Co.; contact rackhousesupplyco@gmail.com for a commercial license.
+
+**Not climbing equipment.** Never use this part in a climbing, rescue or fall-protection system.
+
+Don't have a printer? Buy one printed to order in six colors at https://alkalman123.github.io/RackHouse/
+````
+
+## Approach Bar - Ultralight Quickdraw Bar (Rackhouse)
+
+**Folder in the upload zip:** `rackhouse-approach-bar-v1/`
+
+| Field on Thingiverse | Enter this |
+|---|---|
+| Thing name | Approach Bar - Ultralight Quickdraw Bar (Rackhouse) |
+| Category | Hobby > Sport & Outdoors |
+| License | **Creative Commons - Attribution - Non-Commercial - Share Alike** |
+| This is a remix | **Leave OFF** (original design) |
+| Tags | climbing, quickdraw, ultralight, gear bar, gear organizer, carabiner holder, backpack, rackhouse |
+| Files | `files/` (the STL) and `LICENSE.txt` |
+| Images | `images/` in numbered order. Image 01 becomes the thumbnail. The images are 3D renders: add a photo of your own print once you have one. |
+| Print settings → Supports / Rafts | No / No |
+| Print settings → Resolution | 0.2 mm |
+| Print settings → Infill | 30% gyroid, 4 walls |
+| Print settings → Filament | PLA+ or PETG |
+| Print settings → Notes | Print flat, text up, as exported. |
+
+**Description** (paste into the Summary/Description box; it's also in `DESCRIPTION.md`):
+
+````markdown
+# Approach Bar: ultralight quickdraw bar
+
+An ultralight 6 mm bar for 7 quickdraws, about 36 g: light enough to live in your pack.
+
+- **Every opening is fully enclosed.** Once a carabiner's gate closes through it, it can't slide off in any direction: on a wall, in a car, in a pack or at the crag.
+- **7 clip openings**, each at least 14 mm wide, with a 8-8 mm strip a carabiner gate closes around.
+- **Hangs from:** end slots: two hooks, two screws with washers, or a sling through both.
+- **RACKHOUSE / NOT FOR CLIMBING** debossed into the face.
+
+Size: 200 x 40 mm, 6 mm thick. About 36 g.
+
+## Printing
+Prints **flat, text up**, exactly as exported, **no supports**. Fits a 210 mm bed (Ender 3, Prusa MK3/MK4, Bambu A1/P1/X1).
+0.2 mm layers, **4 walls, 30% gyroid**. PLA+ indoors, PETG if it lives in a hot car.
+
+**License:** Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (CC BY-NC-SA 4.0). Print and remix it for yourself. Please don't sell prints or files. Commercial rights are reserved by Rackhouse Supply Co.; contact rackhousesupplyco@gmail.com for a commercial license.
+
+**Not climbing equipment.** Never use this part in a climbing, rescue or fall-protection system.
+
+Don't have a printer? Buy one printed to order in six colors at https://alkalman123.github.io/RackHouse/
+````
+
+## Pocket Bar - 4-Slot Carabiner Bar (Rackhouse)
+
+**Folder in the upload zip:** `rackhouse-pocket-bar-v1/`
+
+| Field on Thingiverse | Enter this |
+|---|---|
+| Thing name | Pocket Bar - 4-Slot Carabiner Bar (Rackhouse) |
+| Category | Hobby > Sport & Outdoors |
+| License | **Creative Commons - Attribution - Non-Commercial - Share Alike** |
+| This is a remix | **Leave OFF** (original design) |
+| Tags | climbing, carabiner holder, quickdraw, nut tool, gear organizer, glovebox, backpack, rackhouse |
+| Files | `files/` (the STL) and `LICENSE.txt` |
+| Images | `images/` in numbered order. Image 01 becomes the thumbnail. The images are 3D renders: add a photo of your own print once you have one. |
+| Print settings → Supports / Rafts | No / No |
+| Print settings → Resolution | 0.2 mm |
+| Print settings → Infill | 30% gyroid, 4 walls |
+| Print settings → Filament | PLA+ or PETG |
+| Print settings → Notes | Print flat, text up, as exported. |
+
+**Description** (paste into the Summary/Description box; it's also in `DESCRIPTION.md`):
+
+````markdown
+# Pocket Bar: 4-slot carabiner bar
+
+A 130 mm bar with 4 enclosed slots for a pack lid, glovebox or crag bag: a nut tool, a couple of draws, a belay device and a locker.
+
+- **Every opening is fully enclosed.** Once a carabiner's gate closes through it, it can't slide off in any direction: on a wall, in a car, in a pack or at the crag.
+- **4 clip openings**, each at least 14 mm wide, with a 9-9 mm strip a carabiner gate closes around.
+- **Hangs from:** end slots: two hooks, two screws with washers, or a sling through both.
+- **RACKHOUSE / NOT FOR CLIMBING** debossed into the face.
+
+Size: 130 x 44 mm, 9 mm thick. About 33 g.
+
+## Printing
+Prints **flat, text up**, exactly as exported, **no supports**. Fits a 210 mm bed (Ender 3, Prusa MK3/MK4, Bambu A1/P1/X1).
+0.2 mm layers, **4 walls, 30% gyroid**. PLA+ indoors, PETG if it lives in a hot car.
+
+**License:** Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (CC BY-NC-SA 4.0). Print and remix it for yourself. Please don't sell prints or files. Commercial rights are reserved by Rackhouse Supply Co.; contact rackhousesupplyco@gmail.com for a commercial license.
+
+**Not climbing equipment.** Never use this part in a climbing, rescue or fall-protection system.
+
+Don't have a printer? Buy one printed to order in six colors at https://alkalman123.github.io/RackHouse/
+````
+
+---
+
+<!-- organizers:end -->
 
 ## Gatekeeper V3 - Trad Rack & Helmet Wall Hanger (Rackhouse)
 
@@ -101,97 +424,6 @@ Prints flat exactly as exported, **no supports**. Needs a bed of at least 210 mm
 0.2 mm layers, 4 walls, 30% gyroid. PLA+ indoors, PETG in a hot van.
 
 Use a screw into a stud or a rated anchor once it's loaded with a full rack.
-
-**License:** Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (CC BY-NC-SA 4.0). Print and remix it for yourself. Please don't sell prints or files. Commercial rights are reserved by Rackhouse Supply Co.; contact rackhousesupplyco@gmail.com for a commercial license.
-
-**Not climbing equipment.** Never use this part in a climbing, rescue or fall-protection system.
-
-Don't have a printer? Buy one printed to order in six colors at https://alkalman123.github.io/RackHouse/
-````
-
-## Rock Ring V3 - Full Trad Rack & Helmet Gear Ring (Rackhouse)
-
-**Folder in the upload zip:** `rackhouse-rock-ring-v3/`
-
-| Field on Thingiverse | Enter this |
-|---|---|
-| Thing name | Rock Ring V3 - Full Trad Rack & Helmet Gear Ring (Rackhouse) |
-| Category | Hobby > Sport & Outdoors |
-| License | **Creative Commons - Attribution - Non-Commercial - Share Alike** |
-| This is a remix | **Leave OFF** (original design) |
-| Tags | climbing, trad, rack, gear ring, gear organizer, cam rack, helmet holder, wall hanger, garage organization, rackhouse |
-| Files | `files/` (the STL) and `LICENSE.txt` |
-| Images | `images/` in numbered order. Image 01 becomes the thumbnail. |
-| Print settings → Supports / Rafts | No / No |
-| Print settings → Resolution | 0.2 mm |
-| Print settings → Infill | 40% gyroid, 4 walls |
-| Print settings → Filament | PLA+ or PETG |
-| Print settings → Notes | Print face down, feet up, as exported. Needs 210 mm of bed in one direction. |
-
-**Description** (paste into the Summary/Description box; it's also in `DESCRIPTION.md`):
-
-````markdown
-# Rock Ring V3: full-rack gear ring
-
-Your whole trad rack and your helmet on one ring on the wall.
-
-- **Clip on like a gear sling:** carabiners clip straight onto the ring band.
-- **15 numbered notches** on the inner edge keep every cam in size order instead of sliding to the bottom. Enough for a double rack plus nuts and a couple of draws.
-- **Helmet hook** in the middle: hang your helmet by its chin strap (13 mm throat).
-- **Keyhole** for one #8 pan-head screw, and **3 standoff feet** that hold it 26 mm off the wall so every carabiner clips on easily.
-- **RACKHOUSE / NOT FOR CLIMBING** debossed on the band.
-
-Size: 184 x 206 mm, 26 mm deep. About 110-140 g. Built for up to 8 kg of gear.
-
-## Printing
-Prints **face down** exactly as exported, feet up, **no supports**. Needs 210 mm of bed in one direction (Ender 3, Prusa MK3/MK4, Bambu A1/P1/X1).
-0.2 mm layers, **4 walls, 40% gyroid** (it carries a full rack). PLA+ indoors, PETG in a hot van.
-
-## Hanging
-Drive a #8 pan-head screw into a stud or a rated anchor, leaving the head about 9 mm out. Slip the keyhole over it and let the ring drop.
-
-**License:** Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (CC BY-NC-SA 4.0). Print and remix it for yourself. Please don't sell prints or files. Commercial rights are reserved by Rackhouse Supply Co.; contact rackhousesupplyco@gmail.com for a commercial license.
-
-**Not climbing equipment.** Never use this part in a climbing, rescue or fall-protection system.
-
-Don't have a printer? Buy one printed to order in six colors at https://alkalman123.github.io/RackHouse/
-````
-
-## Draw Bar - Quickdraw & Extra Gear Wall Rail (Rackhouse)
-
-**Folder in the upload zip:** `rackhouse-draw-bar-v1/`
-
-| Field on Thingiverse | Enter this |
-|---|---|
-| Thing name | Draw Bar - Quickdraw & Extra Gear Wall Rail (Rackhouse) |
-| Category | Hobby > Sport & Outdoors |
-| License | **Creative Commons - Attribution - Non-Commercial - Share Alike** |
-| This is a remix | **Leave OFF** (original design) |
-| Tags | climbing, quickdraw, quickdraw holder, gear rail, gear organizer, sling, wall rack, garage organization, rackhouse |
-| Files | `files/` (the STL) and `LICENSE.txt` |
-| Images | `images/` in numbered order. Image 01 becomes the thumbnail. |
-| Print settings → Supports / Rafts | No / No |
-| Print settings → Resolution | 0.2 mm |
-| Print settings → Infill | 30% gyroid, 4 walls |
-| Print settings → Filament | PLA+ or PETG |
-| Print settings → Notes | Print face down, standoffs up, as exported. |
-
-**Description** (paste into the Summary/Description box; it's also in `DESCRIPTION.md`):
-
-````markdown
-# Draw Bar: quickdraw & extra-gear rail
-
-A straight wall rail for your quickdraws, slings, nuts and everything that doesn't fit on your main rack.
-
-- **7 slots** (13 x 22 mm, 22 mm apart): clip a carabiner through a slot and around the 11 mm bottom rail.
-- **Two keyholes** for #8 pan-head screws, 176 mm apart.
-- **12 mm standoff ends** hold it 20 mm off the wall so carabiners clip on cleanly.
-- **RACKHOUSE / NOT FOR CLIMBING** debossed along the top.
-
-Size: 200 x 44 mm, 20 mm deep. About 55-65 g. Built for up to 5 kg of gear.
-
-## Printing
-Prints **face down** exactly as exported, standoffs up, **no supports**. 0.2 mm layers, 4 walls, 30% gyroid.
 
 **License:** Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (CC BY-NC-SA 4.0). Print and remix it for yourself. Please don't sell prints or files. Commercial rights are reserved by Rackhouse Supply Co.; contact rackhousesupplyco@gmail.com for a commercial license.
 
@@ -252,12 +484,18 @@ Don't have a printer? Buy one printed to order in six colors at https://alkalman
 
 | Design | Thingiverse URL | Printables URL | MakerWorld URL |
 |---|---|---|---|
+| Gear Board | | | |
+| Crag Ring | | | |
+| Rock Ring | | | |
+| Double Ring | | | |
+| Sport Board | | | |
+| Approach Bar | | | |
+| Pocket Bar | | | |
 | Gatekeeper V3 | | | |
-| Rock Ring V3 | | | |
-| Draw Bar | | | |
 | Cup Cradle V2 | | | |
 
-Once they're live, add the Thingiverse links to the Kickstarter page's
-"Open designs" section and the product pages ("Print it yourself").
+Once they're live, paste each link into `SHOP.openDesigns` in
+`js/store-data.js`: the Kickstarter page's "Open designs" list picks them
+up automatically.
 Free files bring in people who later buy a printed one or back the
 campaign.

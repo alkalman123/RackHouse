@@ -8,9 +8,9 @@ outperform them on social every time). Swap `[link]` for your shop URL.
 
 ## Before you post anything
 
-- Get **one real photo or short video** of at least the Gatekeeper
-  printed and loaded up — a real trad rack and helmet hung off it, on an
-  actual hook — whatever is true to how you'd actually use it. Real
+- Get **one real photo or short video** of at least the Gear Board
+  printed and loaded up — a real rack of cams, nuts and draws clipped
+  through it, hanging on an actual wall — whatever is true to how you'd actually use it. Real
   beats rendered on social, even if the render is prettier.
 - Have the link live and working before the first post — nothing kills
   momentum like a broken or "coming soon" link the moment people are
@@ -23,11 +23,12 @@ outperform them on social every time). Swap `[link]` for your shop URL.
 
 > Been sitting on this for a while — finally printed and shipping.
 >
-> The Gatekeeper: a pear-shaped rack that hangs your whole trad kit off
-> one hook. Cams and draws on the gear slots, slings on the frame, helmet
-> on the J-hook — all off the floor, all in one spot. And yes, "NOT FOR
-> CLIMBING" is debossed right into it — it's a rack, not rated hardware,
-> and I'd rather you know that up front.
+> The Gear Board: your whole rack on one board. 18 closed slots, three
+> rows: draws on the bottom, cams and nuts above, each through its own
+> window so nothing tangles. Every slot is fully enclosed, so nothing
+> falls off in the closet, the car, the pack or at the crag. And yes,
+> "NOT FOR CLIMBING" is debossed right into it — it's an organizer, not
+> rated hardware.
 >
 > Small batch, printed to order, six colors. First run is live — link in
 > bio. 🧗
@@ -39,33 +40,29 @@ outperform them on social every time). Swap `[link]` for your shop URL.
 
 ### Post 2 — the "why" (day 2–3)
 
-> Why I made this: a full rack always ends up as a tangle on the garage
-> floor or the bottom of the trunk — cams jumbled together, helmet
-> rolling around loose, twenty minutes lost before you even leave.
+> Why I made this: every gear hook I've owned drops stuff. Bump the bin,
+> toss the pack in the trunk, and a cam slides right off the peg.
 >
-> So — one hook, one rack, everything clipped in its own spot where you
-> can see it. Grab and go.
+> So every slot on these is a closed window. Once the gate closes, the
+> only way off is to open it again. Took 40 prototypes to get there.
 >
 > Six colorways named after actual terrain — Rock, Moss, Ice, Sand, Ink,
 > Ember. [link]
 
-*Good spot for a short video: hanging the Gatekeeper on one hook, then
-clipping cams into the slots and dropping a helmet strap into the J-hook.*
+*Good spot for a short video: a loaded Gear Board, picked up off the wall
+and shaken upside down. Nothing falls off.*
 
-### Post 3 — the Rock Ring, Draw Bar + Cup Cradle (day 4–5)
+### Post 3 — the Crag Ring + the rest of the lineup (day 4–5)
 
-> Three more in the lineup:
+> The Gear Board keeps the rack at home. The Crag Ring carries it.
 >
-> The Rock Ring — your whole double rack on one ring. Clip every cam
-> into its own numbered notch, smallest to biggest, and hang your helmet
-> from the hook in the middle. One screw on the wall.
+> A light gear ring with 11 closed windows and a carry handle: rack up,
+> grab it like a bag, walk in, clip the handle to a tree at the base.
 >
-> The Draw Bar — a straight rail for your quickdraws, slings and
-> everything that doesn't fit on the main rack. Seven slots, two screws.
->
-> And for the drive out: the Cup Cradle, a car-cupholder insert that
-> cradles a wide-mouth Nalgene so it stops sliding around on the way to
-> the trailhead.
+> Also in the lineup: the Rock Ring and Double Ring for single racks,
+> the Sport Board for 13 draws, the 36 g Approach Bar for your pack, and
+> the Pocket Bar for the glovebox. Same rule on all of them: nothing
+> falls off.
 >
 > All live now. [link]
 
@@ -94,8 +91,8 @@ read as more credible for exactly that reason.*
 
 ## Evergreen posts (use anytime, space them out)
 
-> POV: your whole rack, off the floor, on one hook. [Gatekeeper, loaded
-> up, quick clip]
+> POV: your whole rack, off the floor, and none of it falls off. [Gear
+> Board, loaded up, quick clip]
 
 > Every piece is printed to order — not pulled off a shelf. Made after
 > you order it, not before. [link]
@@ -103,9 +100,9 @@ read as more credible for exactly that reason.*
 > Which colorway are you? Rock / Moss / Ice / Sand / Ink / Ember — drop
 > yours below. [grid image of all six, from the site's colorway section]
 
-> "NOT FOR CLIMBING" — it's printed right into the plastic, because it's
-> shaped like a biner and we'd rather be obvious about it than clever
-> about it. [Gatekeeper detail shot]
+> "NOT FOR CLIMBING" — it's debossed right into the plastic, because it
+> sits next to real climbing gear and we'd rather be obvious about it
+> than clever about it. [Gear Board detail shot]
 
 > Nalgene sliding around in the cupholder on every turn out to the crag?
 > Made a fix for that. [Cup Cradle, in the car, quick clip]
@@ -131,7 +128,7 @@ read as more credible for exactly that reason.*
   with it.
 - Don't imply the Cup Cradle is an official Nalgene product, even
   casually — see `LEGAL-AND-ENTITY-FORMATION.md` for why.
-- Don't oversell the Gatekeeper as climbing gear, even as a joke that
+- Don't oversell any organizer as climbing gear, even as a joke that
   could get screenshotted out of context — "NOT FOR CLIMBING" is the
-  whole point of that product's honesty; keep your captions on the same
+  whole point of the products' honesty; keep your captions on the same
   side of that line.

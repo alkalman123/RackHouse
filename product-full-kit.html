@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Full Kit — Rackhouse</title>
+<meta name="description" content="The Full Kit: the Gear Board for home, the Crag Ring for the approach, and a Rackhouse sticker pack, in the colors you pick. Save $8.">
+<meta property="og:type" content="product">
+<meta property="og:site_name" content="Rackhouse">
+<meta property="og:title" content="The Full Kit — Rackhouse">
+<meta property="og:description" content="The Full Kit: the Gear Board for home, the Crag Ring for the approach, and a Rackhouse sticker pack, in the colors you pick. Save $8.">
+<meta property="og:image" content="https://alkalman123.github.io/RackHouse/img/products/gear-board-ember-gear.jpg">
+<meta property="og:url" content="https://alkalman123.github.io/RackHouse/product-full-kit.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Full Kit — Rackhouse">
+<meta name="twitter:description" content="The Full Kit: the Gear Board for home, the Crag Ring for the approach, and a Rackhouse sticker pack, in the colors you pick. Save $8.">
+<meta name="twitter:image" content="https://alkalman123.github.io/RackHouse/img/products/gear-board-ember-gear.jpg">
+<meta property="product:price:amount" content="62.00">
+<meta property="product:price:currency" content="USD">
+<link rel="icon" type="image/png" sizes="512x512" href="img/favicon-512.png">
+<link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="visually-hidden" href="#main">Skip to content</a>
+<div class="announce">Rackhouse is coming to Kickstarter: <a href="kickstarter.html">get early-bird pricing</a> · Free shipping over $60</div>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <span class="mark"><svg viewBox="0 0 20 22" fill="none"><circle cx="10" cy="11" r="7.4" stroke="currentColor" stroke-width="1.7"/><path d="M2.8 8.3H12" stroke="#d85c2a" stroke-width="1.7" stroke-linecap="round"/><circle cx="2.8" cy="8.3" r="1" fill="#d85c2a"/><circle cx="12" cy="8.3" r="1" fill="#d85c2a"/></svg></span>
+      RACKHOUSE
+    </a>
+    <nav class="nav-links">
+      <a href="shop.html" class="active">Shop</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+      <a href="kickstarter.html">Kickstarter</a>
+    </nav>
+    <div class="header-actions">
+      <a href="shop.html" class="btn btn-outline btn-sm hide-mobile">Shop now</a>
+      <button class="btn-icon" id="menuToggle" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <button class="btn-icon" data-cart-open aria-label="Open cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l1 13H5L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="icon-badge" data-cart-count style="display:none;">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobileNav" aria-hidden="true">
+  <div class="backdrop"></div>
+  <div class="panel">
+    <div class="panel-top">
+      <span class="logo"><span class="mark"><svg viewBox="0 0 20 22" fill="none"><circle cx="10" cy="11" r="7.4" stroke="currentColor" stroke-width="1.7"/><path d="M2.8 8.3H12" stroke="#d85c2a" stroke-width="1.7" stroke-linecap="round"/><circle cx="2.8" cy="8.3" r="1" fill="#d85c2a"/><circle cx="12" cy="8.3" r="1" fill="#d85c2a"/></svg></span>RACKHOUSE</span>
+      <button class="btn-icon" id="mobileNavClose" aria-label="Close menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About</a>
+    <a href="faq.html">FAQ</a>
+    <a href="shipping-returns.html">Shipping &amp; Returns</a>
+    <a href="contact.html">Contact</a>
+    <a href="kickstarter.html">Kickstarter</a>
+  </div>
+</div>
+
+<div class="cart-drawer-root" id="cartDrawerRoot" aria-hidden="true">
+  <div class="backdrop"></div>
+  <div class="cart-drawer">
+    <div class="cart-drawer-head">
+      <h3>Your cart</h3>
+      <button class="btn-icon" id="cartDrawerClose" aria-label="Close cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <div class="cart-drawer-items" id="cartDrawerItems"></div>
+    <div class="cart-drawer-foot" id="cartDrawerFoot" style="display:none;">
+      <div class="cart-subtotal-row"><span>Subtotal</span><span class="num" id="cartDrawerSubtotal">$0.00</span></div>
+      <div class="cart-ship-note" id="cartShipNote"></div>
+      <div class="ship-progress"><div class="ship-progress-fill" id="cartShipProgress"></div></div>
+      <a href="checkout.html" class="btn btn-primary btn-block">Checkout</a>
+      <a href="cart.html" class="btn btn-ghost btn-block" style="justify-content:center;margin-top:10px;">View full cart</a>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+<section class="section-tight">
+  <div class="container">
+    <div class="breadcrumbs">
+      <a href="index.html">Home</a><span class="sep">/</span>
+      <a href="shop.html">Shop</a><span class="sep">/</span>
+      <span class="current">The Full Kit</span>
+    </div>
+
+    <div class="pdp">
+      <div class="pdp-gallery">
+        <div class="main-frame" style="display:grid; grid-template-columns:1fr 1fr; gap:2px;">
+          <img id="kitImg1" src="img/products/gear-board-ember-gear.jpg" alt="The Gear Board, Ember, loaded with gear" style="width:100%;height:100%;object-fit:cover;">
+          <img id="kitImg2" src="img/products/crag-ring-rock-gear.jpg" alt="The Crag Ring, Rock, loaded with cams" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <p class="muted" style="font-size:12.5px;text-align:center;">Preview updates as you choose colors below. Images are 3D renders.</p>
+      </div>
+
+      <div class="pdp-info">
+        <div class="badges-row">
+          <span class="badge badge-dark">Bundle</span>
+          <span class="badge">Save $8</span>
+        </div>
+        <h1>The Full Kit</h1>
+        <p class="muted" style="margin-top:6px;font-weight:650;">Gear Board + Crag Ring + Sticker Pack</p>
+        <div class="price-row">
+          <span class="price num">$62.00</span>
+          <span class="was num">$70.00</span>
+        </div>
+        <p class="desc">Everything you need to get your gear organized, at home and on the move. The Gear Board holds your whole rack in the closet; the Crag Ring carries the cams you need to the crag; and a Rackhouse sticker pack goes in the box. Every opening on both pieces is fully enclosed, so nothing falls off.</p>
+
+        <div class="option-block">
+          <div class="opt-title"><span>Gear Board color</span><span id="kitColorName1">Ember</span></div>
+          <div class="swatch-picker" data-picker="1">
+            <button type="button" class="swatch-btn" data-color-key="rock" style="background:#63707c;" aria-label="Rock"></button>
+            <button type="button" class="swatch-btn" data-color-key="moss" style="background:#55805a;" aria-label="Moss"></button>
+            <button type="button" class="swatch-btn" data-color-key="ice" style="background:#4a90c2;" aria-label="Ice"></button>
+            <button type="button" class="swatch-btn" data-color-key="sand" style="background:#c9a86a;" aria-label="Sand"></button>
+            <button type="button" class="swatch-btn" data-color-key="ink" style="background:#202326;" aria-label="Ink"></button>
+            <button type="button" class="swatch-btn selected" data-color-key="ember" style="background:#d85c2a;" aria-label="Ember"></button>
+          </div>
+        </div>
+        <div class="option-block" style="margin-top:20px;padding-top:20px;">
+          <div class="opt-title"><span>Crag Ring color</span><span id="kitColorName2">Rock</span></div>
+          <div class="swatch-picker" data-picker="2">
+            <button type="button" class="swatch-btn selected" data-color-key="rock" style="background:#63707c;" aria-label="Rock"></button>
+            <button type="button" class="swatch-btn" data-color-key="moss" style="background:#55805a;" aria-label="Moss"></button>
+            <button type="button" class="swatch-btn" data-color-key="ice" style="background:#4a90c2;" aria-label="Ice"></button>
+            <button type="button" class="swatch-btn" data-color-key="sand" style="background:#c9a86a;" aria-label="Sand"></button>
+            <button type="button" class="swatch-btn" data-color-key="ink" style="background:#202326;" aria-label="Ink"></button>
+            <button type="button" class="swatch-btn" data-color-key="ember" style="background:#d85c2a;" aria-label="Ember"></button>
+          </div>
+        </div>
+
+        <div class="buy-row">
+          <div class="qty-stepper" id="pdpQty">
+            <button type="button" data-step="dec" aria-label="Decrease quantity">−</button>
+            <input type="text" inputmode="numeric" value="1" readonly aria-label="Quantity">
+            <button type="button" data-step="inc" aria-label="Increase quantity">+</button>
+          </div>
+          <button type="button" id="addToCartBtn" class="btn btn-primary">Add to cart</button>
+          <button type="button" id="buyNowBtn" class="btn btn-ember">Buy now</button>
+        </div>
+
+        <ul class="pdp-trust">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg> Gear Board ($38) + Crag Ring ($24) + Sticker Pack ($8)</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg> One box, one shipment, made to order in 2–4 business days</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg> Free standard shipping (it's over $60)</li>
+        </ul>
+
+        <div class="safety-note">
+          <b>Not climbing protection</b>
+          Both pieces are gear organizers, not anchors. They say NOT FOR CLIMBING right on them.
+        </div>
+
+        <div class="accordion">
+          <details open>
+            <summary>What's in the box<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary>
+            <div class="panel">
+              <table class="spec-table">
+                <tr><th>The Gear Board</th><td>18 closed slots, 200 × 169 mm, about 171 g. <a href="product-gear-board.html" style="color:var(--ember-dark);text-decoration:underline;">Details</a></td></tr>
+                <tr><th>The Crag Ring</th><td>11 closed windows and a carry handle, 152 × 190 mm, about 72 g. <a href="product-crag-ring.html" style="color:var(--ember-dark);text-decoration:underline;">Details</a></td></tr>
+                <tr><th>Sticker Pack</th><td>4 weatherproof vinyl stickers</td></tr>
+              </table>
+            </div>
+          </details>
+          <details>
+            <summary>Shipping &amp; returns<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary>
+            <div class="panel"><p>Made to order, 2–4 business days before it ships. Full policy on the <a href="shipping-returns.html" style="color:var(--ember-dark);text-decoration:underline;">shipping &amp; returns page</a>.</p></div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span class="mark"><svg viewBox="0 0 20 22" fill="none"><circle cx="10" cy="11" r="7.4" stroke="currentColor" stroke-width="1.7"/><path d="M2.8 8.3H12" stroke="#d85c2a" stroke-width="1.7" stroke-linecap="round"/><circle cx="2.8" cy="8.3" r="1" fill="#d85c2a"/><circle cx="12" cy="8.3" r="1" fill="#d85c2a"/></svg></span>RACKHOUSE</a>
+        <p>Small-batch 3D-printed gear storage for climbers, designed and printed to order in Chicago.</p>
+        <div class="footer-newsletter">
+          <form data-mailto-form data-mailto-subject="Add me to the Rackhouse list">
+            <input type="email" name="email" placeholder="you@email.com" required aria-label="Email address">
+            <button class="btn btn-ember btn-sm" type="submit">Join</button>
+          </form>
+          <p class="muted" data-form-note style="display:none;font-size:12px;margin-top:8px;"></p>
+        </div>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="product-gear-board.html">The Gear Board</a></li>
+          <li><a href="product-crag-ring.html">The Crag Ring</a></li>
+          <li><a href="product-sport-board.html">The Sport Board</a></li>
+          <li><a href="product-rock-ring.html">The Rock Ring</a></li>
+          <li><a href="product-double-ring.html">The Double Ring</a></li>
+          <li><a href="product-approach-bar.html">The Approach Bar</a></li>
+          <li><a href="product-pocket-bar.html">The Pocket Bar</a></li>
+          <li><a href="product-full-kit.html">The Full Kit</a></li>
+          <li><a href="product-gatekeeper.html">The Gatekeeper</a></li>
+          <li><a href="product-cup-cradle.html">The Cup Cradle</a></li>
+          <li><a href="product-tee.html">Rackhouse Tee</a></li>
+          <li><a href="product-stickers.html">Sticker Pack</a></li>
+          <li><a href="shop.html">All products</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <ul>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="shipping-returns.html">Shipping &amp; returns</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="cart.html">Your cart</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Studio</h4>
+        <ul>
+          <li><a href="about.html">Our story</a></li>
+          <li><a href="kickstarter.html">Back us on Kickstarter</a></li>
+          <li><a href="mailto:rackhousesupplyco@gmail.com">rackhousesupplyco@gmail.com</a></li>
+          <li><span>Chicago, IL</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> Rackhouse Supply Co. Not affiliated with any climbing-gear manufacturer or safety-equipment standard.</span>
+      <div class="legal-links">
+        <a href="shipping-returns.html">Returns</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/store-data.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/ui.js"></script>
+<script>
+(function () {
+  let color1 = 'ember';
+  let color2 = 'rock';
+  function render() {
+    document.getElementById('kitImg1').src = productImages('gear-board', color1).gear;
+    document.getElementById('kitImg2').src = productImages('crag-ring', color2).gear;
+    document.getElementById('kitColorName1').textContent = colorway(color1).name;
+    document.getElementById('kitColorName2').textContent = colorway(color2).name;
+    document.querySelectorAll('[data-picker="1"] .swatch-btn').forEach((b) => b.classList.toggle('selected', b.getAttribute('data-color-key') === color1));
+    document.querySelectorAll('[data-picker="2"] .swatch-btn').forEach((b) => b.classList.toggle('selected', b.getAttribute('data-color-key') === color2));
+  }
+  document.querySelectorAll('[data-picker="1"] .swatch-btn').forEach((b) => b.addEventListener('click', () => { color1 = b.getAttribute('data-color-key'); render(); }));
+  document.querySelectorAll('[data-picker="2"] .swatch-btn').forEach((b) => b.addEventListener('click', () => { color2 = b.getAttribute('data-color-key'); render(); }));
+  render();
+  const qty = initQtyStepper(document.getElementById('pdpQty'), { min: 1, max: 10 });
+  function currentItem() {
+    const c1 = colorway(color1), c2 = colorway(color2);
+    return {
+      key: `full-kit:${color1}:${color2}`, productId: 'full-kit', name: 'The Full Kit',
+      variant: `Gear Board ${c1.name} · Crag Ring ${c2.name}`,
+      price: PRODUCTS['full-kit'].price, qty: qty.get(), image: productImages('gear-board', color1).gear,
+    };
+  }
+  document.getElementById('addToCartBtn').addEventListener('click', () => addToCartAndNotify(currentItem()));
+  document.getElementById('buyNowBtn').addEventListener('click', () => {
+    const stripeLink = getStripeLink('full-kit');
+    if (stripeLink) { window.location.href = stripeLink; return; }
+    cartAdd(currentItem());
+    window.location.href = 'checkout.html';
+  });
+})();
+</script>
+</body>
+</html>

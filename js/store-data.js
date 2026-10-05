@@ -39,12 +39,16 @@ const SHOP = {
     // the built-in email-invoice checkout for that product. See
     // business/PAYMENTS-SETUP.md for exactly how to create these.
     productLinks: {
-      'gatekeeper': '',
+      'gear-board': '',
+      'crag-ring': '',
+      'sport-board': '',
       'rock-ring': '',
-      'draw-bar': '',
+      'double-ring': '',
+      'approach-bar': '',
+      'pocket-bar': '',
+      'full-kit': '',
+      'gatekeeper': '',
       'cup-cradle': '',
-      'gift-duo': '',
-      'felt-pads': '',
       'tee': '',
       'stickers': '',
     },
@@ -69,9 +73,14 @@ const SHOP = {
   // Free design files (business/THINGIVERSE-UPLOAD.md). Paste each
   // Thingiverse / Printables URL once published; blank = "coming soon".
   openDesigns: {
-    'gatekeeper': '',
+    'gear-board': '',
+    'crag-ring': '',
     'rock-ring': '',
-    'draw-bar': '',
+    'double-ring': '',
+    'sport-board': '',
+    'approach-bar': '',
+    'pocket-bar': '',
+    'gatekeeper': '',
     'cup-cradle': '',
   },
 };
@@ -89,21 +98,10 @@ function colorway(key) {
   return COLORWAYS.find((c) => c.key === key) || COLORWAYS[0];
 }
 
-function rockRingImages(colorKey) {
-  return {
-    hero: `img/rockring-${colorKey}-hero.jpg`,
-    front: `img/rockring-${colorKey}-front.jpg`,
-    profile: `img/rockring-${colorKey}-profile.jpg`,
-    detail: `img/rockring-${colorKey}-detail.jpg`,
-  };
-}
-
-function drawBarImages(colorKey) {
-  return {
-    hero: `img/drawbar-${colorKey}-hero.jpg`,
-    front: `img/drawbar-${colorKey}-front.jpg`,
-    detail: `img/drawbar-${colorKey}-detail.jpg`,
-  };
+// Product renders for the carabiner organizers (designs/render/make_images.py)
+function productImages(id, colorKey) {
+  const base = `img/products/${id}-${colorKey}`;
+  return { gear: `${base}-gear.jpg`, hero: `${base}-hero.jpg`, front: `${base}-front.jpg`, edge: `${base}-edge.jpg` };
 }
 
 function gatekeeperImages(colorKey) {
@@ -135,38 +133,112 @@ function teeImage(colorKey) {
 }
 
 const PRODUCTS = {
+  'gear-board': {
+    id: 'gear-board',
+    name: 'The Gear Board',
+    tagline: '18-slot board for a whole rack',
+    price: 38.0,
+    slug: 'product-gear-board.html',
+    badge: 'Flagship',
+    hasColor: true,
+    defaultColor: 'ember',
+    image: productImages('gear-board', 'ember').gear,
+    short: 'Your whole rack on one board. 18 closed slots in three rows of six: quickdraws on the bottom row, cams and nuts on the rows above, each hanging through its own window so nothing tangles. Every opening is fully enclosed, so nothing falls off in the closet, the car, your pack or at the crag.',
+  },
+  'crag-ring': {
+    id: 'crag-ring',
+    name: 'The Crag Ring',
+    tagline: 'Carry-handle gear ring for the crag',
+    price: 24.0,
+    slug: 'product-crag-ring.html',
+    badge: 'Crag favorite',
+    hasColor: true,
+    defaultColor: 'rock',
+    image: productImages('crag-ring', 'rock').gear,
+    short: 'A light 7 mm gear ring with a hand-size carry handle. Rack your cams through 11 closed windows, grab the handle and walk to the crag, then clip the handle to a sling or a tree. Every window is fully enclosed, so nothing falls off on the approach.',
+  },
+  'rock-ring': {
+    id: 'rock-ring',
+    name: 'The Rock Ring',
+    tagline: 'Flat gear ring for a trad rack',
+    price: 28.0,
+    slug: 'product-rock-ring.html',
+    badge: 'Trad',
+    hasColor: true,
+    defaultColor: 'sand',
+    image: productImages('rock-ring', 'sand').gear,
+    short: 'A flat gear ring with 13 closed windows punched right through it. Rack your cams in size order around the ring and hang it from the top eye. Nothing sticks out, so it packs flat and never snags; every window is fully enclosed, so nothing falls off.',
+  },
+  'double-ring': {
+    id: 'double-ring',
+    name: 'The Double Ring',
+    tagline: 'Two rows: cams outside, draws inside',
+    price: 34.0,
+    slug: 'product-double-ring.html',
+    badge: 'Trad + sport',
+    hasColor: true,
+    defaultColor: 'ice',
+    image: productImages('double-ring', 'ice').gear,
+    short: 'A two-row gear ring with 20 closed windows: 13 around the outside for cams and 7 on the inner row for quickdraws, nuts and a nut tool, which hang through the middle. Every window is fully enclosed.',
+  },
+  'sport-board': {
+    id: 'sport-board',
+    name: 'The Sport Board',
+    tagline: 'Two-row board for quickdraws',
+    price: 28.0,
+    slug: 'product-sport-board.html',
+    badge: 'Sport',
+    hasColor: true,
+    defaultColor: 'moss',
+    image: productImages('sport-board', 'moss').gear,
+    short: 'A two-row board for a sport rack: 7 closed slots below and 6 above, whose quickdraws hang down through a long window so the rows never tangle. Every slot is fully enclosed.',
+  },
+  'approach-bar': {
+    id: 'approach-bar',
+    name: 'The Approach Bar',
+    tagline: 'Ultralight 6 mm quickdraw bar',
+    price: 16.0,
+    slug: 'product-approach-bar.html',
+    badge: 'Ultralight',
+    hasColor: true,
+    defaultColor: 'ink',
+    image: productImages('approach-bar', 'ink').gear,
+    short: 'An ultralight 6 mm bar for 7 quickdraws: about 36 g, light enough to live in your pack. Every slot is fully enclosed, so nothing falls off on the approach.',
+  },
+  'pocket-bar': {
+    id: 'pocket-bar',
+    name: 'The Pocket Bar',
+    tagline: '4-slot bar for a pack lid or glovebox',
+    price: 12.0,
+    slug: 'product-pocket-bar.html',
+    badge: 'Pocket size',
+    hasColor: true,
+    defaultColor: 'ember',
+    image: productImages('pocket-bar', 'ember').gear,
+    short: 'A 130 mm bar with 4 closed slots that lives in a pack lid, a glovebox or a crag bag: for your nut tool, a couple of draws, a belay device and a locker. Every slot is fully enclosed.',
+  },
+  'full-kit': {
+    id: 'full-kit',
+    name: 'The Full Kit',
+    tagline: 'Gear Board + Crag Ring + Sticker Pack',
+    price: 62.0,
+    compareAt: 70.0,
+    slug: 'product-full-kit.html',
+    badge: 'Bundle',
+    hasColor: false,
+    image: productImages('gear-board', 'ember').gear,
+    short: 'The Gear Board for home, the Crag Ring for the approach, and a sticker pack, in the colors you pick. Save $8.',
+  },
   'gatekeeper': {
     id: 'gatekeeper',
     name: 'The Gatekeeper',
     tagline: 'Gear organizer & helmet hook — V3',
     price: 20.0,
     slug: 'product-gatekeeper.html',
-    badge: 'Flagship',
+    badge: 'Helmet hook',
     hasColor: true,
     defaultColor: 'rock',
     short: 'A pear-shaped wall hanger, 21 cm tall, that keeps a whole trad rack and your helmet off one hook. Clip cams and draws through the four gear slots, drape slings over the frame, and hang your helmet from the J-hook by its chin strap. "NOT FOR CLIMBING" is debossed right into the rail, because it is genuinely not a rated carabiner.',
-  },
-  'rock-ring': {
-    id: 'rock-ring',
-    name: 'The Rock Ring',
-    tagline: 'Full-rack gear ring & helmet hook — V3',
-    price: 34.0,
-    slug: 'product-rock-ring.html',
-    badge: 'Original',
-    hasColor: true,
-    defaultColor: 'rock',
-    short: 'A 184 mm gear ring for your whole trad rack and your helmet. Clip carabiners straight onto the ring, the way you rack on a gear sling, into 15 numbered notches that keep every cam in size order. Your helmet hangs from the hook in the middle by its chin strap. Hangs on one screw, 26 mm off the wall.',
-  },
-  'draw-bar': {
-    id: 'draw-bar',
-    name: 'The Draw Bar',
-    tagline: 'Quickdraw & extra-gear rail',
-    price: 18.0,
-    slug: 'product-draw-bar.html',
-    badge: 'New',
-    hasColor: true,
-    defaultColor: 'ember',
-    short: 'A straight 20 cm wall rail with seven slots. Clip quickdraws, slings, nuts or anything that doesn\'t fit on your main rack around its bottom rail and they hang in a neat row, ready to grab. Two screws, 20 mm off the wall.',
   },
   'cup-cradle': {
     id: 'cup-cradle',
@@ -178,29 +250,6 @@ const PRODUCTS = {
     hasColor: true,
     defaultColor: 'ice',
     short: 'A ribbed, tapered stem wedges into 69–79 mm car cupholders and flares at 45° into a 94 mm cup that holds a 32 oz wide-mouth Nalgene upright. Arch windows let you grab the bottle, and a drain hole keeps spills from pooling.',
-  },
-  'gift-duo': {
-    id: 'gift-duo',
-    name: 'Rock Ring — Gift Duo',
-    tagline: 'Two Rock Rings, any two colors',
-    price: 62.0,
-    compareAt: 68.0,
-    slug: 'product-gift-duo.html',
-    badge: 'Bundle',
-    hasColor: false,
-    image: rockRingImages('rock').hero,
-    short: 'Two Rock Rings in the colorways of your choice, boxed together: one for your rack and one for your partner\'s, or one for the garage and one for the van.',
-  },
-  'felt-pads': {
-    id: 'felt-pads',
-    name: 'Felt Pad Set',
-    tagline: 'Self-adhesive felt, 4-pack',
-    price: 5.0,
-    slug: 'product-felt-pads.html',
-    badge: 'Add-on',
-    hasColor: false,
-    image: gatekeeperImages('sand').front,
-    short: 'Four self-adhesive 20 mm felt pads. Stick them on the Rock Ring’s or Draw Bar’s standoff feet, or the back of the Gatekeeper, so they hang without scuffing the wall or rattling in a van.',
   },
   'tee': {
     id: 'tee',
@@ -227,7 +276,7 @@ const PRODUCTS = {
   },
 };
 
-const CATALOG_ORDER = ['gatekeeper', 'rock-ring', 'draw-bar', 'cup-cradle', 'gift-duo', 'felt-pads', 'tee', 'stickers'];
+const CATALOG_ORDER = ['gear-board', 'crag-ring', 'sport-board', 'rock-ring', 'double-ring', 'approach-bar', 'pocket-bar', 'full-kit', 'gatekeeper', 'cup-cradle', 'tee', 'stickers'];
 
 const COMING_SOON = [
   { name: 'Crimp Tray', note: 'A shallow dish for rings, coins and hold-shaped clutter.' },

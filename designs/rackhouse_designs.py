@@ -3,7 +3,8 @@
 Every product here is modeled from functional requirements (bottle and
 cupholder diameters, carabiner gate openings and clearances, rack sizes,
 print-bed size), not derived from any third-party model. Run this file to
-rebuild every STL:
+rebuild the Gatekeeper and Cup Cradle STLs (the seven carabiner
+organizers are built by designs/products.py from designs/prototypes2.py):
 
     pip install manifold3d trimesh networkx matplotlib
     python3 designs/rackhouse_designs.py
@@ -177,17 +178,6 @@ def gatekeeper():
 
 # ---------------------------------------------------------------- Rock Ring
 
-def keyhole(cx, cy, head_r=5.5, shank_w=5.6, travel=10.0):
-    """Keyhole through the front plate: drop the screw head through the round
-    hole, then let the part slide down so the shank rides up the slot."""
-    return circle(head_r, cx, cy) + stadium(cx, cy + travel / 2.0, travel + shank_w, shank_w, 90)
-
-
-def keyhole_pocket(cx, cy, head_r=5.5, head_channel=11.0, travel=10.0):
-    """Clearance behind the keyhole (inside the standoff) for the screw head."""
-    return circle(head_r, cx, cy) + stadium(cx, cy + travel / 2.0, travel + head_channel, head_channel, 90)
-
-
 def assert_inside(feature, region, margin, label):
     """Fail the build if `feature` comes closer than `margin` mm to the edge
     of `region` (used to keep debossed text off thin edges)."""
@@ -195,104 +185,6 @@ def assert_inside(feature, region, margin, label):
     if spill.area() > 1e-3:
         raise ValueError(f"{label}: {spill.area():.2f} mm^2 within {margin} mm of an edge")
 
-
-def rock_ring():
-    """Full-rack gear ring + helmet hook. You clip carabiners straight onto
-    the ring band like racking on a gear sling; 15 numbered notches on the
-    inner edge keep each piece in its own spot instead of sliding to the
-    bottom. A coat-hook style horn inside the top holds a helmet by its chin
-    strap. Hangs on one screw through a keyhole; three standoff feet hold it
-    12 mm off the wall so carabiners can wrap behind the band."""
-    T = 14.0            # band thickness (front to back)
-    STANDOFF = 12.0     # clearance behind the band for carabiners
-    R_IN, R_OUT = 72.0, 92.0
-    N_POS, PITCH_DEG = 15, 18.0
-    NOTCH_R = 6.0       # notch depth into the inner edge
-
-    ring = circle(R_OUT) - circle(R_IN)
-    tab = CS.batch_hull([circle(16, 0, 98), rect(-34, 80, 34, 86)])
-    # helmet horn: stem down from the top inner edge, curling up into a hook
-    # 10 mm wide stem and curl, 13 mm throat, rounded tip
-    stem = rect(-5, 48, 5, 76)
-    curl = (circle(16.5, 11.5, 48) - circle(6.5, 11.5, 48)) ^ rect(-6, 25, 30, 48)
-    tip = stadium(23, 53, 20, 10, 90)
-    horn = stem + curl + tip
-    outline = ring + tab + horn
-
-    # numbered rack positions, evenly spaced around the bottom (0 deg = straight down)
-    angles = [(k - (N_POS - 1) / 2.0) * PITCH_DEG for k in range(N_POS)]
-    body = outline
-    labels = None
-    for i, a in enumerate(angles):
-        ar = np.radians(a)
-        ux, uy = np.sin(ar), -np.cos(ar)
-        body = body - circle(NOTCH_R, R_IN * ux, R_IN * uy)
-        lab = text(str(i + 1), 5.0, 86.5 * ux, 86.5 * uy)
-        labels = lab if labels is None else labels + lab
-
-    hole = keyhole(0, 96)
-    body = body - hole
-    band_text = text("RACKHOUSE", 5.2, 0, 83.5) + text("NOT FOR CLIMBING", 3.6, 0, 76.6)
-
-    # every label must sit on solid band with margin (not over a notch or edge)
-    assert_inside(labels, body, 1.2, "rack numbers")
-    assert_inside(band_text, body, 1.0, "band text")
-
-    front = slab_with_edge_break(body, T)
-    front = front - (labels + band_text).extrude(2).translate((0, 0, T - 0.8))
-
-    # standoff feet on the back: one around the keyhole, two on the lower band
-    # (at +/-45 deg, midway between rack positions so carabiners clear them)
-    feet = circle(13, 0, 97) ^ (outline - hole)
-    feet = feet - keyhole_pocket(0, 96)
-    for a in (-45.0, 45.0):
-        ar = np.radians(a)
-        feet = feet + circle(6.0, 82 * np.sin(ar), -82 * np.cos(ar))
-    for a in (-45.0, 45.0):
-        assert min(abs(a - p) for p in angles) >= PITCH_DEG / 2 - 1e-6
-    back = feet.offset(-0.6).extrude(0.8).translate((0, 0, -STANDOFF)) + feet.extrude(STANDOFF - 0.6 + 0.2).translate((0, 0, -STANDOFF + 0.6))
-    part = front + back                                 # front face at z=T, wall side at z=-STANDOFF
-
-    use_part = part.rotate((90, 0, 0))                  # on the wall: y -> up, front faces -y
-    print_part = part.rotate((0, 180, 0))               # face down: smooth front, feet on top, no supports
-    meta = {"rack_positions": N_POS, "band_mm": [R_OUT - R_IN, T], "band_at_notch_mm": [R_OUT - R_IN - NOTCH_R, T],
-            "standoff_mm": STANDOFF, "outer_diameter_mm": 2 * R_OUT}
-    return use_part, print_part, meta
-
-
-# ----------------------------------------------------------------- Draw Bar
-
-def draw_bar():
-    """Straight wall rail for quickdraws and extra gear. Seven slots; clip a
-    carabiner through a slot and around the 11 mm bottom rail. Two keyholes
-    in end standoffs hold it 12 mm off the wall."""
-    L, H, T, STANDOFF = 200.0, 44.0, 8.0, 12.0
-    N_SLOTS, PITCH = 7, 22.0
-    plate = rounded_rect(-L / 2, 0, L / 2, H, 6)
-    slots = None
-    for k in range(N_SLOTS):
-        x = (k - (N_SLOTS - 1) / 2.0) * PITCH
-        sl = stadium(x, 22, 22, 13, 90)
-        slots = sl if slots is None else slots + sl
-    holes = keyhole(-88, 14) + keyhole(88, 14)
-    body = plate - slots - holes
-    label = text("RACKHOUSE  ·  NOT FOR CLIMBING", 4.4, 0, 38.6)
-    assert_inside(label, body, 1.2, "draw bar text")
-
-    front = slab_with_edge_break(body, T) - label.extrude(2).translate((0, 0, T - 0.8))
-    ends = rounded_rect(-L / 2, 0, -L / 2 + 24, H, 6) + rounded_rect(L / 2 - 24, 0, L / 2, H, 6)
-    ends = ends - keyhole_pocket(-88, 14) - keyhole_pocket(88, 14)
-    back = ends.offset(-0.6).extrude(0.8).translate((0, 0, -STANDOFF)) + ends.extrude(STANDOFF - 0.6 + 0.2).translate((0, 0, -STANDOFF + 0.6))
-    part = front + back
-
-    use_part = part.rotate((90, 0, 0))
-    print_part = part.rotate((0, 180, 0))
-    meta = {"slots": N_SLOTS, "slot_mm": [13, 22], "slot_pitch_mm": PITCH, "rail_mm": [11, T],
-            "standoff_mm": STANDOFF, "length_mm": L}
-    return use_part, print_part, meta
-
-
-# --------------------------------------------------------------- Cup Cradle
 
 def cup_cradle():
     """Wide-mouth Nalgene car-cupholder adapter. Tapered, ribbed stem seats
@@ -364,7 +256,7 @@ def build():
     os.makedirs(os.path.join(ROOT, "models"), exist_ok=True)
     os.makedirs(os.path.join(HERE, "print-ready"), exist_ok=True)
     report = {}
-    for name, fn in (("gatekeeper", gatekeeper), ("rock-ring", rock_ring), ("draw-bar", draw_bar), ("cup-cradle", cup_cradle)):
+    for name, fn in (("gatekeeper", gatekeeper), ("cup-cradle", cup_cradle)):
         use_part, print_part, meta = fn()
         # collapse sub-micron sliver edges left by booleans so the mesh stays
         # manifold after the float32 rounding every STL file applies

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Gear Board — Rackhouse</title>
+<meta name="description" content="The Gear Board: Your whole rack on one board. 18 closed slots in three rows of six: quickdraws on the bottom row, cams and nuts on the rows above, each hanging through its own window so nothing tangles. Every opening is fully enclosed, so nothing falls off in the closet, the car, your pack or at the">
+<meta property="og:type" content="product">
+<meta property="og:site_name" content="Rackhouse">
+<meta property="og:title" content="The Gear Board — Rackhouse">
+<meta property="og:description" content="The Gear Board: Your whole rack on one board. 18 closed slots in three rows of six: quickdraws on the bottom row, cams and nuts on the rows above, each hanging through its own window so nothing tangles. Every opening is fully enclosed, so nothing falls off in the closet, the car, your pack or at the">
+<meta property="og:image" content="https://alkalman123.github.io/RackHouse/img/products/gear-board-ember-gear.jpg">
+<meta property="og:url" content="https://alkalman123.github.io/RackHouse/product-gear-board.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Gear Board — Rackhouse">
+<meta name="twitter:description" content="The Gear Board: Your whole rack on one board. 18 closed slots in three rows of six: quickdraws on the bottom row, cams and nuts on the rows above, each hanging through its own window so nothing tangles. Every opening is fully enclosed, so nothing falls off in the closet, the car, your pack or at the">
+<meta name="twitter:image" content="https://alkalman123.github.io/RackHouse/img/products/gear-board-ember-gear.jpg">
+<meta property="product:price:amount" content="38.00">
+<meta property="product:price:currency" content="USD">
+<link rel="icon" type="image/png" sizes="512x512" href="img/favicon-512.png">
+<link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="stylesheet" href="css/style.css">
+<script type="importmap">{"imports": {"three": "./js/vendor/three.module.min.js"}}</script>
+</head>
+<body>
+<a class="visually-hidden" href="#main">Skip to content</a>
+<div class="announce">Rackhouse is coming to Kickstarter: <a href="kickstarter.html">get early-bird pricing</a> · Free shipping over $60</div>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <span class="mark"><svg viewBox="0 0 20 22" fill="none"><circle cx="10" cy="11" r="7.4" stroke="currentColor" stroke-width="1.7"/><path d="M2.8 8.3H12" stroke="#d85c2a" stroke-width="1.7" stroke-linecap="round"/><circle cx="2.8" cy="8.3" r="1" fill="#d85c2a"/><circle cx="12" cy="8.3" r="1" fill="#d85c2a"/></svg></span>
+      RACKHOUSE
+    </a>
+    <nav class="nav-links">
+      <a href="shop.html" class="active">Shop</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+      <a href="kickstarter.html">Kickstarter</a>
+    </nav>
+    <div class="header-actions">
+      <a href="shop.html" class="btn btn-outline btn-sm hide-mobile">Shop now</a>
+      <button class="btn-icon" id="menuToggle" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <button class="btn-icon" data-cart-open aria-label="Open cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l1 13H5L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="icon-badge" data-cart-count style="display:none;">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobileNav" aria-hidden="true">
+  <div class="backdrop"></div>
+  <div class="panel">
+    <div class="panel-top">
+      <span class="logo"><span class="mark"><svg viewBox="0 0 20 22" fill="none"><circle cx="10" cy="11" r="7.4" stroke="currentColor" stroke-width="1.7"/><path d="M2.8 8.3H12" stroke="#d85c2a" stroke-width="1.7" stroke-linecap="round"/><circle cx="2.8" cy="8.3" r="1" fill="#d85c2a"/><circle cx="12" cy="8.3" r="1" fill="#d85c2a"/></svg></span>RACKHOUSE</span>
+      <button class="btn-icon" id="mobileNavClose" aria-label="Close menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About</a>
+    <a href="faq.html">FAQ</a>
+    <a href="shipping-returns.html">Shipping &amp; Returns</a>
+    <a href="contact.html">Contact</a>
+    <a href="kickstarter.html">Kickstarter</a>
+  </div>
+</div>
+
+<div class="cart-drawer-root" id="cartDrawerRoot" aria-hidden="true">
+  <div class="backdrop"></div>
+  <div class="cart-drawer">
+    <div class="cart-drawer-head">
+      <h3>Your cart</h3>
+      <button class="btn-icon" id="cartDrawerClose" aria-label="Close cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <div class="cart-drawer-items" id="cartDrawerItems"></div>
+    <div class="cart-drawer-foot" id="cartDrawerFoot" style="display:none;">
+      <div class="cart-subtotal-row"><span>Subtotal</span><span class="num" id="cartDrawerSubtotal">$0.00</span></div>
+      <div class="cart-ship-note" id="cartShipNote"></div>
+      <div class="ship-progress"><div class="ship-progress-fill" id="cartShipProgress"></div></div>
+      <a href="checkout.html" class="btn btn-primary btn-block">Checkout</a>
+      <a href="cart.html" class="btn btn-ghost btn-block" style="justify-content:center;margin-top:10px;">View full cart</a>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+<section class="section-tight">
+  <div class="container">
+    <div class="breadcrumbs">
+      <a href="index.html">Home</a><span class="sep">/</span>
+      <a href="shop.html">Shop</a><span class="sep">/</span>
+      <span class="current">The Gear Board</span>
+    </div>
+
+    <div class="pdp">
+      <div class="pdp-gallery">
+        <div class="filter-row gallery-tabs" role="group" aria-label="Gallery view">
+          <button type="button" class="filter-chip active" data-gallery-tab="photos">Photos</button>
+          <button type="button" class="filter-chip" data-gallery-tab="3d">3D View</button>
+        </div>
+        <div class="main-frame" id="galleryPhotoFrame">
+          <img id="pdpMainImg" src="img/products/gear-board-ember-gear.jpg" alt="The Gear Board loaded with a full rack">
+        </div>
+        <div class="main-frame" id="gallery3DFrame" style="display:none;">
+          <div id="viewer3D" style="width:100%;height:100%;"></div>
+          <span class="viewer-hint">Drag to rotate · Scroll to zoom</span>
+        </div>
+        <div class="pdp-thumbs">
+          <button type="button" data-angle="gear" class="active"><img loading="lazy" src="img/products/gear-board-ember-gear.jpg" alt="Loaded with gear"></button>
+          <button type="button" data-angle="hero"><img loading="lazy" src="img/products/gear-board-ember-hero.jpg" alt="Three-quarter view"></button>
+          <button type="button" data-angle="front"><img loading="lazy" src="img/products/gear-board-ember-front.jpg" alt="Front view"></button>
+          <button type="button" data-angle="edge"><img loading="lazy" src="img/products/gear-board-ember-edge.jpg" alt="Edge view"></button>
+        </div>
+        <p class="muted" style="font-size:12.5px;margin-top:10px;">Images are 3D renders of the actual product file, shown with typical climbing gear.</p>
+      </div>
+
+      <div class="pdp-info">
+        <div class="badges-row">
+          <span class="badge badge-ember">Flagship</span>
+          <span class="badge">18 closed openings</span>
+        </div>
+        <h1>The Gear Board</h1>
+        <p class="muted" style="margin-top:6px;font-weight:650;">18-slot board for a whole rack</p>
+        <div class="price-row">
+          <span class="price num">$38.00</span>
+        </div>
+        <p class="desc">Your whole rack on one board. Eighteen closed slots in three rows of six: clip quickdraws on the bottom row and cams, nuts and slings on the rows above. Each upper row hangs through its own long window, so nothing tangles with the row below.</p>
+        <p class="desc">Every opening is fully enclosed, so a clipped carabiner can't fall off in any direction: in the gear closet, bouncing around in the car, stuffed in a pack or leaning against a boulder at the crag. Hang it on two hooks or screws through the top slots, or run a sling through both and hang it from anything.</p>
+
+        <div class="option-block">
+          <div class="opt-title"><span>Color</span><span id="selectedColorName">Ember</span></div>
+          <div class="swatch-picker" id="swatchPicker">
+            <button type="button" class="swatch-btn" data-color-key="rock" style="background:#63707c;" aria-label="Rock"></button>
+            <button type="button" class="swatch-btn" data-color-key="moss" style="background:#55805a;" aria-label="Moss"></button>
+            <button type="button" class="swatch-btn" data-color-key="ice" style="background:#4a90c2;" aria-label="Ice"></button>
+            <button type="button" class="swatch-btn" data-color-key="sand" style="background:#c9a86a;" aria-label="Sand"></button>
+            <button type="button" class="swatch-btn" data-color-key="ink" style="background:#202326;" aria-label="Ink"></button>
+            <button type="button" class="swatch-btn selected" data-color-key="ember" style="background:#d85c2a;" aria-label="Ember"></button>
+          </div>
+        </div>
+
+        <div class="buy-row">
+          <div class="qty-stepper" id="pdpQty">
+            <button type="button" data-step="dec" aria-label="Decrease quantity">−</button>
+            <input type="text" inputmode="numeric" value="1" readonly aria-label="Quantity">
+            <button type="button" data-step="inc" aria-label="Increase quantity">+</button>
+          </div>
+          <button type="button" id="addToCartBtn" class="btn btn-primary">Add to cart</button>
+          <button type="button" id="buyNowBtn" class="btn btn-ember">Buy now</button>
+        </div>
+
+        <ul class="pdp-trust">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg> Every opening fully enclosed: clipped gear can't fall off</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg> Made to order — ships in 2–4 business days</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg> Free standard shipping over $60</li>
+        </ul>
+
+        <div class="safety-note">
+          <b>Not climbing protection</b>
+          The Gear Board is a gear organizer, not an anchor, and it says NOT FOR CLIMBING right on it. Never clip it into a climbing system or hang body weight from it.
+        </div>
+
+        <div class="accordion" id="details">
+          <details open>
+            <summary>Details &amp; specs<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary>
+            <div class="panel">
+              <table class="spec-table">
+                <tr><th>Size</th><td>200 × 169 mm, 9 mm thick (7.9 × 6.7 in)</td></tr>
+                <tr><th>Weight</th><td>About 171 g</td></tr>
+                <tr><th>Openings</th><td>18 fully enclosed openings, each at least 14 mm across</td></tr>
+                <tr><th>Holds</th><td>A double rack of cams, a set of nuts and six quickdraws</td></tr>
+                <tr><th>Clip strip</th><td>8–9 mm: easy for any standard carabiner to close around</td></tr>
+                <tr><th>Hangs from</th><td>Two top slots (24 × 12 mm): hang it on two hooks, two screws with washers, or run a sling through both slots and hang it from a single hook, a car grab handle or a tree at the crag.</td></tr>
+                <tr><th>Material</th><td>PLA+ (PETG on request for hot cars), matte finish</td></tr>
+                <tr><th>Text</th><td>"RACKHOUSE" and "NOT FOR CLIMBING" debossed in</td></tr>
+                <tr><th>Design</th><td>Original Rackhouse design. Prints flat, no supports</td></tr>
+                <tr><th>Colorways</th><td>Rock, Moss, Ice, Sand, Ink, Ember</td></tr>
+              </table>
+              <div class="spec-image"><img loading="lazy" src="img/products/gear-board-dimensions.jpg" alt="Dimension drawing of The Gear Board: 200 by 169 mm"></div>
+            </div>
+          </details>
+          <details>
+            <summary>Closet, car, pack, crag<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary>
+            <div class="panel">
+              <p><b>Closet:</b> Two top slots (24 × 12 mm): hang it on two hooks, two screws with washers, or run a sling through both slots and hang it from a single hook, a car grab handle or a tree at the crag.</p>
+              <p><b>Car:</b> hang it from a grab handle or headrest with a carabiner. Gear stays clipped on bumpy roads because every opening is closed.</p>
+              <p><b>Pack:</b> it's flat and rounded, so it slides in without snagging, and nothing comes unclipped in the pack.</p>
+              <p><b>Crag:</b> clip it to a sling, a tree or your pack at the base and rack straight off it.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Material &amp; care<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary>
+            <div class="panel">
+              <p>Printed in PLA+. Wipe clean with a damp cloth. PLA+ softens above about 55 °C (130 °F), so if it'll ride in a car parked in the sun, ask for PETG in the order notes and we'll print it in that instead, same price.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Shipping &amp; returns<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary>
+            <div class="panel">
+              <p>Made to order, 2–4 business days before it ships. Full policy on the <a href="shipping-returns.html" style="color:var(--ember-dark);text-decoration:underline;">shipping &amp; returns page</a>.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid grid-2" style="align-items:center; gap:56px;">
+      <div class="reveal">
+        <img loading="lazy" src="img/products/gear-board-ink-gear.jpg" alt="The Gear Board in Ink, loaded with a full rack" style="border-radius:var(--radius-lg); border:1px solid var(--line); width:100%; height:auto; display:block;">
+      </div>
+      <div class="reveal reveal-1">
+        <span class="eyebrow">In use</span>
+        <h2 style="margin-top:10px;">A whole rack, in order, on one board.</h2>
+        <p class="lede" style="margin-top:16px;">Quickdraws along the bottom, cams in size order across the middle, big cams and slings up top. Rack up by unclipping a row at a time, and see at a glance what's missing before you leave.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--paper-dim);">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">More from Rackhouse</span>
+      <h2>Pairs well with</h2>
+    </div>
+    <div class="grid grid-3">
+      <a href="product-crag-ring.html" class="product-card">
+        <div class="thumb"><div class="badges"><span class="badge badge-ember">Crag favorite</span></div><img loading="lazy" src="img/products/crag-ring-rock-gear.jpg" alt="The Crag Ring loaded with a trad rack"></div>
+        <div class="body"><div class="title-row"><h3>The Crag Ring</h3><span class="price">$24.00</span></div><p class="desc">A light gear ring with a carry handle: grab your rack like a bag.</p></div>
+      </a>
+      <a href="product-sport-board.html" class="product-card">
+        <div class="thumb"><div class="badges"><span class="badge badge-ember">Sport</span></div><img loading="lazy" src="img/products/sport-board-moss-gear.jpg" alt="The Sport Board loaded with quickdraws"></div>
+        <div class="body"><div class="title-row"><h3>The Sport Board</h3><span class="price">$28.00</span></div><p class="desc">Two rows of closed slots for a full sport rack of quickdraws.</p></div>
+      </a>
+      <a href="product-full-kit.html" class="product-card">
+        <div class="thumb"><div class="badges"><span class="badge badge-dark">Bundle</span></div><img loading="lazy" src="img/products/gear-board-ember-gear.jpg" alt="The Full Kit bundle"></div>
+        <div class="body"><div class="title-row"><h3>The Full Kit</h3><span class="price">$62.00</span></div><p class="desc">Gear Board + Crag Ring + stickers. Save $8.</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span class="mark"><svg viewBox="0 0 20 22" fill="none"><circle cx="10" cy="11" r="7.4" stroke="currentColor" stroke-width="1.7"/><path d="M2.8 8.3H12" stroke="#d85c2a" stroke-width="1.7" stroke-linecap="round"/><circle cx="2.8" cy="8.3" r="1" fill="#d85c2a"/><circle cx="12" cy="8.3" r="1" fill="#d85c2a"/></svg></span>RACKHOUSE</a>
+        <p>Small-batch 3D-printed gear storage for climbers, designed and printed to order in Chicago.</p>
+        <div class="footer-newsletter">
+          <form data-mailto-form data-mailto-subject="Add me to the Rackhouse list">
+            <input type="email" name="email" placeholder="you@email.com" required aria-label="Email address">
+            <button class="btn btn-ember btn-sm" type="submit">Join</button>
+          </form>
+          <p class="muted" data-form-note style="display:none;font-size:12px;margin-top:8px;"></p>
+        </div>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="product-gear-board.html">The Gear Board</a></li>
+          <li><a href="product-crag-ring.html">The Crag Ring</a></li>
+          <li><a href="product-sport-board.html">The Sport Board</a></li>
+          <li><a href="product-rock-ring.html">The Rock Ring</a></li>
+          <li><a href="product-double-ring.html">The Double Ring</a></li>
+          <li><a href="product-approach-bar.html">The Approach Bar</a></li>
+          <li><a href="product-pocket-bar.html">The Pocket Bar</a></li>
+          <li><a href="product-full-kit.html">The Full Kit</a></li>
+          <li><a href="product-gatekeeper.html">The Gatekeeper</a></li>
+          <li><a href="product-cup-cradle.html">The Cup Cradle</a></li>
+          <li><a href="product-tee.html">Rackhouse Tee</a></li>
+          <li><a href="product-stickers.html">Sticker Pack</a></li>
+          <li><a href="shop.html">All products</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <ul>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="shipping-returns.html">Shipping &amp; returns</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="cart.html">Your cart</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Studio</h4>
+        <ul>
+          <li><a href="about.html">Our story</a></li>
+          <li><a href="kickstarter.html">Back us on Kickstarter</a></li>
+          <li><a href="mailto:rackhousesupplyco@gmail.com">rackhousesupplyco@gmail.com</a></li>
+          <li><span>Chicago, IL</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> Rackhouse Supply Co. Not affiliated with any climbing-gear manufacturer or safety-equipment standard.</span>
+      <div class="legal-links">
+        <a href="shipping-returns.html">Returns</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/store-data.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/ui.js"></script>
+<script type="module">
+  import { mountModelViewer } from './js/model-viewer.js';
+  window.mountModelViewer = mountModelViewer;
+</script>
+<script>
+(function () {
+  const PID = 'gear-board';
+  const params = new URLSearchParams(location.search);
+  const requested = params.get('color');
+  let selected = COLORWAYS.some((c) => c.key === requested) ? requested : PRODUCTS[PID].defaultColor;
+  let activeAngle = 'gear';
+  const mainImg = document.getElementById('pdpMainImg');
+  const thumbBtns = document.querySelectorAll('.pdp-thumbs button');
+  const swatchBtns = document.querySelectorAll('.swatch-btn');
+  const colorLabel = document.getElementById('selectedColorName');
+  let viewer = null;
+  const tabBtns = document.querySelectorAll('[data-gallery-tab]');
+  const photoFrame = document.getElementById('galleryPhotoFrame');
+  const frame3D = document.getElementById('gallery3DFrame');
+  const viewerContainer = document.getElementById('viewer3D');
+
+  function ensureViewer() {
+    if (viewer || !window.mountModelViewer) return;
+    const loading = document.createElement('div');
+    loading.className = 'viewer-loading';
+    loading.textContent = 'Loading 3D model…';
+    viewerContainer.appendChild(loading);
+    viewer = window.mountModelViewer(viewerContainer, {
+      stlUrl: 'models/' + PID + '.stl',
+      color: colorway(selected).hex,
+      onReady: () => loading.remove(),
+      onError: () => { loading.textContent = 'Could not load the 3D model.'; },
+    });
+  }
+  tabBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      tabBtns.forEach((b) => b.classList.remove('active'));
+      btn.classList.add('active');
+      const is3D = btn.getAttribute('data-gallery-tab') === '3d';
+      photoFrame.style.display = is3D ? 'none' : '';
+      frame3D.style.display = is3D ? '' : 'none';
+      if (is3D) ensureViewer();
+    });
+  });
+  function render() {
+    const set = productImages(PID, selected);
+    const c = colorway(selected);
+    mainImg.src = set[activeAngle];
+    mainImg.alt = `${PRODUCTS[PID].name} in ${c.name}, ${activeAngle === 'gear' ? 'loaded with gear' : activeAngle + ' view'}`;
+    if (viewer) viewer.setColor(c.hex);
+    thumbBtns.forEach((b) => {
+      const angle = b.getAttribute('data-angle');
+      b.querySelector('img').src = set[angle];
+      b.classList.toggle('active', angle === activeAngle);
+    });
+    swatchBtns.forEach((b) => b.classList.toggle('selected', b.getAttribute('data-color-key') === selected));
+    colorLabel.textContent = c.name;
+  }
+  swatchBtns.forEach((b) => b.addEventListener('click', () => { selected = b.getAttribute('data-color-key'); render(); }));
+  thumbBtns.forEach((b) => b.addEventListener('click', () => { activeAngle = b.getAttribute('data-angle'); render(); }));
+  render();
+  const qty = initQtyStepper(document.getElementById('pdpQty'), { min: 1, max: 10 });
+  function currentItem() {
+    const c = colorway(selected);
+    return {
+      key: `${PID}:${selected}`, productId: PID, name: PRODUCTS[PID].name, variant: c.name, variantHex: c.hex,
+      price: PRODUCTS[PID].price, qty: qty.get(), image: productImages(PID, selected).gear,
+    };
+  }
+  document.getElementById('addToCartBtn').addEventListener('click', () => addToCartAndNotify(currentItem()));
+  document.getElementById('buyNowBtn').addEventListener('click', () => {
+    const stripeLink = getStripeLink(PID);
+    if (stripeLink) { window.location.href = stripeLink; return; }
+    cartAdd(currentItem());
+    window.location.href = 'checkout.html';
+  });
+})();
+</script>
+</body>
+</html>

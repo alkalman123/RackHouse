@@ -34,7 +34,7 @@ item in them.
 Stripe's standard US rate is **2.9% + $0.30 per successful card charge**
 (rates can differ slightly for certain card types, e.g. Amex, or for
 international cards — check your dashboard for your actual rate). On a
-$34 Rock Ring, that's about $1.29 — already reflected in the margin
+$38 Gear Board, that's about $1.40 — already reflected in the margin
 table in `UNIT-ECONOMICS-AND-SCALING.md`. There's no monthly fee, no
 setup fee — you only pay when you get paid.
 
@@ -42,8 +42,8 @@ setup fee — you only pay when you get paid.
 
 In the Stripe dashboard: **Payment Links → + New**.
 
-- Product name: match the site (e.g. "The Rock Ring")
-- Price: match the site exactly, including cents (e.g. $34.00) — Stripe
+- Product name: match the site (e.g. "The Gear Board")
+- Price: match the site exactly, including cents (e.g. $38.00) — Stripe
   and the site's displayed price should never disagree
 - Turn on **"Allow customers to adjust quantity"** if you want them able
   to buy more than one in a single Stripe checkout
@@ -81,7 +81,7 @@ Save, redeploy (see `RENDER-DEPLOYMENT.md`), done. A product with a blank
 `''` keeps using the built-in cart + email-invoice checkout — so you can
 turn this on one product at a time, whenever each is ready.
 
-### 5. What happens with a mixed cart (Rock Ring + Gift Duo together, say)
+### 5. What happens with a mixed cart (Gear Board + Pocket Bar together, say)
 
 "Add to cart" always uses the site's own cart and checkout — a single
 Stripe Payment Link can't represent an arbitrary combination of items

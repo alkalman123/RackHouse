@@ -65,7 +65,7 @@ climbing-adjacent, not despite it:
 - **The site's disclaimers are a real risk-reduction measure, not just
   copy.** Every relevant product page and the FAQ state plainly that
   these are storage/novelty items, not rated climbing protection, and
-  the Gatekeeper has "NOT FOR CLIMBING" printed into the physical part
+  every organizer has "NOT FOR CLIMBING" debossed into the physical part
   itself. Keep these. If you add products in the future, keep the same
   standard — clear, prominent, on the product page itself.
 - **A disclaimer reduces risk, it doesn't eliminate it.** Someone
@@ -135,8 +135,11 @@ and editing an NC file doesn't fix that: an edited copy is a "derivative"
 and inherits the NC restriction.
 
 **What replaced them.** All three products were redesigned from scratch
-as new, original parts, and the Draw Bar was added as a new original
-design. Nothing was traced, imported or remixed from the old files.
+as new, original parts. The old-file Rock Ring and the later Draw Bar have
+since been retired and replaced by seven carabiner organizers, also
+designed from scratch (two rounds of 20 prototypes each, in
+`designs/prototypes.py` and `designs/prototypes2.py`; the production
+versions are built by `designs/products.py`). Nothing was traced, imported or remixed from the old files.
 They're defined from functional requirements (bottle and cupholder
 diameters, carabiner gate openings and clearances, rack sizes, a 210 mm
 print bed) in `designs/rackhouse_designs.py`:
@@ -144,9 +147,9 @@ print bed) in `designs/rackhouse_designs.py`:
 | Product | Old file (not yours) | New Rackhouse design (yours) |
 |---|---|---|
 | Gatekeeper | Oversized carabiner-outline panel with a ring of holes | **V3:** pear frame, 4 stadium gear slots, cross rail with debossed text, helmet J-hook, top hang tab |
-| Rock Ring | Dome-topped block with two open ports | **V3:** 184 mm clip-on gear ring, 15 numbered inner-edge notches, central helmet hook, keyhole hanger, 3 standoff feet |
+| Rock Ring | Dome-topped block with two open ports | **Retired.** Replaced by the new Rock Ring: 176 × 203 mm flat ring, 13 fully enclosed windows, top hang eye (from prototype R12) |
 | Cup Cradle | Stem flaring to a scalloped basket | **V2:** tapered stem with 8 wedge ribs, 45° flare, 94 mm cup with arch/gate windows, drain |
-| Draw Bar | (none: new product) | Straight 200 mm rail, 7 carabiner slots, debossed text, 2 keyholes in standoff ends |
+| Gear Board, Crag Ring, Double Ring, Sport Board, Approach Bar, Pocket Bar | (none: new products) | Flat plates with fully enclosed carabiner windows, debossed RACKHOUSE · NOT FOR CLIMBING (from prototypes B20, R20, R15, B12, B18, B14) |
 
 Copyright protects a design's specific *expression*, not the idea or
 function ("hang gear on a wall," "adapt a bottle to a cupholder"). So an
@@ -155,8 +158,8 @@ infringement. These new parts don't share the old parts' shapes.
 
 **Keep the evidence.** Your best protection is a clear record that the
 new designs were created independently. That record already exists:
-`designs/rackhouse_designs.py` is the full source and git history
-timestamps it. Don't delete it, and don't add the old STLs back to any
+`designs/rackhouse_designs.py`, `designs/prototypes*.py` and
+`designs/products.py` are the full source and git history timestamps it. Don't delete it, and don't add the old STLs back to any
 repo or listing. When you post the designs on Thingiverse, **don't mark
 them as a remix** of the old things. They aren't remixes, and marking
 them as one would pull the old NC license onto them.

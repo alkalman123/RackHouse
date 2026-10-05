@@ -77,86 +77,6 @@ def gatekeeper_scene():
     return svg("Illustration of the Gatekeeper hanging from a wall hook, cams clipped through its gear slots and a helmet hanging from the J-hook", "\n".join(b))
 
 
-def front_outline(print_part, z_mid):
-    """Undo the face-down print rotation and slice through the front plate."""
-    return print_part.rotate((0, -180, 0)).slice(z_mid)
-
-
-def cam_svg(cx, cy, size, color):
-    """Stylised cam hanging from a carabiner whose top is at (cx, cy)."""
-    lobe_w, lobe_h = 7 + 5 * size, 11 + 7 * size
-    return (f'<g transform="translate({cx:.0f},{cy:.0f})" stroke="{INK}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">'
-            f'<rect x="-8" y="-4" width="16" height="38" rx="8" fill="none" stroke="{color}" stroke-width="4.5"/>'
-            f'<line x1="0" y1="34" x2="0" y2="74" stroke-width="5"/>'
-            f'<g fill="{color}"><ellipse cx="{-lobe_w * .55:.1f}" cy="{86 + lobe_h * .3:.1f}" rx="{lobe_w * .55:.1f}" ry="{lobe_h * .62:.1f}" transform="rotate(-18 {-lobe_w * .55:.1f} {86 + lobe_h * .3:.1f})"/>'
-            f'<ellipse cx="{lobe_w * .55:.1f}" cy="{86 + lobe_h * .3:.1f}" rx="{lobe_w * .55:.1f}" ry="{lobe_h * .62:.1f}" transform="rotate(18 {lobe_w * .55:.1f} {86 + lobe_h * .3:.1f})"/></g>'
-            f'<rect x="-3.5" y="72" width="7" height="{24 + lobe_h * .9:.0f}" rx="3" fill="{INK}"/></g>')
-
-
-def rockring_scene():
-    cs = front_outline(r.rock_ring()[1], 7.0)
-    s, tx, ty = 1.6, 400, 16 + 114 * 1.6            # model top (y=114) lands at y=16
-    X = lambda x: tx + x * s
-    Y = lambda y: ty - y * s
-    b = ['  <g stroke="#15191c" stroke-opacity=".10" stroke-width="3">'
-         + "".join(f'<line x1="{x}" y1="20" x2="{x}" y2="540"/>' for x in (90, 250, 550, 710)) + "</g>"]
-    b.append(f'  <circle cx="{X(0):.0f}" cy="{Y(101):.0f}" r="5" fill="{INK}"/>')
-    b.append(f'  <path d="{path_d(cs.to_polygons(), s, tx, ty)}" fill="{ROCK}" fill-rule="evenodd" stroke="{INK}" stroke-width="2.5" stroke-linejoin="round"/>')
-    # cams clipped through the numbered notches, sized smallest to biggest
-    colors = ["#8a8f96", "#7b4fa0", "#3a8f4f", "#c03b2b", "#d8b52a", "#3a6fc0", "#8a8f96", "#7b4fa0", "#3a8f4f", "#c03b2b", "#d8b52a"]
-    for i, k in enumerate(range(2, 13)):
-        a = np.radians((k - 7) * 18.0)
-        nx, ny = 75 * np.sin(a), -75 * np.cos(a)
-        b.append("  " + cam_svg(X(nx), Y(ny), 0.7 + i * 0.3, colors[i]))
-    # helmet hanging from the hook by its chin strap, in front of the ring
-    hx, hy = X(11.5), Y(48 - 6.5)
-    b.append(f'  <path d="M{hx - 4:.0f} {hy:.0f} L{hx - 120:.0f} {hy + 60:.0f} M{hx + 4:.0f} {hy:.0f} L{hx + 120:.0f} {hy + 60:.0f}" stroke="{INK}" stroke-width="4" fill="none"/>')
-    top = hy + 60                                  # rim of the helmet, where the straps end
-    b.append('  <g opacity=".88">')
-    # hung by the chin strap, the helmet hangs crown-down with its opening up
-    b.append(f'  <path d="M{hx - 132:.0f} {top:.0f} C {hx - 132:.0f} {top + 150:.0f} {hx + 132:.0f} {top + 150:.0f} {hx + 132:.0f} {top:.0f} Z" fill="#f2f2f2" stroke="{INK}" stroke-width="5" stroke-linejoin="round"/>')
-    b.append(f'  <path d="M{hx - 70:.0f} {top + 62:.0f} h40 M{hx + 30:.0f} {top + 62:.0f} h40" stroke="{INK}" stroke-width="4" stroke-linecap="round"/>')
-    b.append(f'  <rect x="{hx - 142:.0f}" y="{top - 6:.0f}" width="284" height="12" rx="6" fill="{INK}"/>')
-    b.append('  </g>')
-    b.append('  <g font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#15191c">'
-             '<text x="24" y="56">15 numbered notches</text>'
-             '<text x="24" y="76" font-weight="400" fill="#4b5157">clip each cam in size order</text>'
-             '<text x="610" y="56">Helmet hook</text>'
-             '<text x="590" y="76" font-weight="400" fill="#4b5157">hang it by the chin strap</text></g>')
-    return svg("Illustration of the Rock Ring on a wall: a full set of cams clipped around its numbered notches in size order, and a helmet hanging from the hook in the middle", "\n".join(b))
-
-
-def quickdraw_svg(cx, cy, color):
-    return (f'<g transform="translate({cx:.0f},{cy:.0f})" stroke-linecap="round" stroke-linejoin="round">'
-            f'<rect x="-11" y="-14" width="22" height="58" rx="11" fill="none" stroke="#9aa1a8" stroke-width="5"/>'
-            f'<rect x="-9" y="36" width="18" height="58" rx="5" fill="{color}" stroke="{INK}" stroke-width="2"/>'
-            f'<rect x="-11" y="86" width="22" height="58" rx="11" fill="none" stroke="#9aa1a8" stroke-width="5"/></g>')
-
-
-def drawbar_scene():
-    cs = front_outline(r.draw_bar()[1], 4.0)
-    s, tx, ty = 3.0, 400, 70 + 44 * 3.0
-    X = lambda x: tx + x * s
-    Y = lambda y: ty - y * s
-    b = ['  <g stroke="#15191c" stroke-opacity=".10" stroke-width="3">'
-         + "".join(f'<line x1="{x}" y1="20" x2="{x}" y2="540"/>' for x in (60, 740)) + "</g>"]
-    b.append(f'  <circle cx="{X(-88):.0f}" cy="{Y(24):.0f}" r="5" fill="{INK}"/><circle cx="{X(88):.0f}" cy="{Y(24):.0f}" r="5" fill="{INK}"/>')
-    b.append(f'  <path d="{path_d(cs.to_polygons(), s, tx, ty)}" fill="{EMBER}" fill-rule="evenodd" stroke="{INK}" stroke-width="2.5" stroke-linejoin="round"/>')
-    b.append(f'  <text x="{X(0):.0f}" y="{Y(38.6) + 5:.0f}" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-weight="800" font-size="13" letter-spacing="1.5" fill="#8f3a17">RACKHOUSE  ·  NOT FOR CLIMBING</text>')
-    sling_colors = [ICE, "#3a8f4f", SAND, "#c03b2b", ICE, "#3a8f4f", SAND]
-    for k in range(7):
-        x = (k - 3) * 22.0
-        if k == 5:   # one slot with a sling and a few nuts instead of a draw
-            b.append(f'  <g transform="translate({X(x):.0f},{Y(22) - 10:.0f})"><rect x="-11" y="-4" width="22" height="58" rx="11" fill="none" stroke="#9aa1a8" stroke-width="5"/>'
-                     f'<path d="M-6 54 C -40 120 -30 230 0 250 C 30 230 40 120 6 54" fill="none" stroke="{SAND}" stroke-width="7"/></g>')
-            continue
-        b.append("  " + quickdraw_svg(X(x), Y(22) - 4, sling_colors[k]))
-    b.append('  <g font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#15191c">'
-             '<text x="60" y="480">7 slots: clip quickdraws, slings or extra gear</text>'
-             '<text x="60" y="502" font-weight="400" fill="#4b5157">Two screws through the keyholes, 20 mm off the wall</text></g>')
-    return svg("Illustration of the Draw Bar on a wall with six quickdraws and a sling clipped through its slots", "\n".join(b))
-
-
 def cupcradle_scene():
     outer = [(0, 0), (29.3, 0), (30.0, 0.7), (31.0, 62.0), (50.5, 81.5), (50.5, 133.0), (49.9, 134.6),
              (48.8, 135.4), (47.7, 135.4), (47.0, 134.6), (47.0, 84.0), (0, 84.0)]
@@ -200,7 +120,7 @@ def cupcradle_scene():
 
 
 if __name__ == "__main__":
-    for name, fn in (("gatekeeper", gatekeeper_scene), ("rockring", rockring_scene), ("drawbar", drawbar_scene), ("cupcradle", cupcradle_scene)):
+    for name, fn in (("gatekeeper", gatekeeper_scene), ("cupcradle", cupcradle_scene)):
         with open(os.path.join(IMG, f"usecase-{name}.svg"), "w") as f:
             f.write(fn())
     print("ok")

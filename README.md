@@ -3,19 +3,18 @@
 **Running the business, not just the code?** Start in [`business/README.md`](business/README.md) — the plan, unit economics, legal notes, payments setup, and order fulfillment/automation all live there. This README covers the site's codebase.
 
 A self-contained e-commerce site for **Rackhouse Supply Co.**, selling
-four 3D-printed pieces, all **original Rackhouse designs** modeled from
-scratch in `designs/rackhouse_designs.py`, plus two print-on-demand merch
-items:
+3D-printed carabiner organizers and gear storage, all **original
+Rackhouse designs** modeled from scratch (see `designs/`), plus two
+print-on-demand merch items:
 
-- **The Gatekeeper V3** (flagship) — a pear-shaped gear hanger with four
-  gear slots and a helmet J-hook.
-- **The Rock Ring V3** — a full-rack gear ring: 15 numbered clip notches
-  for a double rack of cams, plus a helmet hook in the middle.
-- **The Draw Bar** — a straight 7-slot wall rail for quickdraws and extra
-  gear.
+- **The Gear Board** (flagship) — 18 fully enclosed slots for a whole rack.
+- **The Crag Ring** (second lead) — 11 enclosed windows and a carry handle.
+- **The Rock Ring**, **Double Ring**, **Sport Board**, **Approach Bar** and
+  **Pocket Bar** — the rest of the organizer line, same enclosed-window rule.
+- **The Full Kit** — Gear Board + Crag Ring + Sticker Pack bundle.
+- **The Gatekeeper V3** — a pear-shaped helmet hook and gear hanger.
 - **The Cup Cradle V2** — a car-cupholder adapter that holds a wide-mouth
   Nalgene upright.
-- **Rock Ring — Gift Duo** and **Felt Pad Set** — add-ons.
 - **Rackhouse Tee** and **Sticker Pack** — logo merch, fulfilled by a
   print-on-demand partner rather than printed in-house (see
   `business/ORDER-INTAKE-AND-FULFILLMENT.md`).
@@ -42,8 +41,8 @@ python3 -m http.server 8099
 | **A real cart** | `localStorage`-backed, shared across every page via `js/cart.js`, with a slide-out drawer and a full cart page. |
 | **A real checkout** | Address form with validation, two shipping speeds, a working promo code (`FIRSTSEND10`), live order-summary math. |
 | **Order capture** | Placing an order saves it (client-side) and shows a confirmation with an order ID — see **What still needs you** below for the one piece this can't do on its own. |
-| **Interactive 3D viewers** | The Gatekeeper, Rock Ring, Draw Bar and Cup Cradle each have a drag-to-rotate, live-recolored WebGL viewer (Three.js, vendored — no CDN) loading the actual STL, alongside rendered photography. |
-| **95 images** | Rendered directly from the four products' actual STL geometry (six colorways × multiple angles each) plus dark hero shots, "in use" illustrations, and the merch mockups — not stock photography. |
+| **Interactive 3D viewers** | Every printed product has a drag-to-rotate, live-recolored WebGL viewer (Three.js, vendored — no CDN) loading the actual STL, alongside rendered photography. |
+| **3D renders** | Rendered directly from each product's actual STL geometry (six colorways × four angles each, including gear mock-ups with carabiners, quickdraws and cams hung to scale) plus dark hero shots, dimension drawings and the merch mockups. Labeled as renders; not photographs. |
 
 ## Where the numbers come from
 
@@ -119,7 +118,7 @@ js/ui.js            Header, mobile nav, cart drawer wiring, scroll
 js/checkout.js      Checkout page: shipping/promo math, validation,
                     order placement.
 js/model-viewer.js  Mounts the interactive Three.js STL viewer used
-                    on the Gatekeeper, Rock Ring, Draw Bar and Cup Cradle pages.
+                    on every printed product page.
 js/vendor/          Three.js, STLLoader, OrbitControls — vendored
                     locally, no CDN dependency at runtime.
 

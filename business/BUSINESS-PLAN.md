@@ -1,6 +1,6 @@
 # Rackhouse Supply Co. — Business Plan
 
-*Working draft. Written to get you from "I have three 3D-printed designs
+*Working draft. Written to get you from "I have a line of original 3D-printed designs
 and a climbing following" to a running, profitable small business with
 close to zero upfront cash — not to be a static document you file away.
 Update the numbers in here as real ones replace the estimates.*
@@ -12,16 +12,20 @@ order, plus two print-on-demand merch items:
 
 | Product | Price | What it is |
 |---|---|---|
-| The Gatekeeper | $20 | Flagship — pear-shaped gear hanger with four gear slots and a helmet J-hook, hangs a full trad rack and a helmet off one point, debossed "NOT FOR CLIMBING" |
-| The Rock Ring | $34 | Full-rack gear ring — clip a double rack of cams straight onto the ring in 15 numbered notches, helmet hook in the middle, hangs on one screw, debossed "NOT FOR CLIMBING" |
-| The Draw Bar | $18 | Straight 7-slot wall rail for quickdraws, slings and extra gear, two keyhole screws |
+| **The Gear Board** | $38 | **Flagship.** 200 × 169 mm wall board with 18 fully enclosed slots in three rows: a double rack of cams, nuts and six quickdraws. Hangs from two hooks or a sling |
+| **The Crag Ring** | $24 | **Second lead product.** 7 mm gear ring with 11 enclosed windows and a carry handle: carry a single rack to the crag, clip the handle to a sling or tree |
+| The Rock Ring | $28 | Flat gear ring with 13 enclosed windows for a single rack plus nuts, hangs from a top eye |
+| The Double Ring | $34 | Two-row ring, 20 enclosed windows: cams outside, draws, nuts and a nut tool inside |
+| The Sport Board | $28 | Two-row board for 13 quickdraws; the upper row hangs through a long window |
+| The Approach Bar | $16 | Ultralight 6 mm bar for 7 quickdraws, about 36 g |
+| The Pocket Bar | $12 | 130 mm bar with 4 enclosed slots for a pack lid or glovebox |
+| The Full Kit | $62 | Gear Board + Crag Ring + Sticker Pack, two colors of your choice ($70 separately) |
+| The Gatekeeper | $20 | Pear-shaped helmet hook and four-slot gear hanger, hangs from one point |
 | The Cup Cradle | $16 | Car-cupholder adapter: ribbed stem fits 69–79 mm cupholders, 94 mm cup holds a wide-mouth Nalgene upright |
-| Rock Ring — Gift Duo | $62 | Two Rock Rings, any two colors |
-| Felt Pad Set | $5 | Bought-in felt pads: quiet, scuff-free hanging for the Gatekeeper, Rock Ring and Draw Bar |
 | Rackhouse Tee | $26 | Logo tee, print-on-demand, S–XXL |
 | Sticker Pack | $8 | Four die-cut vinyl stickers, print-on-demand |
 
-Full specs, photography, and the live cart/checkout are in ``.
+Full specs, 3D renders, and the live cart/checkout are on the site (repo root).
 Cost basis for every price above is in `UNIT-ECONOMICS-AND-SCALING.md`.
 
 ## 2. The unfair advantage: you already have an audience
@@ -91,7 +95,7 @@ and a **modest first month** driven entirely by your existing audience:
 | | Conservative | Solid launch |
 |---|---|---|
 | Orders in month 1 | 8 | 25 |
-| Average order value | ~$28 (mostly single Gatekeepers/Rock Rings, some merch add-ons) | ~$32 |
+| Average order value | ~$30 (mostly single Gear Boards and Crag Rings, some bars and merch as add-ons) | ~$32 |
 | Gross revenue | $224 | $800 |
 | Materials-only COGS (~20% of revenue, blended with lower-margin merch) | $45 | $160 |
 | Payment processing (~3.3%) | $7 | $26 |
@@ -123,7 +127,7 @@ version of the business.
 |---|---|
 | Overprinting before demand is proven | Make-to-order model, zero pre-built inventory |
 | Money spent before payment is collected | Checkout confirms orders by email before any print starts |
-| Liability from climbing-adjacent branding | Explicit "not climbing protection" disclaimers on every relevant product page and in the FAQ; the Gatekeeper has "NOT FOR CLIMBING" molded into the part itself |
+| Liability from climbing-adjacent branding | Explicit "not climbing protection" disclaimers on every relevant product page and in the FAQ; every organizer has "NOT FOR CLIMBING" debossed into the part itself |
 | Trademark exposure (Nalgene name, on the Cup Cradle) | Product page carries an explicit non-affiliation disclaimer; see `LEGAL-AND-ENTITY-FORMATION.md` |
 | Lower margin / vendor dependency on merch | Tee and stickers are print-on-demand by design — zero upfront inventory risk, in exchange for a thinner margin than the 3D-printed line; see `UNIT-ECONOMICS-AND-SCALING.md` |
 | Fake social proof eroding trust | None added — no fabricated reviews, ratings, or testimonials anywhere on the site |

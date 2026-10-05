@@ -42,7 +42,7 @@ Date | Order ID | Customer | Email | Product | Variant | Qty | Total | Status | 
 3. Action: **Google Sheets → Create Spreadsheet Row** in your Orders sheet, mapping Stripe's customer name/email/amount/line-item description into the columns above, `Status` defaulted to `New`.
 4. Turn the Zap/scenario on. Every future payment now lands in your tracker with zero typing.
 
-## Part 3 — Fulfilling a 3D-printed order (Gatekeeper, Rock Ring, Draw Bar, Cup Cradle, Gift Duo, Felt Pads)
+## Part 3 — Fulfilling a 3D-printed order (Gear Board, Crag Ring, Rock Ring, Double Ring, Sport Board, Approach Bar, Pocket Bar, Full Kit, Gatekeeper, Cup Cradle)
 
 This is the one step that stays manual, because a real printer has to run:
 
@@ -110,9 +110,10 @@ change over time.
    replaces the tracker-triggered "it shipped" email from Part 3 for
    that order — nothing further needed from you.
 
-You can run a mixed model: print the Rock Ring yourself (it wins DIY
-even unbatched per the margin math) while routing the Gatekeeper, Draw Bar and
-Cup Cradle to the farm. Nothing about the site's code needs to change
+You can run a mixed model: print the Gear Board and Double Ring yourself
+(they win DIY even unbatched per the margin math) while routing the
+small, low-price parts (Pocket Bar, Approach Bar, Gatekeeper, Cup Cradle)
+to the farm, or batching them onto a plate next to a board. Nothing about the site's code needs to change
 either way — `SHOP.payment.productLinks` and the cart already treat
 every product identically; only your own fulfillment process differs
 per SKU.

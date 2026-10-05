@@ -80,9 +80,17 @@ class Proto:
     def outline(self):
         return self.solid - self.holes
 
-    def build(self):
+    def build(self, marks=None):
+        """marks: optional list of (text, size, x, y) debossed instead of the
+        prototype ID (the production versions carry the brand and warning)."""
         cs = self.outline()
-        label = text(self.pid, self.label_size, *self.label_xy)
+        if marks:
+            label = None
+            for txt, size, x, y in marks:
+                t = text(txt, size, x, y)
+                label = t if label is None else label + t
+        else:
+            label = text(self.pid, self.label_size, *self.label_xy)
         assert_inside(label, cs, 1.0, f"{self.pid} label")
         part = slab_with_edge_break(cs, self.T) - label.extrude(2).translate((0, 0, self.T - 0.8))
         self.cs = cs

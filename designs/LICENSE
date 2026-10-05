@@ -2,9 +2,11 @@ Rackhouse product designs
 Copyright (c) 2026 Rackhouse Supply Co. All rights reserved except as
 granted below.
 
-Covered files: designs/rackhouse_designs.py, designs/make_usecase_svgs.py,
-designs/make_dimension_drawing.py, designs/print-ready/*.stl, models/*.stl,
-and the Gatekeeper, Rock Ring, Draw Bar and Cup Cradle geometry they define.
+Covered files: designs/rackhouse_designs.py, designs/prototypes.py,
+designs/prototypes2.py, designs/products.py, designs/make_usecase_svgs.py,
+designs/make_product_drawings.py, designs/print-ready/*.stl, models/*.stl,
+and the Gear Board, Crag Ring, Rock Ring, Double Ring, Sport Board,
+Approach Bar, Pocket Bar, Gatekeeper and Cup Cradle geometry they define.
 
 Public license
 --------------

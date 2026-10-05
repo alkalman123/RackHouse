@@ -29,26 +29,33 @@ order arrives:
 
 ## Where the weights come from
 
-Not guessed — computed from the actual CAD geometry of the current
-(original, Rackhouse-owned) designs in `designs/rackhouse_designs.py`
-(solid volume from the mesh, scaled by PLA's density of 1.24 g/cm³; the
-typical-infill column assumes ~1.2 mm walls plus 20–30% infill). Rebuild
-`designs/build-report.json` after any design change to refresh these:
+Not guessed — computed from the actual CAD geometry. The seven carabiner
+organizers come from `designs/products.py` (estimated printed weight at
+4 walls, about 1.6 mm, plus 30% gyroid infill, PLA+ at 1.24 g/cm³; see
+`designs/products-report.json`). The Gatekeeper and Cup Cradle come from
+`designs/rackhouse_designs.py` and `designs/build-report.json`. Rebuild
+the reports after any design change to refresh these:
 
-| Product | Solid volume | Weight at 100% infill | Weight at ~20–35% infill (typical) |
+| Product | Size (mm) | Openings | Est. printed weight |
 |---|---|---|---|
-| Rock Ring V3 | 158.2 cm³ | 196 g | **~110–140 g** |
-| Gatekeeper V3 | 86.6 cm³ | 107 g | **~65–85 g** |
-| Draw Bar | 72.8 cm³ | 90 g | **~55–65 g** |
-| Cup Cradle V2 | 240.5 cm³ | 298 g | **~140–180 g** |
-| Gift Duo (2× Rock Ring) | — | — | **~220–280 g** |
-| Felt Pads | — (not printed; a bought-in commodity item) | — | — |
-| Tee, Sticker Pack | — (not printed here; print-on-demand — see `ORDER-INTAKE-AND-FULFILLMENT.md`) | — | — |
+| Gear Board (flagship) | 200 × 169 × 9 | 18 | **~171 g** |
+| Crag Ring | 152 × 190 × 7 | 11 + handle | **~72 g** |
+| Rock Ring | 176 × 203 × 9 | 13 | **~91 g** |
+| Double Ring | 180 × 207 × 9 | 20 | **~122 g** |
+| Sport Board | 200 × 97 × 9 | 13 | **~100 g** |
+| Approach Bar | 200 × 40 × 6 | 7 | **~36 g** |
+| Pocket Bar | 130 × 44 × 9 | 4 | **~33 g** |
+| Gatekeeper V3 | 209 × 104 × 10 | 4 + helmet hook | **~65–85 g** |
+| Cup Cradle V2 | — | — | **~140–180 g** |
+| Full Kit (Gear Board + Crag Ring + stickers) | — | — | **~243 g** printed |
+| Tee, Sticker Pack | — (print-on-demand — see `ORDER-INTAKE-AND-FULFILLMENT.md`) | — | — |
 
 Print time is the one number I can't compute from geometry alone — it
 depends on your printer's speed, nozzle, layer height, and slicer
 settings. Don't trust a number here you haven't measured; the framework
 below is built so you can drop your real number in once you have it.
+All seven organizers are flat plates 6–9 mm thick, so they print fast
+for their size and need no supports.
 
 ## Cost-per-part framework
 
@@ -67,12 +74,16 @@ processing fee:
 
 | Product | Price | Filament cost | Packaging (est.) | Processing fee | Materials-only COGS | Gross margin |
 |---|---|---|---|---|---|---|
-| Rock Ring | $34.00 | $2.64 (120g) | $2.00 (larger flat box) | $1.29 | $5.93 | **$28.07 (83%)** |
-| Gatekeeper | $20.00 | $1.76 (80g) | $2.00 (larger flat box) | $0.88 | $4.64 | **$15.36 (77%)** |
-| Draw Bar | $18.00 | $1.32 (60g) | $1.50 | $0.82 | $3.64 | **$14.36 (80%)** |
-| Cup Cradle | $16.00 | $3.52 (160g) | $1.30 | $0.76 | $5.58 | **$10.42 (65%)** |
-| Gift Duo | $62.00 | $5.28 (240g) | $2.50 | $2.10 | $9.88 | **$52.12 (84%)** |
-| Felt Pads | $5.00 | ~$0.75 (bought-in) | $0.75 | $0.45 | $1.95 | **$3.06 (61%)** |
+| Gear Board | $38.00 | $3.76 (171 g) | $2.00 (flat box) | $1.40 | $7.16 | **$30.84 (81%)** |
+| Crag Ring | $24.00 | $1.58 (72 g) | $1.75 | $1.00 | $4.33 | **$19.67 (82%)** |
+| Rock Ring | $28.00 | $2.00 (91 g) | $2.00 | $1.11 | $5.11 | **$22.89 (82%)** |
+| Double Ring | $34.00 | $2.68 (122 g) | $2.00 | $1.29 | $5.97 | **$28.03 (82%)** |
+| Sport Board | $28.00 | $2.20 (100 g) | $1.75 | $1.11 | $5.06 | **$22.94 (82%)** |
+| Approach Bar | $16.00 | $0.79 (36 g) | $1.25 (mailer) | $0.76 | $2.81 | **$13.19 (82%)** |
+| Pocket Bar | $12.00 | $0.73 (33 g) | $1.00 (mailer) | $0.65 | $2.37 | **$9.63 (80%)** |
+| Gatekeeper | $20.00 | $1.76 (80 g) | $2.00 | $0.88 | $4.64 | **$15.36 (77%)** |
+| Cup Cradle | $16.00 | $3.52 (160 g) | $1.30 | $0.76 | $5.58 | **$10.42 (65%)** |
+| Full Kit | $62.00 | $5.35 (243 g) | $3.40 (box + card) | $2.10 | $15.35 incl. ~$4.50 stickers | **$46.65 (75%)** |
 
 Merch (print-on-demand, not filament — see `ORDER-INTAKE-AND-FULFILLMENT.md`):
 
@@ -87,9 +98,10 @@ Two things the first table deliberately leaves out, on purpose:
 
 - **Shipping.** The site charges $5.95 standard (free over $60) — verify
   that actually covers a real USPS/UPS/regional-carrier rate for your
-  package's real weight and dimensions before you rely on it. A Rock Ring
-  in a 21 × 19 cm flat box is light but bulky; get an actual quote.
-- **Your time.** Materials margin looks great (65–84%) because it ignores
+  package's real weight and dimensions before you rely on it. The Gear
+  Board ships in a roughly 22 × 19 cm flat box; the bars fit a padded
+  mailer. Get an actual quote.
+- **Your time.** Materials margin looks great (65–82%) because it ignores
   the thing that's actually scarce in a one-printer operation: print
   hours and your own pack/ship time. That's the real constraint — see
   below.
@@ -105,16 +117,21 @@ depends entirely on whether you price your time into the DIY column.
 
 ### Print-farm cost, ballpark
 
-Rough per-unit cost from a third-party FDM print farm (a wide range,
-since farms price on material + machine-time + their margin — get 2–3
-real quotes before trusting this):
+Rough per-unit cost from a third-party FDM print farm (modeled as about
+$2.50 setup + $0.035/g; farms price on material + machine-time + their
+margin, so get 2–3 real quotes before trusting this):
 
 | Product | DIY filament-only cost | Ballpark print-farm cost |
 |---|---|---|
-| Rock Ring (~120g) | $2.64 | $6–10 |
-| Gatekeeper (~80g) | $1.76 | $5–9 |
-| Draw Bar (~60g) | $1.32 | $4–7 |
-| Cup Cradle (~160g) | $3.52 | $8–12 |
+| Gear Board (~171 g) | $3.76 | $6–10 |
+| Crag Ring (~72 g) | $1.58 | $4–6 |
+| Rock Ring (~91 g) | $2.00 | $5–7 |
+| Double Ring (~122 g) | $2.68 | $6–8 |
+| Sport Board (~100 g) | $2.20 | $5–7 |
+| Approach Bar (~36 g) | $0.79 | $3–5 |
+| Pocket Bar (~33 g) | $0.73 | $3–5 |
+| Gatekeeper (~80 g) | $1.76 | $5–9 |
+| Cup Cradle (~160 g) | $3.52 | $8–12 |
 
 A print farm roughly **doubles to triples** your per-unit cost versus
 printing it yourself — but it also removes the one-printer-at-a-time
@@ -129,10 +146,15 @@ margin at the midpoint of the ranges above:
 
 | Product | Price | Print-farm margin |
 |---|---|---|
-| Gatekeeper | $20.00 | $10.12 (51%) |
-| Rock Ring | $34.00 | $22.71 (67%) |
-| Draw Bar | $18.00 | $10.18 (57%) |
-| Cup Cradle | $16.00 | $3.94 (25%) |
+| Gear Board | $38.00 | $26.11 (69%) |
+| Crag Ring | $24.00 | $16.23 (68%) |
+| Rock Ring | $28.00 | $19.20 (69%) |
+| Double Ring | $34.00 | $23.94 (70%) |
+| Sport Board | $28.00 | $19.14 (68%) |
+| Approach Bar | $16.00 | $10.23 (64%) |
+| Pocket Bar | $12.00 | $6.70 (56%) |
+| Gatekeeper | $20.00 | $11.82 (59%) |
+| Cup Cradle | $16.00 | $5.84 (36%) |
 
 ### Now price in your own hands-on time for the DIY column
 
@@ -141,36 +163,32 @@ hands-on work per unit: slicing/setup, starting the print and checking
 the first layers, post-processing, packing, and a shipping run. At a
 placeholder **$25/hr** (swap in your real number), two scenarios:
 
-- **One order at a time:** ~35–40 min hands-on ≈ $15–17/unit in labor
-- **Batched** (several units per plate/session — scaling step 1 below): ~15–20 min/unit ≈ $6–8/unit in labor
+- **One order at a time:** ~35–40 min hands-on ≈ $16/unit in labor
+- **Batched** (several units per plate/session — scaling step 1 below): ~15–20 min/unit ≈ $7/unit in labor
 
 | Product | DIY margin (materials only) | Minus labor, one-at-a-time | Minus labor, batched |
 |---|---|---|---|
-| Gatekeeper | $15.36 | **-$1.31** | $7.86 |
-| Rock Ring | $28.07 | $11.40 | $20.57 |
-| Draw Bar | $14.36 | **-$2.31** | $6.86 |
-| Cup Cradle | $10.42 | **-$6.25** | $2.92 |
+| Gear Board | $30.84 | $14.84 | $23.84 |
+| Crag Ring | $19.67 | $3.67 | $12.67 |
+| Rock Ring | $22.89 | $6.89 | $15.89 |
+| Double Ring | $28.03 | $12.03 | $21.03 |
+| Sport Board | $22.94 | $6.94 | $15.94 |
+| Approach Bar | $13.19 | **-$2.81** | $6.19 |
+| Pocket Bar | $9.63 | **-$6.37** | $2.63 |
+| Gatekeeper | $15.36 | **-$0.64** | $8.36 |
+| Cup Cradle | $10.42 | **-$5.58** | $3.42 |
 
-The takeaway: **once your time is priced in, printing the Gatekeeper,
-Draw Bar or Cup Cradle one order at a time can lose money.** Only the Rock Ring
-clearly wins DIY even unbatched, because its price is high enough to
-absorb the labor. Batching (filling a plate with several units before
-you print) fixes this for all four — but batching only works once
-you have enough simultaneous orders to fill a plate, which isn't true
-in the first weeks when orders trickle in one at a time.
+The takeaway: **the Gear Board and Double Ring carry the business.**
+They clear their labor even one at a time. The Approach Bar, Pocket Bar,
+Gatekeeper and Cup Cradle lose money as single, one-off orders; they
+earn their keep as add-ons in a bigger order (one box, one shipping run)
+or batched several to a plate. The bars are small enough that 4–6 fit on
+one plate next to a board, so batch them alongside Gear Board orders.
 
-Compare the time-adjusted DIY numbers above to the hands-off print-farm
-margins: **the farm route beats one-at-a-time DIY on every product**, and
-only batched DIY on the Rock Ring comes close.
-
-**Watch the Cup Cradle.** The V2 redesign is a bigger, sturdier part
-(~160 g vs ~110 g for the old file), so at $16 its farm margin is thin
-(~$4, 25%). Two fixes, your call: raise it to **$18** (farm margin
-~$5.90, 33%), or sell it mainly as an add-on that rides along in a
-Gatekeeper or Rock Ring order, where the packaging and shipping are
-already paid for. This is a genuine case for routing at least some of the catalog
-through a farm from day one, not just as a stopgap before you own a
-printer.
+**Watch the Cup Cradle.** At ~160 g and $16 its farm margin is thin
+(~$6, 36%). Raise it to **$18**, or sell it mainly as an add-on that
+rides along in a bigger order, where the packaging and shipping are
+already paid for.
 
 ### The catch: this only works if the farm is actually hands-off
 
@@ -184,7 +202,7 @@ API-driven, drop-ship FDM fulfillment).
 
 ## The real bottleneck is printer-hours, not materials
 
-A print that costs $2.42 in filament but ties up your printer for 5–7
+A print that costs $2–4 in filament but ties up your printer for 5–7
 hours caps how many you can sell per week far more than materials cost
 ever will. Before pricing decisions, figure out (from your benchmark
 print) roughly how many hours each product takes, then:
@@ -193,10 +211,10 @@ print) roughly how many hours each product takes, then:
 Max units/week on one printer ≈ (printer-hours available per week) ÷ (hours per print)
 ```
 
-Example: if a Rock Ring takes ~6 hours and you can run the printer
-~12 hours/day (waking hours plus one overnight run), that's roughly
-2 prints/day, or **~14 Rock Rings/week** from a single machine — call
-it $476/week gross on that SKU alone, materials-only margin ~$400/week,
+Example: if a Gear Board takes ~5 hours and you can run the printer
+~15 hours/day (waking hours plus one overnight run), that's roughly
+3 prints/day, or **~21 Gear Boards/week** from a single machine — call
+it $798/week gross on that SKU alone, materials-only margin ~$650/week,
 before your labor. That's a real, useful ceiling to know going in.
 
 ## Scaling past one printer (only once demand proves it)

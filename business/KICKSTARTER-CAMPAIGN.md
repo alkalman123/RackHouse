@@ -28,6 +28,10 @@ below). Everything you'll paste into it is written out here.
   prototype in its current state and doesn't allow photorealistic
   renderings to stand in for the product. Use the site renders only where
   they're clearly labeled as renders, and lead with real photos.
+- **A load test of each printed prototype**: hang the full rack the
+  product page lists (for the Gear Board, a double rack, nuts and six
+  draws) for a week, shake it, toss the Crag Ring and bars in a pack. The
+  capacities on the site come from the CAD, not from a test yet.
 
 ## 2. Create the project
 
@@ -39,9 +43,9 @@ below). Everything you'll paste into it is written out here.
 
 | Field | Enter |
 |---|---|
-| Project title | Rackhouse: Original 3D-Printed Gear for Climbers |
-| Subtitle | Wall hangers for your whole trad rack and helmet, a quickdraw bar, and a Nalgene cupholder adapter. Designed and printed in Chicago. |
-| Image | `img/kickstarter-share.jpg` until you have a real photo, then a real photo of all four parts |
+| Project title | Rackhouse: Carabiner Organizers That Never Drop Your Gear |
+| Subtitle | 3D-printed gear boards, rings and bars with fully enclosed slots: your rack stays clipped in the closet, the car, the pack and at the crag. Designed and printed in Chicago. |
+| Image | `img/kickstarter-share.jpg` until you have a real photo, then a real photo of the Gear Board loaded with a rack (lead image) |
 | Funding goal | **$1,200** |
 | Campaign duration | **21 days** (shorter campaigns convert better; avoid ending on a holiday weekend) |
 | Launch date | A Tuesday morning, at least 3 weeks after you start the pre-launch page |
@@ -50,7 +54,7 @@ below). Everything you'll paste into it is written out here.
 
 | Line item | Amount |
 |---|---|
-| 3D printer with a 256 mm bed (fits the 209 mm Gatekeeper; e.g. Bambu Lab A1) | $400 |
+| 3D printer with a 256 mm bed (fits every part; the biggest is 207 mm; e.g. Bambu Lab A1) | $400 |
 | Filament for prototypes and every reward (~12 kg PLA+/PETG) | $270 |
 | Packaging, labels, thank-you cards | $150 |
 | Illinois LLC filing fee | $150 |
@@ -72,45 +76,50 @@ item: $6 shipping. Bundles: $8. "Spotter" has no shipping.
 |---|---|---|---|---|
 | $5 | Spotter | Name on the supporters wall + updates | — | Month after campaign |
 | $7 | Sticker Pack | 4 vinyl stickers | — | +6 weeks |
-| $13 | Cup Cradle | 1 Cup Cradle, backer picks color in survey | — | +6 weeks |
-| $15 | Early Bird Gatekeeper | 1 Gatekeeper | 50 | +6 weeks |
-| $17 | Gatekeeper | 1 Gatekeeper | — | +6 weeks |
-| $26 | Early Bird Rock Ring | 1 Rock Ring | 50 | +6 weeks |
-| $29 | Rock Ring | 1 Rock Ring | — | +6 weeks |
-| $14 | Early Bird Draw Bar | 1 Draw Bar | 50 | +6 weeks |
-| $15 | Draw Bar | 1 Draw Bar | — | +6 weeks |
-| $44 | The Send Kit | Rock Ring + Draw Bar + sticker pack ($60 retail) | — | +6 weeks |
-| $68 | The Full Wall | Rock Ring + Gatekeeper + Draw Bar + Cup Cradle + sticker pack ($96 retail) | — | +6 weeks |
-| $89 | The Crew Pack | The Full Wall + logo tee, size in survey ($122 retail) | — | +8 weeks (tee is print-on-demand) |
+| $10 | Pocket Bar | 1 Pocket Bar, color in survey ($12 retail) | — | +6 weeks |
+| $13 | Approach Bar | 1 Approach Bar ($16 retail) | — | +6 weeks |
+| $18 | Early Bird Crag Ring | 1 Crag Ring ($24 retail) | 50 | +6 weeks |
+| $20 | Crag Ring | 1 Crag Ring | — | +6 weeks |
+| **$29** | **Early Bird Gear Board** (feature this one) | 1 Gear Board ($38 retail) | 50 | +6 weeks |
+| $32 | Gear Board | 1 Gear Board | — | +6 weeks |
+| $23 | Sport Board | 1 Sport Board ($28 retail) | — | +6 weeks |
+| $23 | Rock Ring | 1 Rock Ring ($28 retail) | — | +6 weeks |
+| $28 | Double Ring | 1 Double Ring ($34 retail) | — | +6 weeks |
+| $53 | The Full Kit | Gear Board + Crag Ring + sticker pack, two colors ($62 in the shop, $70 separately) | — | +6 weeks |
+| $72 | The Crew Pack | The Full Kit + logo tee, size in survey ($88 in the shop) | — | +8 weeks (tee is print-on-demand) |
 
-Turn on **add-ons** for extra Draw Bars ($15), Cup Cradles ($13),
-Sticker Packs ($7) and Felt Pads ($5): a backer on the Send Kit can add
-a second Draw Bar or a Cup Cradle without switching tiers.
+Turn on **add-ons**: Gatekeeper helmet hook ($16), Cup Cradle ($13),
+extra Sticker Pack ($6), and any organizer at its non-early-bird pledge
+price. A Gear Board backer can add a Pocket Bar for the pack without
+switching tiers.
 
-Margin check: The Full Wall at $68 costs about $9 in filament, $2 in
-stickers, $3 in packaging and $7 in fees, leaving about $47 before your
-time. Every tier is profitable. The early birds are deliberately
-thinner.
+Margin check: The Full Kit at $53 costs about $5.35 in filament, ~$4.50
+in stickers, $3.40 in packaging and ~$5.50 in Kickstarter + payment fees,
+leaving about $34 before your time. The Early Bird Gear Board at $29
+leaves about $20. Every tier is profitable. The early birds are
+deliberately thinner.
 
 ### Story (paste into the Story editor; add your photos between sections)
 
 ```
-I'm a climber in Chicago, and I design and 3D-print gear that fixes the small annoyances in my own climbing life. Rackhouse is that shop, and this campaign gets it off the ground.
+I'm a climber in Chicago, and I design and 3D-print gear storage that fixes the small annoyances in my own climbing life. Rackhouse is that shop, and this campaign gets it off the ground.
 
-THE GATEKEEPER: your whole rack, off one hook
-A pear-shaped hanger that holds a full trad rack and your helmet. Clip cams and quickdraws through the four gear slots, drape slings through the frame, and drop your helmet's chin strap into the J-hook. 21 cm tall, hangs from one screw. "NOT FOR CLIMBING" is debossed right into it, because it's an organizer, not rated hardware.
+THE PROBLEM: GEAR THAT FALLS OFF
+Hooks, pegs and open notches are fine until the bin gets bumped, the pack gets tossed in the trunk or you walk the rack to the crag. Then a cam slides off and ends up under the seat. So every Rackhouse organizer clips through fully enclosed windows. Once a carabiner's gate closes through one, the only way off is to open the gate again. It took two rounds and 40 prototypes to get every window big enough to clip, with a strip thin enough to clip around.
 
-THE ROCK RING: your whole double rack, in order
-A 184 mm gear ring you clip cams straight onto, the way you rack on a gear sling. Fifteen numbered notches keep every piece in size order instead of sliding into a pile, and your helmet hangs from the hook in the middle. One screw on the wall.
+THE GEAR BOARD: your whole rack, on the wall
+A 200 x 169 mm board with 18 closed slots in three rows of six: a double rack of cams, a set of nuts and six quickdraws, each hanging through its own window so nothing tangles. Hang it from two hooks, or run a sling through the top slots and hang it from one hook, a car grab handle or a tree.
 
-THE DRAW BAR: every quickdraw in a row
-A straight 20 cm rail with seven slots for quickdraws, slings, nuts and all the gear that doesn't fit on your main rack. Two screws, and it sits 20 mm off the wall so every carabiner clips on cleanly.
+THE CRAG RING: grab your rack like a bag
+A light 7 mm gear ring with 11 closed windows and a hand-size carry handle. Rack your cams, walk in carrying it by the handle, then clip the handle to a sling or a tree at the base. About 72 g.
 
-THE CUP CRADLE: your Nalgene, upright in the car
-Wide-mouth Nalgenes don't fit car cupholders. The Cup Cradle's ribbed stem wedges into 69–79 mm cupholders and holds a 32 oz wide-mouth bottle upright, with windows to grab it and a drain for spills.
+AND FIVE MORE
+The Rock Ring (13 windows) and Double Ring (20, draws on an inner row) for single racks; the Sport Board for 13 quickdraws; the 36 g Approach Bar for 7 draws in your pack; and the Pocket Bar for a pack lid or glovebox.
+
+"NOT FOR CLIMBING" is debossed into every one, because they're organizers, not rated hardware.
 
 EVERY DESIGN IS ORIGINAL
-I modeled all four from scratch around real measurements: bottle and cupholder diameters, carabiner gate openings, the size of a double rack. Have a printer? The files are free for personal use on Thingiverse. The campaign is how I get printed ones to everyone else.
+I modeled every piece from scratch around real carabiner gate openings and rack sizes. Have a printer? The files are free for personal use on Thingiverse. The campaign is how I get printed ones to everyone else.
 
 WHERE YOUR PLEDGE GOES
 [insert the budget table image or list from the Kickstarter page]
@@ -118,21 +127,21 @@ WHERE YOUR PLEDGE GOES
 All-or-nothing: if we don't hit $1,200, nobody is charged.
 ```
 
-### Risks and challenges (paste once your prototypes really are printed and tested)
+### Risks and challenges (paste only once your prototypes really are printed and load-tested)
 
 ```
-The designs are finished and prototypes are printed and tested, so the main risk is volume. If more people back this than one printer can handle on schedule, overflow orders will be printed by a professional print farm using the same files and materials, so delivery dates hold. Shipping delays outside my control can happen; every backer gets tracking, and I'll post an update every two weeks until the last reward ships. These products are not climbing safety equipment and are never to be used to hold a person.
+The designs are finished and prototypes are printed and load-tested with real gear, so the main risk is volume. If more people back this than one printer can handle on schedule, overflow orders will be printed by a professional print farm using the same files and materials, so delivery dates hold. Shipping delays outside my control can happen; every backer gets tracking, and I'll post an update every two weeks until the last reward ships. These products are not climbing safety equipment and are never to be used to hold a person.
 ```
 
 ### Video (60–90 seconds, phone is fine)
 
-1. 0–10 s: the problem. A gear pile on the garage floor, a Nalgene
-   rolling in the footwell.
-2. 10–40 s: the Gatekeeper in use. Hang it on one screw, clip cams in,
-   drop the helmet strap on the hook. Then the Rock Ring: rack a full
-   set of cams onto the ring, smallest to biggest, and hang the helmet
-   in the middle. Then a row of quickdraws going onto the Draw Bar, and
-   the Cup Cradle dropping into a cupholder.
+1. 0–10 s: the problem. A cam sliding off a hook as a gear bin gets
+   bumped; a rack spilling in the trunk.
+2. 10–40 s: the Gear Board on the wall, loaded. Unclip a cam, clip it
+   back, then pick the whole board up and shake it: nothing falls off.
+   Then the Crag Ring: rack up, grab the handle, walk out the door, clip
+   it to a tree at the crag. Quick cuts of the Approach Bar going into
+   a pack and the Pocket Bar in a glovebox.
 3. 40–60 s: you at the printer, a part coming off the bed. "Every design
    is original, printed here in Chicago."
 4. 60–80 s: the ask. "$1,200 gets a real printer running and the first
@@ -163,15 +172,15 @@ footage of real parts is what backers trust.
 Most climbing communities **ban or limit self-promotion**. Read each
 group's rules first, and lead with something useful.
 
-- **Lead with the free files.** "I designed a free printable trad rack
-  hanger / gear ring / quickdraw bar. Files here, and I'm also running a small
+- **Lead with the free files.** "I designed a free printable gear board
+  that never drops a carabiner. Files here, and I'm also running a small
   Kickstarter for printed ones." Free useful stuff is welcome almost
   everywhere; ads aren't.
 - **Disclose you're the maker** in every post.
 - **Reddit:** r/climbing has strict self-promotion rules. Check the
   sidebar, and post in the weekly/self-promo thread if there is one.
   r/3Dprinting, r/functionalprint, r/tradclimbing and r/bouldering are
-  better fits; post a build or "made this" photo of a racked-up Rock Ring.
+  better fits; post a build or "made this" photo of a racked-up Gear Board.
 - **Facebook groups:** local climbing groups, gym groups, van-life and
   climbing-trip groups. Message an admin first and ask whether a
   one-time post about a local climber's project is OK.
@@ -186,11 +195,12 @@ group's rules first, and lead with something useful.
 
 **Ready-to-post caption:**
 
-> I'm a Chicago climber launching a tiny gear shop on Kickstarter. Four
-> original 3D-printed designs: two wall hangers for your whole trad rack
-> and helmet, a quickdraw bar, and a cupholder adapter for wide-mouth
-> Nalgenes. Got a printer? The files are free for personal use. Want a
-> printed one? Early birds are up to 25% off for the first 50 backers:
+> I'm a Chicago climber launching a tiny gear shop on Kickstarter:
+> 3D-printed carabiner organizers with fully enclosed slots, so your rack
+> stays clipped in the closet, the car, your pack and at the crag. The
+> Gear Board holds a whole rack; the Crag Ring carries it. Got a printer?
+> The files are free for personal use. Want a printed one? Early birds are
+> up to 25% off for the first 50 backers:
 > https://alkalman123.github.io/RackHouse/kickstarter.html
 
 ## 5. Launch day
