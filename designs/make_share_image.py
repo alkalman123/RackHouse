@@ -16,7 +16,8 @@ def main():
         t = y / H
         d.line([(0, y), (W, y)], fill=(int(30 - 12 * t), int(22 - 6 * t), int(18 - 4 * t)))
     hero = Image.open(os.path.join(ROOT, "img", "products", "gear-board-hero-dark.jpg"))
-    hero = hero.crop((150, 0, 1850, 1400)).resize((765, 630), Image.LANCZOS)
+    hw, hh = hero.size
+    hero = hero.crop((int(hw * 0.075), 0, int(hw * 0.925), hh)).resize((765, 630), Image.LANCZOS)
     mask = Image.linear_gradient("L").rotate(90).resize((765, 630))   # fade in from the left
     mask = mask.point(lambda v: min(255, int(v * 2.2)))
     bg.paste(hero, (W - 765, 0), mask)
