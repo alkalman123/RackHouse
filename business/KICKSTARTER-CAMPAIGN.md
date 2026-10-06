@@ -28,6 +28,8 @@ below). Everything you'll paste into it is written out here.
   prototype in its current state and doesn't allow photorealistic
   renderings to stand in for the product. Use the site renders only where
   they're clearly labeled as renders, and lead with real photos.
+  The full shot list and how to put photos on the site and campaign:
+  `PROTOTYPE-PHOTO-KIT.md`.
 - **A load test of each printed prototype**: hang the full rack the
   product page lists (for the Gear Board, a double rack, nuts and six
   draws) for a week, shake it, toss the Crag Ring and bars in a pack. The

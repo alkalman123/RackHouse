@@ -56,6 +56,22 @@ const SHOP = {
   social: {
     instagram: '',
   },
+  // Real photos of printed prototypes (business/PROTOTYPE-PHOTO-KIT.md).
+  // Run tools/prep_photos.py on your photos and paste the lines it prints.
+  // Each product page shows these first, tagged "Photo"; everything else
+  // stays tagged "3D render". Empty list = renders only.
+  photos: {
+    'gear-board': [],
+    'crag-ring': [],
+    'rock-ring': [],
+    'double-ring': [],
+    'sport-board': [],
+    'approach-bar': [],
+    'pocket-bar': [],
+    'full-kit': [],
+    'gatekeeper': [],
+    'cup-cradle': [],
+  },
   // Kickstarter campaign (see business/KICKSTARTER-CAMPAIGN.md).
   // 1. Once your Kickstarter draft exists, turn on its pre-launch page and
   //    paste that URL into `url`; leave status 'prelaunch'. Every
