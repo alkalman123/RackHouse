@@ -30,7 +30,7 @@ order arrives:
 ## Where the weights come from
 
 Not guessed — computed from the actual CAD geometry. The seven carabiner
-organizers come from `designs/products.py` (estimated printed weight at
+organizers come from `designs/products.py` in the private design archive (estimated printed weight at
 4 walls, about 1.6 mm, plus 30% gyroid infill, PLA+ at 1.24 g/cm³; see
 `designs/products-report.json`). The Gatekeeper and Cup Cradle come from
 `designs/rackhouse_designs.py` and `designs/build-report.json`. Rebuild

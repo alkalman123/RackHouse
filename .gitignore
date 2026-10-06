@@ -3,3 +3,6 @@ _site/
 designs/render/raw/
 designs/render/scenes/
 designs/render/raw-cycles/
+
+# Private design master copy: never commit (all rights reserved)
+designs/
