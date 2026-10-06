@@ -53,7 +53,7 @@ a 5–12 mm strip a carabiner gate can close around.
 | `print-ready/rackhouse-cup-cradle.stl` | Cup Cradle V2, stem down |
 | `build-report.json` | Watertight/single-body checks, sizes, volumes |
 | `make_usecase_svgs.py` | Builds the "in use" illustrations for these two |
-| `LICENSE` | CC BY-NC-SA 4.0 for the public; commercial rights reserved |
+| `LICENSE` | All rights reserved: no one else may print, copy or sell these designs |
 
 `models/*.stl` (used by the website's 3D viewer and the renders) are the
 same parts in their use orientation.
@@ -103,10 +103,10 @@ both); the rings hang from a 24 mm top eye, and the Crag Ring from its
 
 ## License
 
-Copyright © 2026 Rackhouse Supply Co. Public license: **CC BY-NC-SA 4.0**.
-Print and remix them for personal use with credit. Selling prints or
-files requires a commercial license from Rackhouse Supply Co. See
-`LICENSE`.
+Copyright © 2026 Rackhouse Supply Co. **All rights reserved.** No
+licence is granted: nobody but the owner may print, copy, modify, share
+or sell these designs or files made from them. See `LICENSE`. This folder
+is private; keep it out of any public repository.
 
 **Not climbing equipment.** These parts must never be used in a climbing,
 rescue or fall-protection system.

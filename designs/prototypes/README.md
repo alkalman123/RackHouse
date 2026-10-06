@@ -3,7 +3,7 @@
 Twenty print-and-test candidates. **Nothing here is on the website yet.**
 Print the ones you want to try, run the tests below, and say which to
 continue with. The winner(s) then get the full treatment: final tuning,
-product photos, product page, Thingiverse files.
+product photos, product page.
 
 `rings.jpg` and `bars.jpg` show all twenty side by side. Each prototype's
 ID is debossed on the part, so prints don't get mixed up.

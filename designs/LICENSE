@@ -1,42 +1,31 @@
 Rackhouse product designs
-Copyright (c) 2026 Rackhouse Supply Co. All rights reserved except as
-granted below.
+Copyright (c) 2026 Rackhouse Supply Co. (owner: GitHub account alkalman123).
+ALL RIGHTS RESERVED.
 
-Covered files: designs/rackhouse_designs.py, designs/prototypes.py,
-designs/prototypes2.py, designs/products.py, designs/make_usecase_svgs.py,
-designs/make_product_drawings.py, designs/print-ready/*.stl, models/*.stl,
-and the Gear Board, Crag Ring, Rock Ring, Double Ring, Sport Board,
-Approach Bar, Pocket Bar, Gatekeeper and Cup Cradle geometry they define.
+Covered: the designs, geometry, CAD source, print files and images of the
+Gear Board, Crag Ring, Rock Ring, Double Ring, Sport Board, Approach Bar,
+Pocket Bar, Gatekeeper and Cup Cradle, every prototype (R01-R20,
+B01-B20), and any file that defines or reproduces them, in any format
+(CAD source, STL/3MF print files, website 3D models and anything
+generated from them).
 
-Public license
---------------
-These designs are licensed to the public under the Creative Commons
-Attribution-NonCommercial-ShareAlike 4.0 International License
-(CC BY-NC-SA 4.0): https://creativecommons.org/licenses/by-nc-sa/4.0/
+No licence is granted. Nobody other than the owner may copy, print,
+manufacture, modify, distribute, publish, sell or offer for sale these
+designs, or prints or files made from them, for personal or commercial
+use, without the owner's prior written permission. Viewing a 3D model on
+the Rackhouse website does not grant any right to download, print or
+reproduce it.
 
-In short, you may download, print and modify these designs for personal,
-non-commercial use, as long as you:
-  * credit "Rackhouse Supply Co." and link to
-    https://alkalman123.github.io/RackHouse/ ,
-  * do not sell the files, prints made from them, or prints of modified
-    versions, and
-  * share any modified version under these same terms.
+From 6 October 2026 this notice replaces the Creative Commons
+(CC BY-NC-SA 4.0) notice that earlier versions of this repository
+carried. The designs were never listed on Thingiverse, Printables or any
+model site.
 
-Commercial rights
------------------
-All commercial rights are reserved by Rackhouse Supply Co. Selling prints,
-offering print-on-demand listings, or otherwise using these designs
-commercially requires a separate written license. Contact
-rackhousesupplyco@gmail.com.
+Trademarks: "Rackhouse", "Rackhouse Supply Co." and the Rackhouse
+carabiner logo are trademarks of Rackhouse Supply Co.
 
-Trademarks
-----------
-"Rackhouse", "Rackhouse Supply Co." and the Rackhouse carabiner logo are
-trademarks of Rackhouse Supply Co. and are not licensed under CC BY-NC-SA.
-Remixes must remove or replace the debossed RACKHOUSE wordmark.
-
-Safety
-------
-These parts are NOT climbing equipment. They are not rated to hold a
+Safety: these parts are NOT climbing equipment, are not rated to hold a
 person and must never be used in a climbing, rescue or fall-protection
-system. Provided "as is", without warranty of any kind.
+system.
+
+Permission requests: rackhousesupplyco@gmail.com

@@ -237,23 +237,17 @@
   </div>
 </section>
 
-<section class="section ks-designs" id="open">
+<section class="section ks-designs" id="original">
   <div class="container">
     <div class="grid grid-2" style="gap:56px;align-items:center;">
       <div>
-        <span class="eyebrow">Open designs</span>
-        <h2 style="margin-top:10px;">Got a printer? Print one free.</h2>
-        <p class="lede" style="margin-top:16px;">All nine designs are published for personal use under a Creative Commons non-commercial license. Print one, try it, and if you like it, back the campaign or tell a friend. That's how a small shop grows.</p>
-        <ul style="margin-top:18px;display:flex;flex-direction:column;gap:8px;" id="ksDesignLinks">
-          <li data-design="gear-board"><b>Gear Board</b>: <span class="muted">files coming soon</span></li>
-          <li data-design="crag-ring"><b>Crag Ring</b>: <span class="muted">files coming soon</span></li>
-          <li data-design="rock-ring"><b>Rock Ring</b>: <span class="muted">files coming soon</span></li>
-          <li data-design="double-ring"><b>Double Ring</b>: <span class="muted">files coming soon</span></li>
-          <li data-design="sport-board"><b>Sport Board</b>: <span class="muted">files coming soon</span></li>
-          <li data-design="approach-bar"><b>Approach Bar</b>: <span class="muted">files coming soon</span></li>
-          <li data-design="pocket-bar"><b>Pocket Bar</b>: <span class="muted">files coming soon</span></li>
-          <li data-design="gatekeeper"><b>Gatekeeper V3</b>: <span class="muted">files coming soon</span></li>
-          <li data-design="cup-cradle"><b>Cup Cradle V2</b>: <span class="muted">files coming soon</span></li>
+        <span class="eyebrow">Original designs</span>
+        <h2 style="margin-top:10px;">Designed here. Printed here. Only here.</h2>
+        <p class="lede" style="margin-top:16px;">Every Rackhouse organizer is an original design, worked out over 40 prototypes, and every one is printed in-house to order. The files aren't for sale or download: when you back the campaign, you get the real thing, printed and checked by the person who designed it.</p>
+        <ul style="margin-top:18px;display:flex;flex-direction:column;gap:8px;">
+          <li><b>Two rounds of prototypes</b>: <span class="muted">20 hook-and-notch designs, then 20 with fully enclosed windows</span></li>
+          <li><b>Seven made the cut</b>: <span class="muted">Gear Board, Crag Ring, Rock Ring, Double Ring, Sport Board, Approach Bar, Pocket Bar</span></li>
+          <li><b>All rights reserved</b>: <span class="muted">Rackhouse designs are not licensed for anyone else to print or sell</span></li>
         </ul>
       </div>
       <img loading="lazy" src="img/products/gear-board-dimensions.jpg" alt="Gear Board dimension drawing: 200 by 169 mm, 18 closed slots in three rows" style="border-radius:var(--radius-lg);border:1px solid var(--line);">
@@ -416,16 +410,6 @@
     });
   }
 
-  var designs = shop.openDesigns || {};
-  document.querySelectorAll('#ksDesignLinks [data-design]').forEach(function (li) {
-    var link = (designs[li.getAttribute('data-design')] || '').trim();
-    if (!link) return;
-    var span = li.querySelector('span');
-    var a = document.createElement('a');
-    a.href = link; a.target = '_blank'; a.rel = 'noopener'; a.className = 'ext';
-    a.textContent = 'download the free files';
-    span.replaceWith(a);
-  });
 })();
 </script>
 

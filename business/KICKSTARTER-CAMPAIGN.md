@@ -119,7 +119,7 @@ The Rock Ring (13 windows) and Double Ring (20, draws on an inner row) for singl
 "NOT FOR CLIMBING" is debossed into every one, because they're organizers, not rated hardware.
 
 EVERY DESIGN IS ORIGINAL
-I modeled every piece from scratch around real carabiner gate openings and rack sizes. Have a printer? The files are free for personal use on Thingiverse. The campaign is how I get printed ones to everyone else.
+I modeled every piece from scratch around real carabiner gate openings and rack sizes, and I print every one myself. The files aren't for sale or download: the campaign is how I get printed ones to everyone else.
 
 WHERE YOUR PLEDGE GOES
 [insert the budget table image or list from the Kickstarter page]
@@ -172,10 +172,10 @@ footage of real parts is what backers trust.
 Most climbing communities **ban or limit self-promotion**. Read each
 group's rules first, and lead with something useful.
 
-- **Lead with the free files.** "I designed a free printable gear board
-  that never drops a carabiner. Files here, and I'm also running a small
-  Kickstarter for printed ones." Free useful stuff is welcome almost
-  everywhere; ads aren't.
+- **Lead with the story, not the ask.** "I spent 40 prototypes on a gear
+  board that never drops a carabiner. Here's what failed and why." Build
+  photos, failed prototypes and the shake-it-upside-down test are welcome
+  almost everywhere; ads aren't. Link the campaign at the end.
 - **Disclose you're the maker** in every post.
 - **Reddit:** r/climbing has strict self-promotion rules. Check the
   sidebar, and post in the weekly/self-promo thread if there is one.
@@ -198,9 +198,9 @@ group's rules first, and lead with something useful.
 > I'm a Chicago climber launching a tiny gear shop on Kickstarter:
 > 3D-printed carabiner organizers with fully enclosed slots, so your rack
 > stays clipped in the closet, the car, your pack and at the crag. The
-> Gear Board holds a whole rack; the Crag Ring carries it. Got a printer?
-> The files are free for personal use. Want a printed one? Early birds are
-> up to 25% off for the first 50 backers:
+> Gear Board holds a whole rack; the Crag Ring carries it. Every one is an
+> original design, printed by me. Early birds are up to 25% off for the
+> first 50 backers:
 > https://alkalman123.github.io/RackHouse/kickstarter.html
 
 ## 5. Launch day

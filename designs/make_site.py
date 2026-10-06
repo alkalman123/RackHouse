@@ -559,8 +559,6 @@ def store_data():
     s = open(p).read()
     links = "\n".join(f"      '{k}': ''," for k in ORDER)
     s = re.sub(r"    productLinks: \{\n.*?\n    \},", "    productLinks: {\n" + links + "\n    },", s, flags=re.S)
-    designs = "\n".join(f"    '{k}': ''," for k in list(ORGANIZERS) + ["gatekeeper", "cup-cradle"])
-    s = re.sub(r"  openDesigns: \{\n.*?\n  \},", "  openDesigns: {\n" + designs + "\n  },", s, flags=re.S)
     a = s.find("function rockRingImages(colorKey) {")
     if a < 0:
         a = s.index("// Product renders for the carabiner organizers")

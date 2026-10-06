@@ -17,8 +17,10 @@ to you directly.
 2. **Kickstarter** → `KICKSTARTER-CAMPAIGN.md`. The shareable page is
    already live at https://alkalman123.github.io/RackHouse/kickstarter.html ;
    create the Kickstarter project and paste its URL into `js/store-data.js`
-3. **Post the free design files** → `THINGIVERSE-UPLOAD.md` (license and
-   copy-paste text ready; upload zip in `designs/`)
+3. **Keep the design archive private** → the printable files and CAD
+   source are all rights reserved and live only in your private archive
+   (`rackhouse-design-archive`); proof of ownership is in its
+   `DESIGN-OWNERSHIP-RECORD.md`
 4. **Print one of each 3D-printed product**, or get one printed, to
    (a) have a real photo/video and (b) get real cost numbers →
    `UNIT-ECONOMICS-AND-SCALING.md`
@@ -36,7 +38,7 @@ to you directly.
 | `ORDER-INTAKE-AND-FULFILLMENT.md` | How orders actually reach you, what's automatic out of the box, and how to wire up hands-off order tracking, customer emails, and print-on-demand fulfillment for the tee/stickers |
 | `LEGAL-AND-ENTITY-FORMATION.md` | Sole prop vs. LLC, when to actually form one, product-liability and trademark considerations, and **§4c: why the products were redesigned and who owns the designs** — general education, not legal advice |
 | `KICKSTARTER-CAMPAIGN.md` | Goal and budget, reward tiers, paste-ready story/risks text, video plan, pre-launch plan, how to share in climbing communities without getting banned |
-| `THINGIVERSE-UPLOAD.md` | Step-by-step upload of the four designs with license choice, titles, tags, print settings and descriptions |
+| `PROTOTYPE-PHOTO-KIT.md` | What to print, how to photograph it, and how to swap your real photos into the site and Kickstarter |
 | `PAYMENTS-SETUP.md` | Exact steps to accept credit cards via Stripe, and how it plugs into the code that's already built for it |
 | `RENDER-DEPLOYMENT.md` | An alternative hosting path, documented but not the one currently live |
 | `SOCIAL-MEDIA-KIT.md` | Ready-to-edit launch posts and an evergreen content list |
@@ -47,7 +49,7 @@ I built, tested, and can edit anything in the codebase — the storefront,
 the cart/checkout logic, the Stripe Payment Link hook, all of it. What I
 can't do is act as you on services that need your own identity and
 banking: creating your Render account, your Stripe account, your Kickstarter
-project, your Thingiverse uploads, or an LLC all require your own sign-up, your own bank account, and in the LLC's
+project, or an LLC all require your own sign-up, your own bank account, and in the LLC's
 case your own state filing. Every doc above tells you exactly what to
 click; none of it requires waiting on me again to move forward.
 

@@ -160,9 +160,10 @@ infringement. These new parts don't share the old parts' shapes.
 new designs were created independently. That record already exists:
 `designs/rackhouse_designs.py`, `designs/prototypes*.py` and
 `designs/products.py` are the full source and git history timestamps it. Don't delete it, and don't add the old STLs back to any
-repo or listing. When you post the designs on Thingiverse, **don't mark
-them as a remix** of the old things. They aren't remixes, and marking
-them as one would pull the old NC license onto them.
+repo or listing. If you ever list a design anywhere, **never mark it as a
+remix** of the old things: they aren't remixes, and marking them as one
+would pull the old NC license onto them. The full proof package is
+`DESIGN-OWNERSHIP-RECORD.md` (kept with the private design archive).
 
 **Three honest caveats (take these to a lawyer if money is on the line):**
 
@@ -190,14 +191,33 @@ them as one would pull the old NC license onto them.
    approve it explicitly. Your exposure is low because you're not
    selling them, but purging removes any doubt.
 
-**Licensing your designs.** Post them publicly under **CC BY-NC-SA 4.0**
-(set up in `designs/LICENSE` and `business/THINGIVERSE-UPLOAD.md`).
-As the owner, you keep every right, including the exclusive right to sell
-prints. Everyone else can print for personal use and remix
-non-commercially, with credit, and their remixes must carry the same
-non-commercial terms. That's the same arrangement the original designer
-used on you, now working in your favor. If you'd rather nobody can post
-modified versions at all, pick CC BY-NC-ND 4.0 instead.
+**Licensing your designs: all rights reserved (since 6 Oct 2026).**
+The designs are not licensed to anyone. Nobody else may print, copy,
+modify, share or sell them, for personal or commercial use, without your
+written permission (`LICENSE` in the private design archive). The earlier
+plan to post free files on Thingiverse under CC BY-NC-SA was dropped
+before anything was posted.
+
+What "all rights reserved" can and can't do:
+
+- It's your legal right to stop copying. It doesn't physically stop it:
+  anyone holding an STL can print it. So the printable files and the CAD
+  source now live only in your private archive, not in the public repo,
+  and the website's 3D viewer uses a coarse display mesh rather than the
+  production file.
+- Copyright protects the design files and their specific shapes. A
+  climber who designs their own board with enclosed slots isn't
+  infringing: function and ideas aren't protected (see caveat 2 for
+  patents).
+- For CC licences, copies someone already downloaded while the old
+  CC BY-NC-SA notice sat in the public repo (Oct 4-6, 2026) could still
+  be printed for personal use under that notice; it never allowed
+  selling. Exposure is minimal: the files were never promoted or listed
+  anywhere.
+- To enforce it (a takedown on Etsy, Thingiverse or a print farm), a
+  DMCA notice works without registration; suing requires a US copyright
+  registration. Registering the designs as a group is about $45-65 at
+  copyright.gov (see `DESIGN-OWNERSHIP-RECORD.md`).
 
 ## 5. Sales tax — the honest current state
 

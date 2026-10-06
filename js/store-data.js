@@ -70,19 +70,6 @@ const SHOP = {
     goal: 1200,
     launchDate: '',        // e.g. 'November 12' — shown on the page when set
   },
-  // Free design files (business/THINGIVERSE-UPLOAD.md). Paste each
-  // Thingiverse / Printables URL once published; blank = "coming soon".
-  openDesigns: {
-    'gear-board': '',
-    'crag-ring': '',
-    'rock-ring': '',
-    'double-ring': '',
-    'sport-board': '',
-    'approach-bar': '',
-    'pocket-bar': '',
-    'gatekeeper': '',
-    'cup-cradle': '',
-  },
 };
 
 const COLORWAYS = [
